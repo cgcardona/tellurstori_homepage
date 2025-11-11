@@ -115,28 +115,10 @@ if (distributionSection) {
 // Add loading animation for stats
 const stats = document.querySelectorAll('.stat-value');
 stats.forEach(stat => {
-    const text = stat.textContent;
-    stat.textContent = '';
+    const text = stat.textContent.trim();
     
-    const isNumber = text.match(/\d+/);
-    if (isNumber) {
-        const number = parseInt(isNumber[0]);
-        const prefix = text.split(number)[0];
-        const suffix = text.split(number)[1];
-        
-        let current = 0;
-        const increment = number / 50;
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= number) {
-                stat.textContent = prefix + number + suffix;
-                clearInterval(timer);
-            } else {
-                stat.textContent = prefix + Math.floor(current) + suffix;
-            }
-        }, 30);
-    } else {
-        stat.textContent = text;
-    }
+    // Don't animate - just display the text as-is to preserve formatting
+    // This prevents issues with decimals, ranges, and special characters
+    stat.textContent = text;
 });
 

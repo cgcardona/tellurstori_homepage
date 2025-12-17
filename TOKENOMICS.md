@@ -428,9 +428,8 @@ Fee Allocation Model
 
 Transaction fees are distributed to balance work compensation with holding incentives:
 
-- **60%** → Active validators (work-based compensation)
+- **70%** → Active validators (work-based compensation)
 - **15%** → Staking rewards (distributed to all stakers proportionally)
-- **10%** → Protocol burns (permanent removal creating deflationary pressure)
 - **10%** → Grants & ecosystem development treasury
 - **5%** → Emergency response / insurance pool
 
@@ -438,9 +437,9 @@ Transaction fees are distributed to balance work compensation with holding incen
 
 This split creates three key benefits:
 
-1. **Validator Priority (60%):** Majority goes to active workers maintaining network security
+1. **Validator Priority (70%):** Strong majority goes to active workers maintaining network security
 2. **Holding Incentive (15%):** Staking rewards reduce velocity and stabilize token economics
-3. **Long-term Sustainability (10% burns):** Creates deflationary pressure as protocol usage grows
+3. **All Fees to Participants:** Unlike networks that burn fees (e.g., AVAX), we reward all fees to ecosystem participants
 
 All percentages are adjustable via governance within predefined bounds (±20% from base allocation).
 
@@ -521,7 +520,7 @@ While TUS is not designed as a passive investment asset, the protocol implements
 - Slashing risk: Stake subject to penalties for poor performance
 
 **Benefits:**
-- Earn 60% share of transaction fees (work-based compensation)
+- Earn 70% share of transaction fees (work-based compensation)
 - Participate in transaction validation and consensus
 - Full governance voting rights with reputation weighting
 - Priority consideration for protocol upgrades and new features
@@ -564,16 +563,15 @@ Transaction fees are distributed to create holding incentives while rewarding ac
 
 | Recipient | Allocation | Purpose |
 |-----------|------------|---------|
-| Active Validators | 60% | Work-based compensation for network operation |
+| Active Validators | 70% | Work-based compensation for network operation |
 | Staking Rewards | 15% | Distributed proportionally to all stakers (incentivizes holding) |
-| Protocol Burns | 10% | Permanent removal creating deflationary pressure |
 | Grants & Ecosystem | 10% | Development, integrations, community growth |
 | Emergency Fund | 5% | Insurance pool for security incidents and contingencies |
 
 **Rationale:**
-- Validators maintain majority (60%) as primary workers
+- Validators maintain strong majority (70%) as primary workers
 - Staking rewards (15%) reduce velocity and create holding incentive
-- Burns (10%) provide long-term deflationary pressure as usage grows
+- All fees reward participants (unlike AVAX which burns all fees)
 - Treasury (10%) funds sustainable ecosystem development
 - Emergency fund (5%) ensures protocol resilience
 
@@ -626,7 +624,7 @@ TUS holders benefit from network growth through:
 2. **Fee Discounts (10-30%):** Reduces cost of platform services
 3. **Governance Power:** Influence protocol evolution and fee structures
 4. **Priority Access:** Queue advantages during high-demand periods
-5. **Deflationary Pressure (10% burns):** Long-term supply reduction as usage scales
+5. **Validator Rewards (70% of fees):** All fees go to participants, not burned
 
 **Important Framing:**
 
@@ -670,7 +668,7 @@ Launch mechanisms may include:
 
 TUS does **not** include:
 
-- Burn-driven scarcity narratives (though 10% of fees are burned for long-term deflation)
+- Burn-driven scarcity narratives (all fees reward participants, not burned)
 - Guaranteed returns or fixed yields
 - Misleading "APY" marketing (staking rewards fluctuate with usage)
 - Price targets or appreciation promises
@@ -704,7 +702,7 @@ This maintains our utility-first positioning while creating sustainable token ec
 - Solves cold start problem without ongoing inflation
 
 **3. Multi-Tier Staking**
-- **Validators (10K+ TUS):** Earn 60% of fees + governance + slashing risk
+- **Validators (10K+ TUS):** Earn 70% of fees + governance + slashing risk
 - **Creators (1K+ TUS):** 20% fee discounts + 15% staking rewards + priority access
 - **Community (100+ TUS):** 10% fee discounts + 10% staking rewards + governance
 
@@ -712,12 +710,11 @@ This maintains our utility-first positioning while creating sustainable token ec
 - Staking rewards (15% of fees) reduce velocity
 - Fee discounts (10-30%) incentivize holding
 - Time-weighted governance (up to 4x voting power)
-- Deflationary burns (10% of fees) create long-term supply pressure
+- All fees to participants (no burns, unlike AVAX)
 
 **5. Balanced Fee Distribution**
-- 60% → Active validators (work-based)
+- 70% → Active validators (work-based)
 - 15% → Staking rewards (holding incentive)
-- 10% → Burns (deflationary pressure)
 - 10% → Grants & ecosystem
 - 5% → Emergency fund
 

@@ -1,3 +1,17 @@
+⚠️ IMPORTANT LEGAL NOTICE
+
+This document is for informational purposes only and does not constitute:
+- An offer to sell or solicitation to purchase TUS tokens
+- Investment, financial, legal, or tax advice
+- A guarantee of token functionality or value
+
+TUS tokens have not been registered with the U.S. Securities and Exchange 
+Commission or any other regulatory authority. This offering is not available 
+to U.S. persons or residents of restricted jurisdictions.
+
+Purchasers should consult their own legal, financial, and tax advisors before 
+participating in any token sale. There is a risk of total loss of capital.
+
 # TellUrStori (TUS) Tokenomics
 
 **Validator-Fee, Utility-First Model**

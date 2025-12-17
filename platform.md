@@ -1,5 +1,19 @@
-# TellUrStori Tokenomics
-## Digital Asset Ownership & Revenue Model
+⚠️ IMPORTANT LEGAL NOTICE
+
+This document is for informational purposes only and does not constitute:
+- An offer to sell or solicitation to purchase TUS tokens
+- Investment, financial, legal, or tax advice
+- A guarantee of token functionality or value
+
+TUS tokens have not been registered with the U.S. Securities and Exchange 
+Commission or any other regulatory authority. This offering is not available 
+to U.S. persons or residents of restricted jurisdictions.
+
+Purchasers should consult their own legal, financial, and tax advisors before 
+participating in any token sale. There is a risk of total loss of capital.
+
+# TellUrStori Digital Asset System
+## Music NFT Ownership & Revenue Model
 
 **Version**: 1.0  
 **Date**: November 11, 2025  
@@ -305,14 +319,14 @@ Streaming:
 1,000,000 streams × 0.001 TUS = 1,000 TUS
 Platform fee (1%): 10 TUS
 
-Total Monthly Revenue: 3,010 TUS (~$120,400 at $40/TUS)
-Total Annual Revenue: ~$1.45M
+Total Monthly Revenue: 3,010 TUS (~$1,505 at $0.50/TUS)
+Total Annual Revenue: ~$18,060
 ```
 
 **Growth Scenario** (18 months):
-- **Month 6**: 5,000 creators = $60K/month
-- **Month 12**: 20,000 creators = $240K/month
-- **Month 18**: 50,000 creators = $600K/month
+- **Month 6**: 5,000 creators = $750/month
+- **Month 12**: 20,000 creators = $3,000/month
+- **Month 18**: 50,000 creators = $7,500/month
 
 **Conservative vs. Aggressive Scenarios**:
 | Metric | Conservative | Base | Aggressive |
@@ -320,8 +334,8 @@ Total Annual Revenue: ~$1.45M
 | Active Creators (18mo) | 25,000 | 50,000 | 100,000 |
 | Avg Instances/Creator/Mo | 3 | 5 | 8 |
 | Avg Instance Price | 3 TUS | 5 TUS | 10 TUS |
-| Monthly Revenue | $225K | $600K | $2.4M |
-| Annual Revenue (Year 2) | $2.7M | $7.2M | $28.8M |
+| Monthly Revenue | $2,812 | $7,500 | $30,000 |
+| Annual Revenue (Year 2) | $33,750 | $90,000 | $360,000 |
 
 ---
 
@@ -409,24 +423,24 @@ Instance Transferred to Buyer
 ```
 Full Ownership Sales (50 sold):
 50 × 10 TUS = 500 TUS
-Artist receives: 500 × 0.89 = 445 TUS ($17,800 at $40/TUS)
+Artist receives: 500 × 0.89 = 445 TUS ($222.50 at $0.50/TUS)
 
 Streaming (10,000 streams):
 10,000 × 0.001 TUS = 10 TUS
-Artist receives: 10 × 0.89 = 8.9 TUS ($356)
+Artist receives: 10 × 0.89 = 8.9 TUS ($4.45)
 
 Limited Play Sales (30 sold):
 30 × 1 TUS = 30 TUS
-Artist receives: 30 × 0.89 = 26.7 TUS ($1,068)
+Artist receives: 30 × 0.89 = 26.7 TUS ($13.35)
 
-Total Artist Revenue: 480.6 TUS (~$19,224)
+Total Artist Revenue: 480.6 TUS (~$240.30)
 ```
 
 **Secondary Market** (after initial sales):
 - Fan resells Full Ownership token for 15 TUS
-- Artist receives royalty: 15 × 0.10 = 1.5 TUS ($60)
-- Platform receives: 15 × 0.01 = 0.15 TUS ($6)
-- Seller receives: 15 - 1.5 - 0.15 = 13.35 TUS ($534)
+- Artist receives royalty: 15 × 0.10 = 1.5 TUS ($0.75)
+- Platform receives: 15 × 0.01 = 0.15 TUS ($0.08)
+- Seller receives: 15 - 1.5 - 0.15 = 13.35 TUS ($6.68)
 
 ---
 
@@ -453,16 +467,16 @@ Platform Fee (1%): 0.5 TUS
 Seller Receives: 42 TUS
 
 Royalty Distribution:
-Owner A: 7.5 × 0.40 = 3 TUS ($120)
-Owner B: 7.5 × 0.40 = 3 TUS ($120)
-Owner C: 7.5 × 0.20 = 1.5 TUS ($60)
+Owner A: 7.5 × 0.40 = 3 TUS ($1.50)
+Owner B: 7.5 × 0.40 = 3 TUS ($1.50)
+Owner C: 7.5 × 0.20 = 1.5 TUS ($0.75)
 ```
 
 **If 200 albums sell**:
-- Owner A earns: 200 × 3 = 600 TUS ($24,000)
-- Owner B earns: 200 × 3 = 600 TUS ($24,000)
-- Owner C earns: 200 × 1.5 = 300 TUS ($12,000)
-- Platform earns: 200 × 0.5 = 100 TUS ($4,000)
+- Owner A earns: 200 × 3 = 600 TUS ($300)
+- Owner B earns: 200 × 3 = 600 TUS ($300)
+- Owner C earns: 200 × 1.5 = 300 TUS ($150)
+- Platform earns: 200 × 0.5 = 100 TUS ($50)
 
 ---
 
@@ -480,11 +494,11 @@ Owner C: 7.5 × 0.20 = 1.5 TUS ($60)
 License Price: 1,000 TUS
 Royalty (10%): 100 TUS → Digital Master owners
 Platform Fee (1%): 10 TUS → TellUrStori
-Artist Receives: 890 TUS ($35,600)
+Artist Receives: 890 TUS ($445)
 
 If Digital Master has 2 owners:
-Owner A (70%): 70 TUS ($2,800)
-Owner B (30%): 30 TUS ($1,200)
+Owner A (70%): 70 TUS ($35)
+Owner B (30%): 30 TUS ($15)
 ```
 
 **Rights Granted**:
@@ -513,7 +527,7 @@ Platform Fee (1%): 200 TUS
 Distributable to Artists: 19,800 TUS
 
 If Artist receives 1% of total streams:
-Artist Earnings: 198 TUS ($7,920/month)
+Artist Earnings: 198 TUS ($99/month)
 ```
 
 ---

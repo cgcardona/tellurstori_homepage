@@ -564,7 +564,6 @@ Artist Earnings: 198 TUS ($99/month)
 - [ ] Fractionalization of Digital Masters
 
 **Phase 3** (Months 13-18):
-- [ ] Cross-chain bridging (Ethereum, Polygon)
 - [ ] Dynamic pricing algorithms
 - [ ] Creator staking for boosted visibility
 - [ ] Revenue-share pools for curators

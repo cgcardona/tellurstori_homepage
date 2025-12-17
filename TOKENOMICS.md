@@ -754,7 +754,7 @@ This model:
 - **Matches TellUrStori's creative, participatory ethos** by paying ecosystem contributors
 - **Creates sustainable economics** through balanced fee distribution and value accrual mechanisms
 - **Solves bootstrap challenges** with dedicated validator subsidy program
-- **Enables long-term growth** through deflationary pressure and governance evolution
+- **Enables long-term growth** through controlled issuance, participant-aligned incentives, and governance evolution
 
 ### One-Sentence Summary (Very Useful)
 

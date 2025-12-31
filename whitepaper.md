@@ -392,12 +392,12 @@ Where Protocol_Activity_Score = weighted sum of:
 
 | Year | Estimated Supply | Inflation Rate | Assumptions |
 |------|------------------|----------------|-------------|
-| 0    | 10,000,000 TUS   | N/A (Genesis)  | Initial allocation |
-| 1    | 11,500,000 TUS   | 15%            | 1,000 DAU, bootstrap phase |
-| 2    | 13,225,000 TUS   | 13%            | 3,000 DAU |
-| 3    | 15,000,000 TUS   | 10%            | 10,000 DAU |
-| 5    | 22,000,000 TUS   | 7%             | 50,000 DAU |
-| 10   | 35,000,000 TUS   | 3-5%           | 200,000 DAU |
+| 0    | 100,000,000 TUS  | N/A (Genesis)  | Initial allocation |
+| 1    | 115,000,000 TUS  | 15%            | 1,000 DAU, bootstrap phase |
+| 2    | 132,250,000 TUS  | 13%            | 3,000 DAU |
+| 3    | 150,000,000 TUS  | 10%            | 10,000 DAU |
+| 5    | 220,000,000 TUS  | 7%             | 50,000 DAU |
+| 10   | 350,000,000 TUS  | 3-5%           | 200,000 DAU |
 
 **Long-Term Equilibrium:**
 - Target steady-state inflation: **3-5% annually**
@@ -409,179 +409,203 @@ This controlled elastic supply model provides **psychological comfort** to stake
 
 ## 3. Initial Genesis Allocation
 
-### Initial Genesis Supply: **10,000,000 TUS**
+### Initial Genesis Supply: **100,000,000 TUS**
 
 The genesis allocation represents the initial supply minted at protocol launch.
 
 | Allocation | Percentage | TUS Amount | Purpose |
 |------------|------------|------------|---------|
-| **Seed Sale** | **5%** | **500,000** | **Early investors, strategic partners** |
-| **Strategic Round** | **10%** | **1,000,000** | **Key partners, advisors, market makers** |
-| **Public Sale** | **10%** | **1,000,000** | **Community distribution** |
-| Community Usage Pool | 30% | 3,000,000 | Ongoing rewards for creators, validators, moderators |
-| Network Bootstrap Fund | 10% | 1,000,000 | Validator subsidies for first 12 months (see Section 8) |
-| Ecosystem & Grants Treasury | 15% | 1,500,000 | Integrations, research, tooling |
-| Team Allocation | 15% | 1,500,000 | Long-term contributor alignment |
-| Foundation Reserve | 5% | 500,000 | Operations and liquidity |
-| **Total Genesis Supply** | **100%** | **10,000,000** | |
+| **Seed Sale** | **3%** | **3,000,000** | **Early investors, strategic partners @ $0.50 = $1.5M** |
+| **Strategic Round** | **5%** | **5,000,000** | **Key partners, advisors, market makers @ $1.00 = $5M** |
+| **Public Sale** | **3.5%** | **3,500,000** | **Community distribution @ $1.00 = $3.5M** |
+| Community Usage Pool | 35% | 35,000,000 | Creator rewards, staking rewards, moderation, governance participation |
+| Network Bootstrap Fund | 15% | 15,000,000 | Validator subsidies: Year 1 (10M TUS), Year 2 conditional (5M TUS, see Section 8) |
+| Ecosystem & Grants Treasury | 15% | 15,000,000 | Major integrations, partnerships, research, tooling, grants |
+| Team Allocation | 18% | 18,000,000 | Long-term contributor alignment (4-year vest, 1-year cliff) |
+| Foundation Reserve | 5.5% | 5,500,000 | Operations, legal, liquidity, contingency |
+| **Total Genesis Supply** | **100%** | **100,000,000** | |
 
-**Total for Token Sales: 25% (2,500,000 TUS)**
+**Total for Token Sales: 11.5% (11,500,000 TUS) → $10,000,000 raise**
 
-### Rationale for 10M Genesis Supply
+### Rationale for 100M Genesis Supply
 
-The 10,000,000 TUS genesis supply was determined through economic modeling based on:
+The 100,000,000 TUS genesis supply provides optimal flexibility for building a thriving, long-term sustainable ecosystem.
 
-**Target Exchange Rate Analysis:**
-- Optimal range: **$0.10 - $1.00 USD per TUS**
-- This range provides the best balance of usability and value perception
+**Why Supply Size Doesn't Affect User Experience:**
 
-**License Pricing Viability:**
-| License Type | TUS Price | @ $0.10/TUS | @ $1.00/TUS |
-|--------------|-----------|-------------|-------------|
-| Streaming | 0.001 TUS | $0.0001 | $0.001 |
-| Limited Play (100 plays) | 1 TUS | $0.10 | $1.00 |
-| Time-Limited (30 days) | 5 TUS | $0.50 | $5.00 |
-| Full Ownership | 10-100 TUS | $1-$10 | $10-$100 |
-| Commercial License | 100-10,000 TUS | $10-$1,000 | $100-$10,000 |
+Because TellUrStori uses **oracle-based dynamic pricing** (see Section 16), all marketplace transactions are denominated in USD and converted to TUS at execution time. Users see "$10 license" whether TUS trades at $0.50 or $5.00—the UX is identical. The genesis supply size is therefore purely an economic design decision, not a UX constraint.
 
-**Year 1 Economic Requirements:**
-- Expected tracks minted: 10,000 × 0.05 TUS = **500 TUS**
-- License purchases: 100,000 × avg 50 TUS = **5,000,000 TUS**
-- Streaming revenue: 50M streams × 0.001 TUS = **50,000 TUS**
-- Transaction fees & operations: **~10,000 TUS**
-- **Total Year 1 circulation needs: ~5,060,000 TUS**
+**Ecosystem Flexibility Requirements:**
 
-**Supply Design Principles:**
-1. **2x Buffer**: 10M supply provides ~2x Year 1 requirements, allowing for organic growth without artificial scarcity
-2. **Bootstrap Coverage**: Combined Community Pool (3M TUS) + Bootstrap Fund (1M TUS) = 4M TUS (40%) can fully cover Year 1 operations
-3. **Gas Fee Efficiency**: At $0.10-$1.00/TUS, gas fees ($0.01-$0.05) = 0.01-0.5 TUS (negligible overhead)
-4. **Streaming Economics**: 0.001 TUS per stream = $0.0001-$0.001, competitive with Spotify ($0.003-$0.005/stream)
-5. **Elastic Growth**: Initial supply is modest; additional issuance can occur algorithmically based on protocol usage milestones
+The 100M supply enables proper funding for all ecosystem components:
 
-**Why NOT Higher or Lower:**
-- ❌ **100M+ supply**: Would require impractically low prices (fractions of a cent) or create perception of "cheap" token
-- ❌ **1M supply**: Too constraining; would force high prices ($10+/TUS) that price out casual users and break streaming economics
-- ✅ **10M supply**: Sweet spot enabling human-readable amounts (1-100 TUS for most transactions) while maintaining value
+**1. Community Usage Pool (35M TUS = 35%)**
+- Support 100,000+ creators with meaningful incentives (100 TUS/creator × 100K = 10M TUS baseline)
+- Staking rewards distributed from 15% fee pool (proportional across all tiers)
+- Governance participation incentives (5M TUS)
+- Moderation & curation rewards (5M TUS)
+- 10-year buffer for sustained growth
+
+**2. Network Bootstrap Fund (15M TUS = 15%)**
+- Year 1 Guaranteed: 10M TUS (833K TUS/month for 50-100 validators)
+- Year 2 Conditional: 5M TUS (requires 75% governance vote at Month 11)
+- At $1/TUS = $10K/validator/month for 100 validators
+- Credible long-term validator support
+
+**3. Ecosystem & Grants Fund (15M TUS = 15%)**
+- Major integrations: Spotify API (~$500K), Ableton plugins (~$300K), streaming platforms (~$1M)
+- Research & development for AI models and audio codecs
+- At $1/TUS: Can fund 15-20 major initiatives without dilution
+
+**4. Team Allocation (18M TUS = 18%)**
+- 10-20 person team over 4 years (200K-400K TUS per senior engineer)
+- Industry-standard equity for retention
+- Competitive with pre-seed/seed stage crypto projects
+
+**Why NOT 10M or 1B:**
+- ❌ **10M supply:** Forces 25%+ to token sales, starves ecosystem (only 3M for community, 2M for bootstrap)
+- ❌ **1B+ supply:** Unnecessary complexity without benefit
+- ✅ **100M supply:** Goldilocks zone (11.5% to sales, 50% to ecosystem, reasonable $100M FDV)
 
 **Note on Bootstrap Allocation:**
-- 10% of genesis supply (1,000,000 TUS) allocated to Network Bootstrap Fund
-- Covers validator subsidies during critical first 12 months
-- Reduces Community Usage Pool from 50% to 30%, but combined with Bootstrap Fund maintains 40% for ecosystem growth
-- Unused bootstrap funds return to Community Pool after Month 12
+- 15% of genesis supply (15,000,000 TUS) allocated to Network Bootstrap Fund
+- Year 1: 10M TUS guaranteed, Year 2: 5M TUS conditional on governance vote
+- Combined Community Pool (35%) + Bootstrap (15%) = **50% for ecosystem growth**
 
 ### Token Sale Allocation Rationale
 
-**Why 25% for token sales?**
-- Raises sufficient capital ($500K-$1M) for 18-24 months runway
-- Maintains combined 40% in Community Pool (30%) + Bootstrap Fund (10%) for organic protocol usage
-- Phased sale approach (seed → strategic → public) ensures price discovery
-- Bootstrap allocation (10%) specifically covers validator subsidies during critical first year
-- Year 1 operational needs (~5M TUS) fully covered by 4M TUS allocation + elastic issuance
+**Why 11.5% for token sales?**
+- Raises sufficient capital ($10M) for **36-48 months runway** + ability to hire 10-20 person team
+- Maintains combined **50%** in Community Pool (35%) + Bootstrap Fund (15%) for robust ecosystem growth
+- **Healthy token sale ratio:** 11.5% to investors vs 50% to ecosystem (4.3:1 ratio)
+- Bootstrap allocation (15%) provides **multi-year** validator subsidies
+- Enables **major integrations** (15% Ecosystem Fund) without dilutive future fundraising
 
 **Capital Raise Projections:**
-| Round | TUS Amount | Price Range | Capital Raised | Discount vs Public |
-|-------|------------|-------------|----------------|-------------------|
-| Seed Sale | 500,000 | $0.05-$0.10 | $25K-$50K | 50-80% |
-| Strategic | 1,000,000 | $0.15-$0.25 | $150K-$250K | 25-50% |
-| Public Sale | 1,000,000 | $0.40-$0.60 | $400K-$600K | Market rate |
-| **Total** | **2,500,000** | - | **$575K-$900K** | - |
+| Round | TUS Amount | % of Supply | Price | Capital Raised | Discount vs Public |
+|-------|------------|-------------|-------|----------------|-------------------|
+| Seed Sale | 3,000,000 | 3.0% | $0.50 | $1,500,000 | 50% |
+| Strategic | 5,000,000 | 5.0% | $1.00 | $5,000,000 | 0% (same as public) |
+| Public Sale | 3,500,000 | 3.5% | $1.00 | $3,500,000 | Market rate |
+| **Total** | **11,500,000** | **11.5%** | - | **$10,000,000** | - |
 
-**Use of Proceeds:**
-- 40% → Core development (DAW, AI services, L1 infrastructure)
-- 25% → Smart contract audits, security, legal compliance
-- 20% → Marketing, community growth, creator onboarding
-- 10% → Initial liquidity provision for DEX pools
-- 5% → Operational contingency
+**Use of Proceeds ($10M):**
+- 35% ($3.5M) → Core development (12-15 engineers, 36-48 months runway)
+- 20% ($2M) → Security & compliance (audits, legal, Foundation setup)
+- 20% ($2M) → Marketing & growth (10,000+ creators Year 1)
+- 15% ($1.5M) → Initial liquidity (DEX pools, market makers)
+- 10% ($1M) → Operational reserves (legal contingency, infrastructure)
 
 ## 4. Token Sale Structure & Timeline
 
-### Phase 1: Seed Round (5% - 500,000 TUS)
+### Phase 1: Seed Round (3% - 3,000,000 TUS)
 
 **Timing:** Before Token Generation Event (TGE)
 
 **Target Participants:**
 - Strategic VCs focused on music tech, Web3, or creator economy
 - Angel investors with relevant industry connections
-- Early believers and advisors
+- Early believers and advisors who provide value beyond capital
 
 **Terms:**
-- **Price:** $0.05-$0.10 per TUS
-- **Raise Target:** $25,000-$50,000
-- **Minimum Investment:** $5,000
-- **Vesting:** 1-year cliff, 3-year linear vest
+- **Price:** $0.50 per TUS
+- **Raise Target:** $1,500,000
+- **Minimum Investment:** $25,000
+- **Maximum Investment:** $250,000 (prevent over-concentration)
+- **Vesting:** 1-year cliff, 3-year linear vest thereafter (4-year total)
 - **Lockup:** Tokens locked until TGE + cliff period
-- **Investor Rights:** Limited to information rights, no board seats or veto rights
+- **Investor Rights:** Information rights only, no board seats or veto rights
+- **Discount:** 50% discount vs public sale price ($1.00)
 
-### Phase 2: Strategic Round (10% - 1,000,000 TUS)
+### Phase 2: Strategic Round (5% - 5,000,000 TUS)
 
-**Timing:** Before TGE
+**Timing:** 3-6 months after Seed, before TGE
 
 **Target Participants:**
-- Strategic partners (music labels, distribution platforms, AI companies)
-- Industry advisors and key opinion leaders
-- Market makers (for liquidity provision)
-- Ecosystem partners (wallets, exchanges, L1 validators)
+- Strategic partners (music labels, distribution platforms, AI companies like Stability AI, Hugging Face)
+- Industry advisors and key opinion leaders (musicians, producers, music tech founders)
+- Market makers (for liquidity provision on Avalanche DEXes)
+- Ecosystem partners (wallets, exchanges, Avalanche L1 validators)
 
 **Terms:**
-- **Price:** $0.15-$0.25 per TUS
-- **Raise Target:** $150,000-$250,000
-- **Minimum Investment:** $10,000
-- **Vesting:** 6-month cliff, 24-month linear vest
+- **Price:** $1.00 per TUS (same as public sale - no discount for strategic value)
+- **Raise Target:** $5,000,000
+- **Minimum Investment:** $50,000
+- **Maximum Investment:** $500,000 (prevent whale concentration)
+- **Vesting:** 6-month cliff, 24-month linear vest thereafter (30-month total)
 - **Lockup:** Tokens locked until TGE + cliff period
-- **Value-Add Required:** Strategic partners must provide operational value (integrations, distribution, technical support)
+- **Value-Add Required:** Strategic partners must provide concrete operational value (Spotify API, Ableton plugin, validator nodes, exchange listings)
 
-### Phase 3: Public Sale / IDO (10% - 1,000,000 TUS)
+### Phase 3: Public Sale / IDO (3.5% - 3,500,000 TUS)
 
 **Timing:** At TGE (Token Generation Event)
 
 **Target Participants:**
-- Community members, early users, creators
-- Public crypto community
-- Musicians and content creators
+- Community members, early DAW users, beta testers
+- Public crypto community interested in music + Web3
+- Musicians, producers, and content creators
+- Retail investors seeking exposure to creator economy
 
 **Mechanism Options:**
 1. **Initial DEX Offering (IDO)**
-   - Platform: Trader Joe, Pangolin, or other Avalanche DEX
-   - Fixed price or Dutch auction
-   - Anti-bot protections (CAPTCHA, wallet age requirements)
+   - Platform: Trader Joe or Pangolin (native Avalanche DEXes)
+   - Fixed price sale followed by immediate DEX trading
+   - Anti-bot protections: CAPTCHA, wallet age requirements, transaction limits
 
-2. **Launchpad Sale**
-   - Platform: Avalanche Launchpad, DAO Maker, Polkastarter
-   - Benefits: Built-in community, KYC/AML handled, marketing support
-   - Cost: 5-15% of raise to platform
+2. **Launchpad Sale (Preferred)**
+   - Platform: Avalanche Launchpad, DAO Maker, or Polkastarter
+   - Benefits: Built-in community (50K+ participants), KYC/AML handled, marketing support
+   - Cost: 5-15% of raise to platform (worthwhile for distribution + compliance)
+   - Tiered allocation system for fair distribution
 
 **Terms:**
-- **Price:** $0.40-$0.60 per TUS (market rate, no discount)
-- **Raise Target:** $400,000-$600,000
-- **Minimum Investment:** $100
-- **Maximum Investment:** $5,000 (prevents whales)
-- **Vesting:** 20% immediate unlock, 80% vested over 6 months
-- **KYC Required:** Yes (for amounts >$1,000)
+- **Price:** $1.00 per TUS (market rate, no discount vs strategic)
+- **Raise Target:** $3,500,000
+- **Minimum Investment:** $100 (accessible to retail)
+- **Maximum Investment:** $10,000 (prevents whale concentration, promotes decentralization)
+- **Vesting:** 20% immediate unlock at TGE, 80% vested linearly over 6 months
+- **KYC Required:** Yes for all participants (launchpad handles this)
+- **Geographic Restrictions:** No US participants, restricted jurisdictions excluded
 
 ### Token Generation Event (TGE)
 
+**Prerequisites for TGE:**
+1. **Functional Product:** DAW operational with core features (multi-track recording, mixing, AI generation)
+2. **L1 Operational:** TellUrStori Avalanche L1 deployed with 10+ validators
+3. **Smart Contracts Audited:** 2+ independent audits completed
+4. **Legal Opinion:** Token legal structure confirmed by BVI/Cayman counsel
+5. **Community Established:** 1,000+ beta users, active Discord/Telegram
+
 **What Happens at TGE:**
-1. **Smart Contract Deployment:** TUS token contract deployed on TellUrStori L1
-2. **Vesting Contracts:** All seed/strategic allocations locked in on-chain vesting contracts
-3. **Initial Liquidity:** Seed DEX pools (e.g., 100K TUS + $40K AVAX)
-4. **Airdrop Distribution:** Early user airdrop (500K TUS) distributed
-5. **Public Sale:** IDO/Launchpad sale opens
-6. **Trading Begins:** Secondary market trading starts
+1. **Smart Contract Deployment:** TUS token contract deployed on TellUrStori L1 (ERC-20 compatible)
+2. **Vesting Contracts:** All seed/strategic/team allocations locked in audited on-chain vesting contracts
+3. **Initial Liquidity:** Seed DEX pools on Trader Joe and Pangolin
+   - Pool 1: 500K TUS + $500K AVAX (1:1 ratio at $1.00/TUS)
+   - Pool 2: 300K TUS + 300K USDC (stable pair for oracle pricing)
+4. **Early User Airdrop:** 2M TUS distributed to beta testers, community members
+5. **Public Sale:** IDO/Launchpad sale opens (3.5M TUS @ $1.00)
+6. **Trading Begins:** Secondary market trading starts immediately post-sale
 
 **Initial Circulating Supply at TGE:**
-| Source | Amount | % of Total |
-|--------|--------|------------|
-| Public Sale (immediate) | 200,000 | 2.0% |
-| Airdrop | 500,000 | 5.0% |
-| Seed (10% unlock) | 50,000 | 0.5% |
-| Strategic (10% unlock) | 100,000 | 1.0% |
-| **Total Circulating** | **850,000** | **8.5%** |
+| Source | Amount | % of Total Supply |
+|--------|--------|-------------------|
+| Public Sale (20% immediate) | 700,000 | 0.7% |
+| Early User Airdrop | 2,000,000 | 2.0% |
+| DEX Liquidity Pools | 800,000 | 0.8% |
+| Foundation Operations (initial) | 500,000 | 0.5% |
+| **Total Circulating at TGE** | **4,000,000** | **4.0%** |
 
 **Fully Diluted Valuation (FDV):**
-- At public sale price of $0.50/TUS
-- FDV = 10M TUS × $0.50 = **$5,000,000**
-- Initial Market Cap = 850K TUS × $0.50 = **$425,000**
-- Circulating to FDV ratio: **8.5%** (healthy for early stage)
+- At public sale price of $1.00/TUS
+- FDV = 100M TUS × $1.00 = **$100,000,000**
+- Initial Market Cap (circulating) = 4M TUS × $1.00 = **$4,000,000**
+- Circulating to FDV ratio at TGE: **4.0%** (healthy for early-stage protocol)
+
+**Comparable FDVs at Launch:**
+- **Audius:** $180M FDV (music streaming)
+- **Royal:** $150M post-Series A (music NFT rights)
+- **Sound.xyz:** $60M seed valuation (music NFT platform)
+- **TellUrStori:** $100M FDV (DAW + AI + L1 + Marketplace = broader scope)
 
 ### Safe Harbor Compliance Framework
 
@@ -638,7 +662,7 @@ The 10,000,000 TUS genesis supply was determined through economic modeling based
 **Structure:**
 ```
 TellUrStori Foundation (BVI)
-├── Holds: 10M genesis TUS allocation
+├── Holds: 100M genesis TUS allocation
 ├── Manages: Protocol treasury, grants program
 ├── Governed by: Foundation Council (5-7 members)
 └── Operates: Non-profit, mission-driven
@@ -683,32 +707,36 @@ Early User Airdrop (5%)
 
 ***
 
-Community Usage Pool (30%) + Bootstrap Fund (10%)
+Community Usage Pool (35%) + Bootstrap Fund (15%)
 
-**Community Usage Pool (3,000,000 TUS):**
+**Community Usage Pool (35,000,000 TUS = 35% of genesis):**
 
-Tokens enter circulation **only** as compensation for:
+Tokens enter circulation **only** as compensation for verified protocol activity:
 
-- Story creation and curation
-- Moderation and validation
-- Governance participation
-- Content quality contributions
+- **Creator Rewards:** Original music production, track uploads, quality content
+- **Staking Rewards:** Distributed from 15% fee pool (proportional across all staking tiers)
+- **Moderation & Curation:** Community governance, content moderation, dispute resolution
+- **Governance Participation:** Proposal creation, voting, delegation
+- **Quality Contributions:** Bug reports, feature suggestions, community support
 
-No upfront unlock—earned only through verified protocol activity.
+No upfront unlock—earned only through verified protocol activity. 35M pool enables sustainable rewards for 100K+ creators over 10+ years.
 
-**Network Bootstrap Fund (1,000,000 TUS):**
+**Network Bootstrap Fund (15,000,000 TUS):**
 
-Reserved specifically for validator subsidies during the first 12 months (see Section 8: Network Bootstrap Economics). Ensures network can operate sustainably while organic fee revenue scales.
+Reserved specifically for validator subsidies with a two-year structure (see Section 8):
+- **Year 1 (Guaranteed):** 10,000,000 TUS for first 12 months
+- **Year 2 (Conditional):** 5,000,000 TUS requires 75% governance vote
 
-Unused bootstrap funds return to Community Usage Pool after Month 12.
+Ensures network can operate sustainably while organic fee revenue scales to self-sufficiency. Unused bootstrap funds return to Community Usage Pool after subsidy period ends.
 
 ## 6. Team Allocation & Vesting
 
-Team Allocation (15%)
+Team Allocation (18% = 18,000,000 TUS)
 
-- 1-year cliff
-- 4-year linear vesting
-- On-chain time locks
+- 1-year cliff (no tokens unlocked until Month 12)
+- 4-year linear vesting thereafter (36 months of vesting after cliff)
+- On-chain time locks (fully audited vesting contracts)
+- Competitive retention package for 10-20 person team
 - No acceleration clauses
 
 Purpose:
@@ -769,24 +797,38 @@ All percentages are adjustable via governance within predefined bounds (±20% fr
 
 A validator-fee model requires active usage to generate revenue, but validators are needed to provide service. This creates a circular dependency that must be solved through **temporary bootstrap subsidies**.
 
-### Bootstrap Phase (Months 0-12)
+### Bootstrap Phase: Two-Year Hybrid Model
 
-**Validator Launch Subsidy Program:**
+**Overview:**
 
-- **Source:** Community Usage Pool (allocated 1,000,000 TUS for bootstrap)
+The bootstrap program provides validator subsidies with a two-tier structure:
+- **Year 1 (Guaranteed):** 10,000,000 TUS allocated for first 12 months (833K TUS/month)
+- **Year 2 (Conditional):** Up to 5,000,000 TUS (417K TUS/month), requires 75% governance approval
+
+**Validator Launch Subsidy Program (Year 1):**
+
+- **Source:** Network Bootstrap Fund (10,000,000 TUS / 15% of 100M genesis)
 - **Duration:** 12 months with graduated transition to fee-based economics
-- **Target:** Minimum 50 active validators to ensure network reliability
-- **Initial Subsidy:** 10,000 TUS per validator per month
+- **Target:** 50-100 active validators to ensure network reliability and decentralization
+- **Initial Subsidy:** ~8,000-16,000 TUS per validator per month (for 50-100 validators)
+- **At $1/TUS:** Provides $8,000-$16,000/month per validator (competitive with hardware/operating costs)
 
-**Graduated Transition Schedule:**
+**Year 1 Graduated Transition Schedule:**
 
-| Phase | Timeline | Subsidy % | Fee Revenue % | Monthly Pool Allocation |
-|-------|----------|-----------|---------------|------------------------|
-| Phase 1 | Months 0-3 | 100% | 0% | 500,000 TUS |
-| Phase 2 | Months 4-6 | 75% | 25% | 375,000 TUS |
-| Phase 3 | Months 7-9 | 50% | 50% | 250,000 TUS |
-| Phase 4 | Months 10-12 | 25% | 75% | 125,000 TUS |
-| Phase 5 | Month 13+ | 0% | 100% | 0 TUS (self-sustaining) |
+| Phase | Timeline | Subsidy % | Fee Revenue % | Total Pool Allocation |
+|-------|----------|-----------|---------------|----------------------|
+| Phase 1 | Months 0-3 | 100% | 0% | 4,000,000 TUS |
+| Phase 2 | Months 4-6 | 75% | 25% | 3,000,000 TUS |
+| Phase 3 | Months 7-9 | 50% | 50% | 2,000,000 TUS |
+| Phase 4 | Months 10-12 | 25% | 75% | 1,000,000 TUS |
+
+**Year 2 Sustainability Bridge (Conditional):**
+
+| Phase | Timeline | Subsidy % | Fee Revenue % | Total Pool Allocation |
+|-------|----------|-----------|---------------|----------------------|
+| Phase 5 | Months 13-18 | 15% | 85% | 2,500,000 TUS |
+| Phase 6 | Months 19-24 | 7.5% | 92.5% | 2,500,000 TUS |
+| Phase 7 | Month 25+ | 0% | 100% | 0 TUS (fully fee-based) |
 
 **Transition Success Criteria:**
 
@@ -797,14 +839,26 @@ The network transitions to the next phase when:
 
 If success criteria are not met, the current phase extends until thresholds are achieved.
 
+**Year 2 Governance Approval Requirements:**
+
+Year 2 funding activates ONLY if all conditions are met:
+1. **Governance Vote (Month 11):** Requires 75% approval, 40% quorum, 7-day voting period
+2. **Performance Metrics:** DAU grew ≥50%, transaction volume trending up, fee revenue covering ≥40% of validator costs
+3. **Justification Required:** Clear roadmap to fee sustainability by Month 24
+
+**If Year 2 Is NOT Activated:**
+- Bootstrap ends at Month 12 (as originally planned)
+- Protocol transitions to 100% fee-based economy
+- Unused Year 2 allocation (5M TUS) returns to Community Usage Pool
+
 **Bootstrap Pool Impact:**
+- **Total allocated:** Up to 15,000,000 TUS (15% of 100M genesis supply)
+  - Year 1 (guaranteed): 10,000,000 TUS
+  - Year 2 (conditional): 5,000,000 TUS
+- **Maintains robust Community Usage Pool:** 35% (35M TUS) for creator rewards, staking, governance
+- **If Year 2 not activated:** Unused 5M TUS returns to Community Pool (increases to 40M / 40%)
 
-- Total allocated: 1,000,000 TUS (10% of genesis supply)
-- Reduces Community Usage Pool from 50% to 40% of genesis allocation
-- Remaining 4,000,000 TUS in Community Pool covers ongoing rewards
-- Bootstrap funds not spent by Month 12 return to Community Usage Pool
-
-This bootstrap model ensures validators can operate sustainably during the critical early months while creating clear incentives for organic network growth.
+This hybrid approach balances ambition with pragmatism: aggressive Year 1 default forces product-market fit, while Year 2 provides runway if protocol is growing but fees not yet sufficient.
 
 ## 9. Issuance & Inflation Controls
 
@@ -840,7 +894,7 @@ While TUS is not designed as a passive investment asset, the protocol implements
 - Slashing risk: Stake subject to penalties for poor performance
 
 **Benefits:**
-- Earn 60% share of transaction fees (work-based compensation)
+- Earn 70% share of transaction fees (work-based compensation)
 - Participate in transaction validation and consensus
 - Full governance voting rights with reputation weighting
 - Priority consideration for protocol upgrades and new features
@@ -1012,19 +1066,20 @@ This maintains our utility-first positioning while creating sustainable token ec
 
 **1. Controlled Elastic Supply**
 - No fixed maximum, but capped at 15% annual inflation declining to 3-5%
-- 10-year projection: 10M → 35M TUS as network scales from 1K to 200K DAU
+- 10-year projection: 100M → 350M TUS as network scales from 1K to 200K DAU
 - Governance-adjustable within 2-8% bounds to prevent abuse
 
 **2. Bootstrap Economics**
-- 1M TUS allocated for validator subsidies (Months 0-12)
+- 10M TUS allocated for Year 1 validator subsidies (833K TUS/month)
+- 5M TUS allocated for Year 2 (conditional on 75% governance vote)
 - Graduated transition: 100% subsidized → 100% fee-based
 - Clear success criteria before each phase transition
 - Solves cold start problem without ongoing inflation
 
 **3. Multi-Tier Staking**
-- **Validators (10K+ TUS):** Earn 70% of fees + governance + slashing risk
-- **Creators (1K+ TUS):** 20% fee discounts + 15% staking rewards + priority access
-- **Community (100+ TUS):** 10% fee discounts + 10% staking rewards + governance
+- **Validators (10K+ TUS):** Run validator nodes, earn 70% of fees, governance participation, slashing risk
+- **Creators (1K+ TUS):** 20% fee discounts, share of 15% staking pool, priority access, governance
+- **Community (100+ TUS):** 10% fee discounts, share of 15% staking pool, governance, beta features
 
 **4. Value Accrual Mechanisms**
 - Staking rewards (15% of fees) reduce velocity
@@ -1268,10 +1323,10 @@ Bond discount adjusts based on protocol's liquidity ownership:
 
 **Capital Allocation from Token Sales:**
 
-From $575K-$900K raised, allocate $150K (20%) to initial POL:
+From $10M raised, allocate $1.5M (15%) to initial POL:
 
-- **TUS-AVAX Pool (Trader Joe):** $100K (50% TUS + 50% AVAX)
-- **TUS-USDC Pool (Pangolin):** $50K (50% TUS + 50% USDC)
+- **TUS-AVAX Pool (Trader Joe):** $1M (50% TUS + 50% AVAX)
+- **TUS-USDC Pool (Pangolin):** $500K (50% TUS + 50% USDC)
 - **Target:** Protocol owns 40-50% of initial liquidity at TGE
 
 ### Fee Compounding Strategy
@@ -1284,11 +1339,11 @@ From $575K-$900K raised, allocate $150K (20%) to initial POL:
 
 **10-Year Projection:**
 ```
-Year 0: $150K POL initial
-Year 1: $150K + $20K fees = $170K (13% growth)
-Year 3: $230K (53% growth from compounding)
-Year 5: $300K (100% growth, doubled from fees alone)
-Year 10: $500K+ (protocol self-sustaining from POL fees)
+Year 0: $1.5M POL initial
+Year 1: $1.5M + $200K fees = $1.7M (13% growth)
+Year 3: $2.3M (53% growth from compounding)
+Year 5: $3M (100% growth, doubled from fees alone)
+Year 10: $5M+ (protocol self-sustaining from POL fees)
 ```
 
 **Assumptions:** $100K daily trading volume, 0.3% fee tier, protocol owns 40% of liquidity.
@@ -1321,7 +1376,7 @@ Year 10: $500K+ (protocol self-sustaining from POL fees)
 ### Implementation Roadmap
 
 **Phase 1: TGE (Day 0)**
-- Deploy $150K initial POL to Trader Joe + Pangolin
+- Deploy $1.5M initial POL to Trader Joe + Pangolin
 - Set up POL treasury multi-sig (5-of-7)
 
 **Phase 2: Month 1-3**

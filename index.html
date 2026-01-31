@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stori - Professional DAW Powered by AI with 128 Instruments, Piano Roll, Score Editor, and Step Sequencer. Create and produce music on macOS.">
+    <meta name="keywords" content="DAW, digital audio workstation, macOS, MIDI, SoundFont, piano roll, score editor, step sequencer, audio recording, music production">
+    <title>Stori - Professional DAW Powered by AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#ai">AI Generation</a></li>
+                    <li><a href="#instruments">Instruments</a></li>
+                    <li><a href="#blockchain">Web3</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#download" class="btn btn-primary disabled">Download Beta</a>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🍎</span>
+                    <span>Built for macOS</span>
+                </div>
+                <h1 class="hero-title">
+                    The Complete Music Studio<br>
+                    <span class="gradient-text">Powered by AI</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Professional DAW • 128 Instruments • Piano Roll & Score Editor • Blockchain Tokenization (Coming Soon)
+                </p>
+                <p class="hero-description">
+                    Create, record, mix, and produce your music in one native macOS application. 
+                    128 General MIDI instruments, professional effects, piano roll, score editor, and step sequencer. 
+                    Web3 tokenization coming soon.
+                </p>
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary btn-lg disabled">
+                        <span class="btn-icon">⬇</span>
+                        Download Beta
+                    </a>
+                    <a href="#features" class="btn btn-secondary btn-lg">
+                        <span class="btn-icon">▶</span>
+                        See Features
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">128</span>
+                        <span class="stat-label">GM Instruments</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">8</span>
+                        <span class="stat-label">Studio Effects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">300+</span>
+                        <span class="stat-label">Drum Patterns</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">&lt;10ms</span>
+                        <span class="stat-label">Latency</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="screenshot-container">
+                    <!-- [SCREENSHOT: Main DAW interface showing multi-track timeline with audio regions, mixer panel on right, and transport controls at bottom] -->
+                    <div class="screenshot-placeholder">
+                        <img src="assets/screenshots/hero-main-daw.png" alt="Stori DAW Interface" />
+                    </div>
+                    <div class="screenshot-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props Section -->
+    <section class="value-props">
+        <div class="container">
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🎛️</span>
+                    </div>
+                    <h3>Professional DAW</h3>
+                    <p>Multi-track timeline, 8 studio effects, professional mixer with channel strips, and real-time audio engine with &lt;10ms latency.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🎹</span>
+                    </div>
+                    <h3>128 Instruments</h3>
+                    <p>Full General MIDI with SoundFonts, 16-voice polyphonic synthesizer, piano roll, score editor, and AU plugin hosting.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🤖</span>
+                    </div>
+                    <h3>AI-Powered Creation</h3>
+                    <p style="opacity: 0.7;"><em>Coming Soon:</em> Generate music and sound effects from text. Create album artwork. Chat with your AI music assistant.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">⛓️</span>
+                    </div>
+                    <h3>Own Your Music</h3>
+                    <p style="opacity: 0.7;"><em>Coming Soon:</em> Mint NFTs on our Avalanche L1. Sell licenses with % creator share. Automatic royalty distribution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Professional DAW</span>
+                <h2 class="section-title">Everything You Need to Create</h2>
+                <p class="section-subtitle">A complete recording studio built natively for macOS</p>
+            </div>
+
+            <div class="features-showcase">
+                <!-- Feature: Timeline -->
+                <div class="feature-block feature-block-left">
+                    <div class="feature-content">
+                        <div class="feature-tag">Multi-Track Timeline</div>
+                        <h3>Arrange Like a Pro</h3>
+                        <p>Unlimited audio and MIDI tracks. Drag regions to arrange your composition. Snap to grid with musical timing. Loop sections for perfection.</p>
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> Professional timeline ruler with beat divisions</li>
+                            <li><span class="check">✓</span> Waveform visualization on audio regions</li>
+                            <li><span class="check">✓</span> Cycle/loop regions for practice or arrangement</li>
+                            <li><span class="check">✓</span> Smart snap with multiple grid resolutions</li>
+                        </ul>
+                    </div>
+                    <div class="feature-visual">
+                        <!-- [SCREENSHOT: Timeline view with multiple tracks, audio regions showing waveforms, and the cycle region highlighted in yellow] -->
+                        <div class="screenshot-placeholder small">
+                            <img src="assets/screenshots/timeline.png" alt="Stori DAW timeline" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature: Mixer -->
+                <div class="feature-block feature-block-right">
+                    <div class="feature-visual">
+                        <!-- [SCREENSHOT: Professional mixer panel showing channel strips with faders, EQ, meters, and effects slots] -->
+                        <div class="screenshot-placeholder small">
+                            <img src="assets/screenshots/mixer.png" alt="Stori DAW Mixer" />
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-tag">Professional Mixer</div>
+                        <h3>Mix to Perfection</h3>
+                        <p>Complete channel strips with volume faders, pan controls, 3-band EQ, and level meters. Route audio through auxiliary buses for professional effects processing.</p>
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> Channel strips with insert slots</li>
+                            <li><span class="check">✓</span> Aux sends for parallel effects</li>
+                            <li><span class="check">✓</span> Master channel with EQ</li>
+                            <li><span class="check">✓</span> Real-time level metering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature: Effects -->
+                <div class="feature-block feature-block-left">
+                    <div class="feature-content">
+                        <div class="feature-tag">8 Studio Effects</div>
+                        <h3>43 Professional Presets</h3>
+                        <p>Every effect you need with industry-standard presets. Double-click any parameter to type exact values. Real-time control with smooth animations.</p>
+                        <div class="effects-grid">
+                            <div class="effect-item">
+                                <span class="effect-icon">🎵</span>
+                                <span>Reverb</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">⏰</span>
+                                <span>Delay</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">🌊</span>
+                                <span>Chorus</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">🗜️</span>
+                                <span>Compressor</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">📊</span>
+                                <span>EQ</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">🔥</span>
+                                <span>Distortion</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">🔍</span>
+                                <span>Filter</span>
+                            </div>
+                            <div class="effect-item">
+                                <span class="effect-icon">🎭</span>
+                                <span>Modulation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-visual">
+                        <!-- [SCREENSHOT: Effects panel showing reverb or delay settings with sliders and preset dropdown] -->
+                        <div class="screenshot-placeholder small">
+                            <img src="assets/screenshots/effects.png" alt="Stori DAW Effects" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature: Recording -->
+                <div class="feature-block feature-block-right">
+                    <div class="feature-visual">
+                        <!-- [SCREENSHOT: Track header with record arm button active (red), showing input level meter during recording] -->
+                        <div class="screenshot-placeholder small">
+                            <img src="assets/screenshots/record.png" alt="Stori DAW Recording" />
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-tag">Recording</div>
+                        <h3>Capture Your Performance</h3>
+                        <p>Record audio from any microphone or audio interface. Real-time input monitoring with zero-latency playback. Professional WAV file output.</p>
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> One-click recording workflow</li>
+                            <li><span class="check">✓</span> Real-time input level metering</li>
+                            <li><span class="check">✓</span> Zero-latency monitoring</li>
+                            <li><span class="check">✓</span> Automatic region creation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instruments Section -->
+    <section id="instruments" class="instruments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">MIDI & Virtual Instruments</span>
+                <h2 class="section-title">128 Instruments at Your Fingertips</h2>
+                <p class="section-subtitle">Full General MIDI specification with SoundFont support, piano roll editor, and professional synthesizer</p>
+            </div>
+
+            <div class="instruments-showcase">
+                <div class="instruments-visual">
+                    <!-- [SCREENSHOT: Piano roll editor showing MIDI notes on a grid, with velocity lane below and scale highlighting] -->
+                    <div class="screenshot-placeholder large">
+                            <img src="assets/screenshots/piano.png" alt="Stori DAW Piano Roll" />
+                    </div>
+                </div>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category">
+                        <h4>🎹 Piano Roll / Score Editor</h4>
+                        <ul>
+                            <li>Traditional piano roll grid view</li>
+                            <li>Full musical staff notation</li>
+                            <li>Per-note velocity editing</li>
+                            <li>14 scale highlighting options</li>
+                            <li>11 grid snap resolutions</li>
+                            <li>Real-time note preview</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🎻 SoundFont Instruments</h4>
+                        <ul>
+                            <li>128 General MIDI instruments</li>
+                            <li>16 instrument categories</li>
+                            <li>Piano, Strings, Brass, Organ</li>
+                            <li>Guitar, Bass, Synth, Ethnic</li>
+                            <li>Live instrument switching</li>
+                            <li>Professional AVAudioUnitSampler</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🎹 16-Voice Synthesizer</h4>
+                        <ul>
+                            <li>Polyphonic synthesizer engine</li>
+                            <li>ADSR envelope controls</li>
+                            <li>5 factory presets included</li>
+                            <li>Real-time parameter editing</li>
+                            <li>Mini keyboard for testing</li>
+                            <li>Per-track synth instances</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🥁 Step Sequencer</h4>
+                        <ul>
+                            <li>16-step drum machine</li>
+                            <li>300+ pattern library</li>
+                            <li>27 categories, 16 genres</li>
+                            <li>Real drum samples (WAV)</li>
+                            <li>Per-step velocity control</li>
+                            <li>Swing/shuffle control</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🎮 Virtual Keyboard</h4>
+                        <ul>
+                            <li>Play with computer keyboard</li>
+                            <li>Octave shift (Z/X keys)</li>
+                            <li>Velocity control (C/V keys)</li>
+                            <li>Sustain pedal (Space bar)</li>
+                            <li>Automatic track routing</li>
+                            <li>MIDI recording support</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🔌 Audio Unit Plugins</h4>
+                        <ul>
+                            <li>Full AU plugin hosting</li>
+                            <li>Third-party instrument support</li>
+                            <li>Insert effect plugins</li>
+                            <li>Plugin browser interface</li>
+                            <li>Parameter automation</li>
+                            <li>Native macOS integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Section -->
+    <section id="ai" class="ai-section">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-label">AI-Powered Creation — Coming Soon</span>
+                <h2 class="section-title">Describe It. Generate It. Own It.</h2>
+            </div>
+
+            <div class="ai-local-banner" style="max-width: 800px; margin: 0 auto;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <p style="font-size: 1.1rem;">AI generation features are in development and will be available in a future update. The current release focuses on professional DAW functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockchain Section -->
+    <section id="blockchain" class="blockchain">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Web3 Music Ownership — Coming Soon</span>
+                <h2 class="section-title">Own Your Music. Forever.</h2>
+            </div>
+
+            <div class="ai-local-banner" style="max-width: 800px; margin: 0 auto;">
+                <div class="banner-content">
+                    <div class="banner-icon">⛓️</div>
+                    <div class="banner-text">
+                        <p style="font-size: 1.1rem;">Web3 and NFT features are in development. Mint music NFTs, sell licenses, and earn royalties on our custom Avalanche L1 blockchain — available in a future update.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology" class="technology">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Under the Hood</span>
+                <h2 class="section-title">Built for Performance</h2>
+                <p class="section-subtitle">Native macOS application with professional-grade architecture</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <div class="tech-icon">🍎</div>
+                    <h3>Native macOS</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <strong>Swift 6 & SwiftUI</strong>
+                            <p>Modern, native app built for macOS</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Core Audio & AVFoundation</strong>
+                            <p>Professional audio engine with &lt;10ms latency</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Audio Unit Plugins</strong>
+                            <p>Full AU plugin hosting for third-party instruments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-icon">🎹</div>
+                    <h3>Instruments</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <strong>128 GM Instruments</strong>
+                            <p>Full General MIDI with SoundFont support</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>16-Voice Synthesizer</strong>
+                            <p>Polyphonic synth with ADSR envelopes</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Step Sequencer</strong>
+                            <p>300+ drum patterns with real samples</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="tech-icon">⛓️</div>
+                    <h3>Blockchain</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <strong>TellUrStori L1</strong>
+                            <p>Custom Avalanche L1 • Chain ID 507</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>Smart Contracts</strong>
+                            <p>ERC-721 Masters + ERC-1155 Licenses</p>
+                        </div>
+                        <div class="tech-item">
+                            <strong>IPFS Storage</strong>
+                            <p>Decentralized audio and metadata</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="performance-specs">
+                <div class="spec">
+                    <span class="spec-value">&lt;10ms</span>
+                    <span class="spec-label">Audio Latency</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-value">&lt;30%</span>
+                    <span class="spec-label">CPU on M1+</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-value">&lt;500MB</span>
+                    <span class="spec-label">RAM (8 tracks)</span>
+                </div>
+                <div class="spec">
+                    <span class="spec-value">&lt;2s</span>
+                    <span class="spec-label">Startup Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section class="accessibility-section" style="padding: 80px 0; background: var(--color-bg-secondary);">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 48px;">
+                <span class="section-label">Inclusive Design</span>
+                <h2 class="section-title">Music Creation for Everyone</h2>
+                <p class="section-subtitle">Stori is built with accessibility at its core, ensuring all creators can make music</p>
+            </div>
+
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">👁️</span>
+                    </div>
+                    <h3>VoiceOver Support</h3>
+                    <p>Complete VoiceOver compatibility with proper labels for all UI elements. Navigate tracks, edit regions, and mix your music with screen reader support.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">⌨️</span>
+                    </div>
+                    <h3>Keyboard Navigation</h3>
+                    <p>Full keyboard control without requiring a mouse. Tab navigation, focus indicators, and comprehensive keyboard shortcuts for every action.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🎨</span>
+                    </div>
+                    <h3>High Contrast Mode</h3>
+                    <p>Automatic support for macOS Increase Contrast setting. Clear visual indicators, enhanced focus states, and optimized color ratios.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🗣️</span>
+                    </div>
+                    <h3>Voice Control</h3>
+                    <p>Compatible with macOS Voice Control for hands-free operation. Large click targets and clear labels for reliable voice commands.</p>
+                </div>
+            </div>
+
+            <div class="ai-local-banner" style="margin-top: 48px;">
+                <div class="banner-content">
+                    <div class="banner-icon">♿</div>
+                    <div class="banner-text">
+                        <h4>Designed for All Abilities</h4>
+                        <p>Whether you're blind, low-vision, or have motor disabilities, Stori provides the tools you need. Learn more in our <a href="accessibility.html" style="color: var(--color-primary-light); text-decoration: underline;">complete accessibility guide</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Development</span>
+                <h2 class="section-title">Where We're Headed</h2>
+                <p class="section-subtitle">From testnet launch to mainstream adoption</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Q1 2026</span>
+                        <h3>DAW Release v0.1.2 ✅</h3>
+                        <ul>
+                            <li>Professional DAW with multi-track timeline</li>
+                            <li>8 studio-grade effects with 43 presets</li>
+                            <li>128 GM instruments with SoundFont support</li>
+                            <li>Piano roll, score editor, step sequencer</li>
+                            <li>16-voice polyphonic synthesizer</li>
+                            <li>Audio Unit plugin hosting</li>
+                            <li>Open source release (MIT license)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item current">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>AI Integration 🔄</h3>
+                        <ul>
+                            <li>AI music generation from text</li>
+                            <li>AI sound effects generation</li>
+                            <li>AI chat assistant for music theory</li>
+                            <li>AI album artwork generation</li>
+                            <li>Cloud GPU acceleration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026</span>
+                        <h3>Web3 Integration</h3>
+                        <ul>
+                            <li>TellUrStori L1 blockchain</li>
+                            <li>NFT minting for music</li>
+                            <li>Decentralized marketplace</li>
+                            <li>Wallet integration</li>
+                            <li>Creator royalty system</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2026+</span>
+                        <h3>Ecosystem Growth</h3>
+                        <ul>
+                            <li>iOS companion app</li>
+                            <li>Real-time collaboration</li>
+                            <li>Advanced marketplace features</li>
+                            <li>Creator analytics dashboard</li>
+                            <li>Third-party integrations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2>Ready to Create?</h2>
+                    <p>Download Stori beta and start making music. Free and open source. Native macOS app.</p>
+                    <div class="download-requirements">
+                        <span class="requirement">🍎 macOS 14+ (Sonoma)</span>
+                        <span class="requirement">💾 8GB RAM minimum</span>
+                    </div>
+                    <div class="download-actions">
+                        <a href="#" class="btn btn-primary btn-xl disabled">
+                            <span class="btn-icon">⬇</span>
+                            Download for macOS
+                            <span class="btn-badge">v0.1.2 Beta</span>
+                        </a>
+                    </div>
+                    <p class="download-note">By downloading, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+                </div>
+                <div class="download-visual">
+                    <!-- [SCREENSHOT: App icon or app running on a MacBook] -->
+                    <div class="screenshot-placeholder download-screenshot">
+                        <img src="assets/screenshots/hero-main-daw.png" alt="Stori DAW Main Interface" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Join the community, report issues, or reach out for partnerships</p>
+            </div>
+
+            <div class="contact-grid">
+                <a href="https://twitter.com/tellurstori" target="_blank" class="contact-card">
+                    <span class="contact-icon">𝕏</span>
+                    <h3>Twitter / X</h3>
+                    <p>@tellurstori</p>
+                </a>
+                <div class="contact-card disabled">
+                    <span class="contact-icon">⌨️</span>
+                    <h3>GitHub</h3>
+                    <p>Report issues & contribute</p>
+                </div>
+                <div class="contact-card disabled">
+                    <span class="contact-icon">✉️</span>
+                    <h3>Email</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#features">Features</a>
+                    <a href="#ai">AI Generation</a>
+                    <a href="docs.html">Docs</a>
+                    <a href="#blockchain">Web3</a>
+                    <a href="#technology">Technology</a>
+                    <a href="#roadmap">Roadmap</a>
+                </div>
+                <div class="footer-disclaimer">
+                    <p>This website is for informational purposes only. TUS tokens have not been registered with the SEC or any regulatory authority. Not available to U.S. persons or restricted jurisdictions.</p>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

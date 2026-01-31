@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete context menu reference for Stori - all right-click menus documented">
+    <title>Context Menus - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Context Menus</h1>
+                <p class="section-subtitle">Complete reference for all right-click menus throughout Stori</p>
+            </div>
+
+            <!-- Context Menu Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Context Menus</div>
+                    <h2>Quick Access to Actions</h2>
+                    <p>Context menus (right-click menus) provide quick access to relevant actions based on what you click:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Right-Click:</strong> Two-finger click or Control+Click</li>
+                        <li><span class="check">✓</span> <strong>Context-Aware:</strong> Different menus for different elements</li>
+                        <li><span class="check">✓</span> <strong>Keyboard Access:</strong> fn+⌃+F2 then arrow keys</li>
+                        <li><span class="check">✓</span> <strong>VoiceOver:</strong> VO+Shift+M to open context menu</li>
+                        <li><span class="check">✓</span> <strong>Shortcuts Shown:</strong> Keyboard shortcuts displayed in menus</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🖱️</span>
+                            <p>Context menu appearing on right-click</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Context Menus -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">📋 Complete Context Menu Reference</h2>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Audio Region Menu</h4>
+                        <ul>
+                            <li><strong>Duplicate (⌘D)</strong> - Copy region</li>
+                            <li><strong>Delete (Delete)</strong> - Remove region</li>
+                            <li><strong>Split at Playhead (⌘T)</strong> - Cut region</li>
+                            <li><strong>Analyze Audio</strong> - Detect tempo & key</li>
+                            <li><strong>Set as Tempo Anchor</strong> - Reference for matching</li>
+                            <li><strong>Match Tempo to Anchor</strong> - Time-stretch</li>
+                            <li><strong>Match Key to...</strong> - Transpose</li>
+                            <li><strong>Show in Inspector</strong> - View details</li>
+                            <li><strong>Export Region</strong> - Save as file</li>
+                            <li><strong>Rename Region</strong> - Change label</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 MIDI Region Menu</h4>
+                        <ul>
+                            <li><strong>Duplicate (⌘D)</strong> - Copy MIDI region</li>
+                            <li><strong>Delete (Delete)</strong> - Remove region</li>
+                            <li><strong>Edit in Piano Roll (⌘⌥P)</strong> - Open editor</li>
+                            <li><strong>Edit in Score View</strong> - Musical notation</li>
+                            <li><strong>Bounce to Audio</strong> - Render as audio</li>
+                            <li><strong>Quantize Notes</strong> - Snap to grid</li>
+                            <li><strong>Transpose...</strong> - Shift pitch</li>
+                            <li><strong>Show in Inspector</strong> - MIDI details</li>
+                            <li><strong>Export as MIDI</strong> - Save MIDI file</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎚️ Track Header Menu</h4>
+                        <ul>
+                            <li><strong>Duplicate Track</strong> - Clone track and contents</li>
+                            <li><strong>Delete Track (⌘⌫)</strong> - Remove track</li>
+                            <li><strong>Rename Track</strong> - Change track name</li>
+                            <li><strong>Change Color</strong> - Visual identification</li>
+                            <li><strong>Mute (M)</strong> - Silence track</li>
+                            <li><strong>Solo (S)</strong> - Isolate track</li>
+                            <li><strong>Arm for Recording (R)</strong> - Enable input</li>
+                            <li><strong>Show Track Settings</strong> - Inspector focus</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎛️ Mixer Channel Menu</h4>
+                        <ul>
+                            <li><strong>Reset Fader</strong> - Return to 0dB</li>
+                            <li><strong>Reset Pan</strong> - Center position</li>
+                            <li><strong>Reset EQ</strong> - Flat response</li>
+                            <li><strong>Copy Channel Settings</strong> - Duplicate config</li>
+                            <li><strong>Paste Channel Settings</strong> - Apply config</li>
+                            <li><strong>Clear All Inserts</strong> - Remove all effects</li>
+                            <li><strong>Bypass All Effects</strong> - Disable processing</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📦 Insert Slot Menu</h4>
+                        <ul>
+                            <li><strong>Add Effect...</strong> - Choose from list</li>
+                            <li><strong>Replace Effect...</strong> - Swap for another</li>
+                            <li><strong>Bypass Effect</strong> - Disable temporarily</li>
+                            <li><strong>Remove Effect</strong> - Delete from slot</li>
+                            <li><strong>Copy Effect</strong> - With settings</li>
+                            <li><strong>Paste Effect</strong> - From clipboard</li>
+                            <li><strong>Reset to Default</strong> - Factory settings</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📏 Timeline Ruler Menu</h4>
+                        <ul>
+                            <li><strong>Set Playhead Here</strong> - Jump to position</li>
+                            <li><strong>Create Cycle Region</strong> - Loop section</li>
+                            <li><strong>Set Loop Start</strong> - Beginning of loop</li>
+                            <li><strong>Set Loop End</strong> - End of loop</li>
+                            <li><strong>Clear Cycle Region</strong> - Remove loop</li>
+                            <li><strong>Add Marker</strong> - Create reference point</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎼 Piano Roll Note Menu</h4>
+                        <ul>
+                            <li><strong>Delete Note (Delete)</strong> - Remove</li>
+                            <li><strong>Duplicate Note (⌘D)</strong> - Copy</li>
+                            <li><strong>Transpose Up</strong> - +1 semitone</li>
+                            <li><strong>Transpose Down</strong> - -1 semitone</li>
+                            <li><strong>Set Velocity...</strong> - Exact value</li>
+                            <li><strong>Quantize</strong> - Snap to grid</li>
+                            <li><strong>Humanize</strong> - Add timing variation</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🥁 Step Sequencer Menu</h4>
+                        <ul>
+                            <li><strong>Load Pattern...</strong> - From library</li>
+                            <li><strong>Save Pattern...</strong> - To library</li>
+                            <li><strong>Copy Pattern (⌘C)</strong> - To clipboard</li>
+                            <li><strong>Paste Pattern (⌘V)</strong> - From clipboard</li>
+                            <li><strong>Clear Pattern (⌘Delete)</strong> - Erase all</li>
+                            <li><strong>Randomize</strong> - Generate random</li>
+                            <li><strong>Rotate Right</strong> - Shift pattern</li>
+                            <li><strong>Rotate Left</strong> - Shift back</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📚 Library Item Menu</h4>
+                        <ul>
+                            <li><strong>Assign to Track</strong> - Set instrument</li>
+                            <li><strong>Preview Sound</strong> - Test instrument</li>
+                            <li><strong>Add to Favorites</strong> - Quick access</li>
+                            <li><strong>Show Info</strong> - Instrument details</li>
+                            <li><strong>Load in Synth</strong> - Synthesizer preset</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>⛓️ NFT Card Menu</h4>
+                        <ul>
+                            <li><strong>Play Audio</strong> - Stream from IPFS</li>
+                            <li><strong>View Details</strong> - Full information</li>
+                            <li><strong>Buy Now</strong> - Purchase license</li>
+                            <li><strong>Share Link</strong> - Copy URL</li>
+                            <li><strong>Report Listing</strong> - Flag issues</li>
+                            <li><strong>View on Explorer</strong> - Blockchain details</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>💼 Wallet Menu</h4>
+                        <ul>
+                            <li><strong>Copy Address</strong> - To clipboard</li>
+                            <li><strong>View on Explorer</strong> - Blockchain viewer</li>
+                            <li><strong>Disconnect Wallet</strong> - Sign out</li>
+                            <li><strong>Add Funds</strong> - Get TUS tokens</li>
+                            <li><strong>Transaction History</strong> - View activity</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📁 Project Browser Menu</h4>
+                        <ul>
+                            <li><strong>Open Project</strong> - Load project</li>
+                            <li><strong>Rename Project</strong> - Change name</li>
+                            <li><strong>Duplicate Project</strong> - Create copy</li>
+                            <li><strong>Delete Project</strong> - Move to trash</li>
+                            <li><strong>Show in Finder</strong> - Reveal file</li>
+                            <li><strong>Export Project</strong> - Save copy elsewhere</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips -->
+            <div class="ai-local-banner" data-animate style="margin-top: 60px;">
+                <div class="banner-content">
+                    <div class="banner-icon">💡</div>
+                    <div class="banner-text">
+                        <h3>Context Menu Tips</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Explore:</strong> Right-click everything to discover available actions</li>
+                            <li>• <strong>Keyboard Alternative:</strong> fn+⌃+F2 enables keyboard menu access</li>
+                            <li>• <strong>Shortcuts Shown:</strong> Keyboard shortcuts displayed in menus - learn them!</li>
+                            <li>• <strong>Selection Matters:</strong> Menu options change based on what's selected</li>
+                            <li>• <strong>Multi-Select:</strong> Many actions work on multiple items at once</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Chat Assistant guide for Stori - music theory help and production advice with local LLM">
+    <title>AI Chat Assistant - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation — Coming Soon</span>
+                <h1 class="section-title">AI Chat Assistant</h1>
+                <p class="section-subtitle">Your personal music theory expert and production wizard — available in a future update</p>
+            </div>
+            
+            <div class="ai-local-banner" style="margin-bottom: 48px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <h4>Coming in a Future Update</h4>
+                        <p>The AI chat assistant is in development. The current v0.1.2 release focuses on professional DAW functionality. Check back for updates!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Chat Assistant Basics</div>
+                    <h2>Your AI Music Expert</h2>
+                    <p>Stori will include a chat assistant running locally on your Mac:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">○</span> <strong>Music Theory:</strong> Ask about chords, scales, progressions, harmony</li>
+                        <li><span class="check">○</span> <strong>Production Advice:</strong> Get mixing, mastering, and arrangement tips</li>
+                        <li><span class="check">○</span> <strong>App Help:</strong> Questions about Stori features</li>
+                        <li><span class="check">○</span> <strong>100% Local:</strong> Will run on your Mac</li>
+                        <li><span class="check">○</span> <strong>Conversation History:</strong> Persistent across app restarts</li>
+                        <li><span class="check">○</span> <strong>Multiple Sessions:</strong> Create, switch, rename conversations</li>
+                        <li><span class="check">○</span> <strong>Fast Response:</strong> Cloud GPU acceleration for speed</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">💬</span>
+                            <p>Chat interface in Inspector panel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Using the Chat -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">💬 How to Use the Chat Assistant</h2>
+                <div class="value-grid" style="max-width: 1000px; margin: 0 auto;">
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">1️⃣</span></div>
+                        <h3>Open Chat Tab</h3>
+                        <p>Inspector Panel → Chat tab. The chat interface appears with your conversation history.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">2️⃣</span></div>
+                        <h3>Type Your Question</h3>
+                        <p>Enter your question in the text field at the bottom. Be specific for better answers.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">3️⃣</span></div>
+                        <h3>Send Message</h3>
+                        <p>Press Enter or click Send. The AI processes your question (takes 2-10 seconds).</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">4️⃣</span></div>
+                        <h3>Read Response</h3>
+                        <p>AI responds with detailed answer. Ask follow-up questions to dive deeper.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What You Can Ask -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">❓ What You Can Ask</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎼 Music Theory</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>"What chords work well in C major?"</li>
+                            <li>"Explain the circle of fifths"</li>
+                            <li>"What's a ii-V-I progression?"</li>
+                            <li>"How do I harmonize a melody?"</li>
+                            <li>"What scales work over A minor?"</li>
+                            <li>"Explain sus chords and when to use them"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎛️ Production & Mixing</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>"How do I EQ vocals?"</li>
+                            <li>"What's the best reverb for drums?"</li>
+                            <li>"How do I make my mix louder?"</li>
+                            <li>"Explain compression ratios"</li>
+                            <li>"How do I create space in a mix?"</li>
+                            <li>"What's sidechain compression?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>✏️ Songwriting</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>"How do I structure a pop song?"</li>
+                            <li>"What makes a good chorus?"</li>
+                            <li>"How do I write a bridge?"</li>
+                            <li>"Explain verse-chorus dynamics"</li>
+                            <li>"How long should my intro be?"</li>
+                            <li>"What's a pre-chorus?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎸 Arrangement</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>"How do I arrange layers?"</li>
+                            <li>"What instruments go in each frequency range?"</li>
+                            <li>"How do I build tension in a track?"</li>
+                            <li>"Explain call and response"</li>
+                            <li>"How do I create dynamics?"</li>
+                            <li>"What's orchestration?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Specific Genres</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>"What defines house music?"</li>
+                            <li>"Explain trap beat structure"</li>
+                            <li>"How do I make jazz chords?"</li>
+                            <li>"What tempo for dubstep?"</li>
+                            <li>"Explain blues progression"</li>
+                            <li>"What's bebop harmony?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❓ App Help (RAG)</h4>
+                        <ul style="font-size: 0.9rem;">
+                            <li>"How do I record audio in Stori?"</li>
+                            <li>"What keyboard shortcuts are available?"</li>
+                            <li>"How do I add effects?"</li>
+                            <li>"Explain aux sends"</li>
+                            <li>"How do I export my project?"</li>
+                            <li>"What's the step sequencer?"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example Conversations -->
+            <div class="ai-local-banner" data-animate style="margin-bottom: 60px;">
+                <div class="banner-content">
+                    <div class="banner-icon">💡</div>
+                    <div class="banner-text">
+                        <h3>Example Conversation</h3>
+                        <div style="margin-top: 16px; background: var(--color-bg); padding: 16px; border-radius: var(--radius-md);">
+                            <p style="margin-bottom: 12px;"><strong>You:</strong> "What chords work well with an A minor progression?"</p>
+                            <p style="margin-bottom: 12px; color: var(--color-primary-light);"><strong>Assistant:</strong> "A minor is the relative minor of C major, so you have several great options..."</p>
+                            <p style="margin-bottom: 12px;"><strong>You:</strong> "Can you give me a specific progression?"</p>
+                            <p style="color: var(--color-primary-light);"><strong>Assistant:</strong> "Sure! Try Am - F - C - G (i - VI - III - VII). This is called the 'Axis progression' and works great for pop/rock..."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Session Management -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📁</span>
+                            <p>Session management with multiple conversations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Session Management</div>
+                    <h2>Multiple Conversations</h2>
+                    <p>Organize your chats into sessions:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Create Session:</strong> Click "New Session" to start fresh conversation</li>
+                        <li><span class="check">✓</span> <strong>Switch Sessions:</strong> Click session name to switch between conversations</li>
+                        <li><span class="check">✓</span> <strong>Rename Session:</strong> Double-click session name to rename</li>
+                        <li><span class="check">✓</span> <strong>Delete Session:</strong> Click X to remove unwanted conversations</li>
+                        <li><span class="check">✓</span> <strong>Persistent History:</strong> All sessions saved across app restarts</li>
+                        <li><span class="check">✓</span> <strong>Organize Topics:</strong> One session per project or topic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tips for Better Responses -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎯 Tips for Better Responses</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">✍️</span>
+                            <h3>Be Specific</h3>
+                        </div>
+                        <p>Detailed questions get better answers:</p>
+                        <ul class="ai-features">
+                            <li>❌ "How do I mix?"</li>
+                            <li>✅ "How do I EQ vocals to sit in a dense EDM mix?"</li>
+                            <li>❌ "Tell me about chords"</li>
+                            <li>✅ "What's the difference between major 7th and dominant 7th chords?"</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🔄</span>
+                            <h3>Follow Up</h3>
+                        </div>
+                        <p>Have a conversation, not just single questions:</p>
+                        <ul class="ai-features">
+                            <li>Ask for examples</li>
+                            <li>Request clarification</li>
+                            <li>Dive deeper into topics</li>
+                            <li>"Can you explain that differently?"</li>
+                            <li>"Give me a practical example"</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎯</span>
+                            <h3>Provide Context</h3>
+                        </div>
+                        <p>Mention your genre, skill level, or specific situation:</p>
+                        <ul class="ai-features">
+                            <li>"I'm producing house music..."</li>
+                            <li>"As a beginner, how do I..."</li>
+                            <li>"My vocals sound muddy in the chorus..."</li>
+                            <li>"For a trap beat at 140 BPM..."</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">📚</span>
+                            <h3>Use It to Learn</h3>
+                        </div>
+                        <p>The assistant is a great learning tool:</p>
+                        <ul class="ai-features">
+                            <li>Ask "why" not just "how"</li>
+                            <li>Request step-by-step explanations</li>
+                            <li>Compare different approaches</li>
+                            <li>Ask for historical context</li>
+                            <li>"What's the theory behind..."</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Limitations -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">⚠️</div>
+                    <div class="banner-text">
+                        <h3>Assistant Limitations</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Not a Search Engine:</strong> Works best for conceptual questions, not fact lookup</li>
+                            <li>• <strong>No Real-Time Data:</strong> Doesn't know current events or latest music trends</li>
+                            <li>• <strong>General Knowledge:</strong> Better at universal music theory than specific software quirks</li>
+                            <li>• <strong>Context Window:</strong> Very long conversations may lose early context</li>
+                            <li>• <strong>Not a Therapist:</strong> For music advice only, not personal counseling</li>
+                            <li>• <strong>Sometimes Wrong:</strong> AI can make mistakes - verify important information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

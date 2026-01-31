@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete interface overview for Stori DAW - learn all UI elements and panels">
+    <title>Interface Overview - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Interface Overview</h1>
+                <p class="section-subtitle">Master the main window layout and all UI elements</p>
+            </div>
+
+            <!-- Main Window Areas -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px;">🖥️ Main Window Layout</h2>
+                <p style="color: var(--color-text-secondary); margin-bottom: 40px;">
+                    Stori's interface is divided into five main areas, each serving a specific purpose in your music creation workflow.
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>1️⃣ Transport Bar (Top)</h4>
+                        <ul>
+                            <li><strong>New/Open/Save</strong> - Project management</li>
+                            <li><strong>Project Info</strong> - Name, track count, tempo</li>
+                            <li><strong>Transport Controls</strong> - Play, stop, record</li>
+                            <li><strong>Time Display</strong> - Current position</li>
+                            <li><strong>CPU Meter</strong> - Processing load</li>
+                            <li><strong>Service Status</strong> - AI service indicators</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>2️⃣ Timeline (Center Left)</h4>
+                        <ul>
+                            <li><strong>Track Headers</strong> - Track controls on left</li>
+                            <li><strong>Timeline Ruler</strong> - Time markers</li>
+                            <li><strong>Track Lanes</strong> - Audio/MIDI regions</li>
+                            <li><strong>Playhead</strong> - Red vertical line</li>
+                            <li><strong>Cycle Region</strong> - Yellow loop area</li>
+                            <li><strong>Grid Background</strong> - Beat divisions</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>3️⃣ Mixer Panel (Right)</h4>
+                        <ul>
+                            <li><strong>Channel Strips</strong> - Per-track controls</li>
+                            <li><strong>Volume Faders</strong> - Level control</li>
+                            <li><strong>Pan Knobs</strong> - Stereo positioning</li>
+                            <li><strong>EQ Section</strong> - Hi/Mid/Lo controls</li>
+                            <li><strong>Insert Slots</strong> - Effects placement</li>
+                            <li><strong>Meters</strong> - Real-time level display</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>4️⃣ Inspector Panel (Far Right)</h4>
+                        <ul>
+                            <li><strong>Region Tab</strong> - Selected region details</li>
+                            <li><strong>Chat Tab</strong> - AI assistant conversations</li>
+                            <li><strong>Visual Tab</strong> - Image generation</li>
+                            <li><strong>Track Properties</strong> - Track settings</li>
+                            <li><strong>Effect Parameters</strong> - When effect selected</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>5️⃣ Library Panel (Left Side)</h4>
+                        <ul>
+                            <li><strong>Instruments Tab</strong> - 128 GM instruments</li>
+                            <li><strong>Patterns Tab</strong> - 300+ drum patterns</li>
+                            <li><strong>Effects Tab</strong> - Effect presets</li>
+                            <li><strong>Samples Tab</strong> - Audio files</li>
+                            <li><strong>Search</strong> - Quick filtering</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>6️⃣ Bottom Panels (Context)</h4>
+                        <ul>
+                            <li><strong>Piano Roll/Score</strong> - MIDI note editing</li>
+                            <li><strong>Step Sequencer</strong> - Drum programming</li>
+                            <li><strong>Virtual Keyboard</strong> - Play instruments</li>
+                            <li><strong>Synthesizer</strong> - Synth programming</li>
+                            <li><strong>Can be hidden/shown</strong> - Flexible workspace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track Header Elements -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Track Headers</div>
+                    <h2>Track Controls (Left Side)</h2>
+                    <p>Each track header contains all the essential controls for managing that track:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Track Number & Icon</strong> - Visual identification</li>
+                        <li><span class="check">✓</span> <strong>Track Name</strong> - Double-click to rename</li>
+                        <li><span class="check">✓</span> <strong>Track Color</strong> - Click to change color</li>
+                        <li><span class="check">✓</span> <strong>Record Arm (●)</strong> - Enable recording</li>
+                        <li><span class="check">✓</span> <strong>Mute (M)</strong> - Silence track</li>
+                        <li><span class="check">✓</span> <strong>Solo (S)</strong> - Isolate track</li>
+                        <li><span class="check">✓</span> <strong>Generate Button</strong> - AI music generation</li>
+                        <li><span class="check">✓</span> <strong>Delete Button</strong> - Remove track</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎚️</span>
+                            <p>Track header with all controls visible</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Ruler -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📏</span>
+                            <p>Professional timeline ruler with beat divisions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Timeline Ruler</div>
+                    <h2>Time Navigation</h2>
+                    <p>The timeline ruler shows time markers and provides navigation controls:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Time Markers</strong> - 0:00, 0:01, 0:02 format</li>
+                        <li><span class="check">✓</span> <strong>Beat Divisions</strong> - Grid lines on beats/bars</li>
+                        <li><span class="check">✓</span> <strong>Playhead</strong> - Red vertical line showing position</li>
+                        <li><span class="check">✓</span> <strong>Click to Jump</strong> - Move playhead instantly</li>
+                        <li><span class="check">✓</span> <strong>Cycle Region</strong> - Yellow area for looping</li>
+                        <li><span class="check">✓</span> <strong>Zoom Controls</strong> - ⌘+ / ⌘- to zoom</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Mixer Channel Strip -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Mixer Channel Strip</div>
+                    <h2>Professional Mixing Console</h2>
+                    <p>Each track has a complete channel strip in the mixer panel:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Track Selector</strong> - Blue dot when selected</li>
+                        <li><span class="check">✓</span> <strong>EQ Section</strong> - Hi, Mid, Lo knobs</li>
+                        <li><span class="check">✓</span> <strong>Insert Slots</strong> - 8 effect slots</li>
+                        <li><span class="check">✓</span> <strong>Pan Knob</strong> - L/R positioning</li>
+                        <li><span class="check">✓</span> <strong>Volume Fader</strong> - Vertical slider</li>
+                        <li><span class="check">✓</span> <strong>Volume %</strong> - Numeric display</li>
+                        <li><span class="check">✓</span> <strong>M/S/R Buttons</strong> - Mute, Solo, Record</li>
+                        <li><span class="check">✓</span> <strong>Level Meter</strong> - Real-time audio level</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎛️</span>
+                            <p>Professional channel strip layout</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inspector Panel -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">ℹ️</span>
+                            <p>Inspector panel with multiple tabs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Inspector Panel</div>
+                    <h2>Context-Sensitive Information</h2>
+                    <p>The inspector shows details about selected items:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Region Tab</strong> - Audio region properties, tempo, key</li>
+                        <li><span class="check">✓</span> <strong>Chat Tab</strong> - AI assistant for music advice</li>
+                        <li><span class="check">✓</span> <strong>Visual Tab</strong> - Album artwork generation</li>
+                        <li><span class="check">✓</span> <strong>Track Properties</strong> - Track-specific settings</li>
+                        <li><span class="check">✓</span> <strong>Effect Details</strong> - When effect selected</li>
+                        <li><span class="check">✓</span> <strong>Analysis Data</strong> - Tempo/key detection results</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Navigation & Dropdown Menus -->
+            <div style="margin-top: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🔽 Dropdown Menus</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>📁 File Menu</h4>
+                        <ul>
+                            <li>New Project (⌘N)</li>
+                            <li>Open... (⌘O)</li>
+                            <li>Save (⌘S)</li>
+                            <li>Save As... (⌘⇧S)</li>
+                            <li>Export Mix (⌘E)</li>
+                            <li>Close Window (⌘W)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>✏️ Edit Menu</h4>
+                        <ul>
+                            <li>Undo (⌘Z)</li>
+                            <li>Redo (⌘⇧Z)</li>
+                            <li>Cut (⌘X)</li>
+                            <li>Copy (⌘C)</li>
+                            <li>Paste (⌘V)</li>
+                            <li>Duplicate (⌘D)</li>
+                            <li>Delete (Delete)</li>
+                            <li>Select All (⌘A)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Track Menu</h4>
+                        <ul>
+                            <li>New Audio Track (⌘⇧A)</li>
+                            <li>New MIDI Track (⌘⇧M)</li>
+                            <li>Duplicate Track</li>
+                            <li>Delete Track</li>
+                            <li>Mute Track (M)</li>
+                            <li>Solo Track (S)</li>
+                            <li>Show Track Inspector</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 MIDI Menu</h4>
+                        <ul>
+                            <li>Open Piano Roll (⌘⌥P)</li>
+                            <li>Open Score View</li>
+                            <li>Virtual Keyboard (⌘⇧K)</li>
+                            <li>Synthesizer (⌘⌥I)</li>
+                            <li>Step Sequencer</li>
+                            <li>Quantize Notes</li>
+                            <li>Bounce to Audio</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🪟 View Menu</h4>
+                        <ul>
+                            <li>Show/Hide Mixer</li>
+                            <li>Show/Hide Inspector</li>
+                            <li>Show/Hide Library</li>
+                            <li>Zoom In (⌘+)</li>
+                            <li>Zoom Out (⌘-)</li>
+                            <li>Zoom to Fit (⌘0)</li>
+                            <li>Toggle Full Screen (⌃⌘F)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❓ Help Menu</h4>
+                        <ul>
+                            <li>Stori User Guide</li>
+                            <li>Main Window Overview</li>
+                            <li>Keyboard Shortcuts</li>
+                            <li>Service Management (⌘⇧M)</li>
+                            <li>Service Diagnostics (⌘⇧D)</li>
+                            <li>Report Issue</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Elements & Indicators -->
+            <div class="ai-local-banner" data-animate style="margin-top: 80px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🎨</div>
+                    <div class="banner-text">
+                        <h3>Visual Indicators & Status</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Blue Dots</strong> - Selected tracks and regions</li>
+                            <li>• <strong>Red Record Button</strong> - Recording armed/active</li>
+                            <li>• <strong>Green Indicators</strong> - AI services healthy</li>
+                            <li>• <strong>Yellow Loop Region</strong> - Cycle/loop area</li>
+                            <li>• <strong>Waveforms</strong> - Visual audio representation</li>
+                            <li>• <strong>Level Meters</strong> - Real-time audio levels (green → yellow → red)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

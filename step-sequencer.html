@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step Sequencer guide for Stori - 16-step drum machine with 300+ patterns and real drum samples">
+    <title>Step Sequencer - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Step Sequencer</h1>
+                <p class="section-subtitle">16-step drum machine with 300+ patterns, real samples, and professional beat making</p>
+            </div>
+
+            <!-- Step Sequencer Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Step Sequencer Basics</div>
+                    <h2>Professional Drum Machine</h2>
+                    <p>The Step Sequencer is a 16-step drum machine for creating beats and rhythms using real drum samples:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>16 Steps:</strong> Create patterns up to one bar (4 beats)</li>
+                        <li><span class="check">✓</span> <strong>8 Instrument Lanes:</strong> Kick, snare, hi-hats, and more</li>
+                        <li><span class="check">✓</span> <strong>Real Drum Samples:</strong> Professional WAV samples from drum kits</li>
+                        <li><span class="check">✓</span> <strong>300+ Pattern Library:</strong> Pre-made patterns across 16 genres</li>
+                        <li><span class="check">✓</span> <strong>Per-Step Velocity:</strong> Option+drag for loudness control</li>
+                        <li><span class="check">✓</span> <strong>Swing/Shuffle:</strong> Add groove with swing control (0-100%)</li>
+                        <li><span class="check">✓</span> <strong>Transport Sync:</strong> Sync with main DAW transport</li>
+                        <li><span class="check">✓</span> <strong>Export to Timeline:</strong> Render patterns as audio regions</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🥁</span>
+                            <p>16-step sequencer grid with 8 instrument lanes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interface -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px;">🎛️ Interface Components</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Grid & Steps</h4>
+                        <ul>
+                            <li><strong>16 Columns</strong> - One per 16th note</li>
+                            <li><strong>8 Rows</strong> - One per drum instrument</li>
+                            <li><strong>3D Step Pads</strong> - Lit/unlit visual states</li>
+                            <li><strong>Click to Toggle</strong> - Activate/deactivate steps</li>
+                            <li><strong>Playhead Animation</strong> - Shows current step</li>
+                            <li><strong>Velocity Colors</strong> - Brightness = loudness</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎚️ Transport Controls</h4>
+                        <ul>
+                            <li><strong>Play/Pause (Space)</strong> - Toggle playback</li>
+                            <li><strong>Transport Sync (⌘D)</strong> - Sync with DAW</li>
+                            <li><strong>BPM Control</strong> - Tempo adjustment</li>
+                            <li><strong>Loop Length</strong> - 8/16/32/64 steps</li>
+                            <li><strong>Pattern Position</strong> - Current playback position</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Instrument Lanes</h4>
+                        <ul>
+                            <li><strong>Kick</strong> - Bass drum</li>
+                            <li><strong>Snare</strong> - Snare drum</li>
+                            <li><strong>Closed Hi-Hat</strong> - CHH</li>
+                            <li><strong>Open Hi-Hat</strong> - OHH</li>
+                            <li><strong>Clap/Rim</strong> - Handclap or rimshot</li>
+                            <li><strong>Tom</strong> - Tom drum</li>
+                            <li><strong>Crash</strong> - Crash cymbal</li>
+                            <li><strong>Ride</strong> - Ride cymbal</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎛️ Pattern Controls</h4>
+                        <ul>
+                            <li><strong>Pattern Library</strong> - Browse presets</li>
+                            <li><strong>Load Pattern</strong> - Apply preset</li>
+                            <li><strong>Save Pattern</strong> - Store custom pattern</li>
+                            <li><strong>Clear (⌘Delete)</strong> - Erase all steps</li>
+                            <li><strong>Copy (⌘C)</strong> - Copy pattern</li>
+                            <li><strong>Paste (⌘V)</strong> - Paste pattern</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎨 Groove Controls</h4>
+                        <ul>
+                            <li><strong>Swing Amount</strong> - 0-100% shuffle</li>
+                            <li><strong>Swing applies to</strong> - Even-numbered steps</li>
+                            <li><strong>Velocity Editing</strong> - Option+drag steps</li>
+                            <li><strong>Humanize</strong> - Random velocity variation</li>
+                            <li><strong>Quantize</strong> - Snap to perfect timing</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📤 Export Options</h4>
+                        <ul>
+                            <li><strong>Export to Timeline</strong> - Render as audio</li>
+                            <li><strong>Track Selection</strong> - Choose destination</li>
+                            <li><strong>Playhead Position</strong> - Or at playhead</li>
+                            <li><strong>Sample-Accurate</strong> - Uses real drum samples</li>
+                            <li><strong>Preserves Swing</strong> - Timing intact</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 300+ Pattern Library -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">📚 300+ Pattern Library (27 Categories, 16 Genres)</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Extensive collection of professional drum patterns across every musical style:
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Electronic</h4>
+                        <ul>
+                            <li>House - Basic/Progressive/Deep</li>
+                            <li>Techno - Minimal/Detroit/Industrial</li>
+                            <li>Trance - Uplifting/Progressive</li>
+                            <li>Dubstep - Half-time grooves</li>
+                            <li>Electro - Funky drum machine</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎤 Hip Hop & R&B</h4>
+                        <ul>
+                            <li>Boom Bap - Classic 90s hip hop</li>
+                            <li>Trap - 808 hi-hat rolls</li>
+                            <li>R&B - Smooth grooves</li>
+                            <li>Lo-Fi - Chill beat patterns</li>
+                            <li>Drill - Modern trap variants</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎸 Rock & Metal</h4>
+                        <ul>
+                            <li>Rock - 4/4 backbeat patterns</li>
+                            <li>Metal - Double bass patterns</li>
+                            <li>Punk - Fast 8th note hi-hats</li>
+                            <li>Indie Rock - Alt rock grooves</li>
+                            <li>Progressive - Odd time signatures</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎺 Jazz & Blues</h4>
+                        <ul>
+                            <li>Jazz - Swing patterns</li>
+                            <li>Blues - Shuffle grooves</li>
+                            <li>Bebop - Fast jazz rhythms</li>
+                            <li>Smooth Jazz - Laid-back beats</li>
+                            <li>Fusion - Complex patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Drum & Bass</h4>
+                        <ul>
+                            <li>D&B - Classic breaks</li>
+                            <li>Jungle - Amen break variants</li>
+                            <li>Neurofunk - Complex patterns</li>
+                            <li>Liquid - Smooth D&B grooves</li>
+                            <li>Jump Up - Energetic patterns</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🌎 World Music</h4>
+                        <ul>
+                            <li>Latin - Salsa, Samba, Bossa Nova</li>
+                            <li>African - Afrobeat, Highlife</li>
+                            <li>Caribbean - Reggae, Dancehall</li>
+                            <li>Middle Eastern - Maqam rhythms</li>
+                            <li>Asian - Taiko, Gamelan</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎸 Funk & Disco</h4>
+                        <ul>
+                            <li>Funk - Syncopated grooves</li>
+                            <li>Disco - Four-on-the-floor</li>
+                            <li>Nu-Funk - Modern funk beats</li>
+                            <li>Boogie - 80s funk patterns</li>
+                            <li>P-Funk - Parliament grooves</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Pop & Dance</h4>
+                        <ul>
+                            <li>Pop - Contemporary patterns</li>
+                            <li>Dance Pop - Club-ready beats</li>
+                            <li>Synthpop - 80s inspired</li>
+                            <li>K-Pop - Modern production</li>
+                            <li>Indie Pop - Alternative grooves</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎚️ Ambient & Experimental</h4>
+                        <ul>
+                            <li>Ambient - Sparse atmospheric</li>
+                            <li>IDM - Glitchy patterns</li>
+                            <li>Experimental - Unconventional</li>
+                            <li>Minimal - Simple repetitive</li>
+                            <li>Industrial - Mechanical rhythms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Using the Step Sequencer -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎼</span>
+                            <p>Pattern library with categories and mini preview</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Creating Patterns</div>
+                    <h2>Step-by-Step Workflow</h2>
+                    <p>Complete workflow for creating drum patterns:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">1</span> <strong>Open Step Sequencer:</strong> MIDI menu → Step Sequencer</li>
+                        <li><span class="check">2</span> <strong>Load Pattern (Optional):</strong> Choose from 300+ presets</li>
+                        <li><span class="check">3</span> <strong>Edit Pattern:</strong> Click steps to activate/deactivate</li>
+                        <li><span class="check">4</span> <strong>Adjust Velocity:</strong> Option+drag steps for loudness control</li>
+                        <li><span class="check">5</span> <strong>Add Swing:</strong> Adjust swing slider for groove (0-100%)</li>
+                        <li><span class="check">6</span> <strong>Play:</strong> Press Space to hear pattern</li>
+                        <li><span class="check">7</span> <strong>Export to Timeline:</strong> Click "Export" button</li>
+                        <li><span class="check">8</span> <strong>Choose Track:</strong> Select destination track or playhead</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Advanced Features -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Advanced Features</div>
+                    <h2>Pro Beat Making</h2>
+                    <p>Advanced capabilities for professional drum programming:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Per-Step Velocity:</strong> Brightness indicates loudness, Option+drag to adjust</li>
+                        <li><span class="check">✓</span> <strong>Swing Control:</strong> Add shuffle/groove to even-numbered steps (0-100%)</li>
+                        <li><span class="check">✓</span> <strong>Transport Sync:</strong> Toggle ⌘D to sync with main DAW playback</li>
+                        <li><span class="check">✓</span> <strong>Copy/Paste:</strong> ⌘C/⌘V to duplicate patterns</li>
+                        <li><span class="check">✓</span> <strong>Clear Pattern:</strong> ⌘Delete to erase all steps</li>
+                        <li><span class="check">✓</span> <strong>Pattern Length:</strong> 8/16/32/64 step options</li>
+                        <li><span class="check">✓</span> <strong>Real Samples:</strong> Authentic drum kit samples, not synthesis</li>
+                        <li><span class="check">✓</span> <strong>Sample-Accurate Export:</strong> Exported audio uses real samples</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎚️</span>
+                            <p>Velocity editing and swing controls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keyboard Shortcuts -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">⌨️ Keyboard Shortcuts</h2>
+                <div class="tech-category" style="max-width: 800px; margin: 0 auto;">
+                    <table style="width: 100%; border-collapse: collapse; font-size: 1rem;">
+                        <thead style="background: var(--color-bg-tertiary); text-align: left;">
+                            <tr>
+                                <th style="padding: 12px; border: 1px solid var(--color-border); width: 40%;">Action</th>
+                                <th style="padding: 12px; border: 1px solid var(--color-border); width: 30%;">Shortcut</th>
+                                <th style="padding: 12px; border: 1px solid var(--color-border); width: 30%;">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody style="font-size: 0.95rem;">
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid var(--color-border);"><strong>Play/Pause</strong></td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); font-family: var(--font-mono);">Space</td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); color: var(--color-text-secondary);">Toggle playback</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid var(--color-border);"><strong>Transport Sync</strong></td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); font-family: var(--font-mono);">⌘D</td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); color: var(--color-text-secondary);">Sync with DAW transport</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid var(--color-border);"><strong>Copy Pattern</strong></td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); font-family: var(--font-mono);">⌘C</td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); color: var(--color-text-secondary);">Copy to clipboard</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid var(--color-border);"><strong>Paste Pattern</strong></td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); font-family: var(--font-mono);">⌘V</td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); color: var(--color-text-secondary);">Paste from clipboard</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid var(--color-border);"><strong>Clear Pattern</strong></td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); font-family: var(--font-mono);">⌘Delete</td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); color: var(--color-text-secondary);">Erase all steps</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid var(--color-border);"><strong>Adjust Velocity</strong></td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); font-family: var(--font-mono);">Option+Drag</td>
+                                <td style="padding: 12px; border: 1px solid var(--color-border); color: var(--color-text-secondary);">Change step loudness</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Pro Tips -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Professional Beat Making Tips</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Start with Kick & Snare:</strong> Build foundation first, add hi-hats and percussion later</li>
+                            <li>• <strong>Vary Velocity:</strong> Real drummers hit drums with different strengths - use velocity for realism</li>
+                            <li>• <strong>Add Swing:</strong> 10-30% swing adds groove to straight patterns</li>
+                            <li>• <strong>Open Hi-Hats Before Snare:</strong> Classic technique for build-up and energy</li>
+                            <li>• <strong>Off-Beat Kicks:</strong> Place kicks on off-beats (steps 3, 7, 11, 15) for modern trap/EDM</li>
+                            <li>• <strong>Layer Patterns:</strong> Export multiple patterns and layer them on different tracks</li>
+                            <li>• <strong>Study Real Drummers:</strong> Listen to actual drummers in your genre for authentic patterns</li>
+                            <li>• <strong>Less is More:</strong> Simple patterns often sound better than overly complex ones</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

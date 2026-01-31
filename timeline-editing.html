@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete timeline editing guide for Stori DAW - regions, arrangement, tempo matching">
+    <title>Timeline & Editing - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Timeline & Editing</h1>
+                <p class="section-subtitle">Master professional arrangement and audio region editing</p>
+            </div>
+
+            <!-- Timeline Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Timeline Basics</div>
+                    <h2>Understanding the Timeline</h2>
+                    <p>The timeline is the heart of Stori - where you arrange your music. It displays audio and MIDI regions across multiple tracks over time.</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Horizontal = Time</strong> - Left to right represents time progression</li>
+                        <li><span class="check">✓</span> <strong>Vertical = Tracks</strong> - Each row is a separate track</li>
+                        <li><span class="check">✓</span> <strong>Regions</strong> - Colored blocks containing audio or MIDI</li>
+                        <li><span class="check">✓</span> <strong>Playhead</strong> - Red vertical line showing current position</li>
+                        <li><span class="check">✓</span> <strong>Timeline Ruler</strong> - Time markers at top (0:00, 0:01, etc.)</li>
+                        <li><span class="check">✓</span> <strong>Grid Lines</strong> - Vertical lines marking beats and bars</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📏</span>
+                            <p>Multi-track timeline with regions and playhead</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Regions -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px;">🎵 Audio Regions</h2>
+                <p style="color: var(--color-text-secondary); margin-bottom: 40px;">
+                    Audio regions are blocks of audio content on the timeline. They display waveforms and can be moved, copied, and edited.
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>📊 Region Display</h4>
+                        <ul>
+                            <li><strong>Waveform</strong> - Visual audio representation</li>
+                            <li><strong>Region Name</strong> - Filename or description</li>
+                            <li><strong>Duration</strong> - Length in time</li>
+                            <li><strong>Start Time</strong> - Position on timeline</li>
+                            <li><strong>Color</strong> - Matches track color</li>
+                            <li><strong>Selection</strong> - Blue border when selected</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>✏️ Region Editing</h4>
+                        <ul>
+                            <li><strong>Move</strong> - Drag to reposition</li>
+                            <li><strong>Duplicate (⌘D)</strong> - Copy region</li>
+                            <li><strong>Delete (Delete)</strong> - Remove region</li>
+                            <li><strong>Trim</strong> - Drag edges to trim</li>
+                            <li><strong>Split (⌘T)</strong> - Cut at playhead</li>
+                            <li><strong>Fade In/Out</strong> - Drag top corners</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎚️ Region Properties</h4>
+                        <ul>
+                            <li><strong>Gain</strong> - Volume adjustment</li>
+                            <li><strong>Pitch Shift</strong> - Transpose audio</li>
+                            <li><strong>Tempo Rate</strong> - Speed adjustment</li>
+                            <li><strong>Detected Key</strong> - AI analysis</li>
+                            <li><strong>Detected Tempo</strong> - BPM detection</li>
+                            <li><strong>Loop Mode</strong> - Repeat audio</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🏷️ Region Badges</h4>
+                        <ul>
+                            <li><strong>Tempo Badge</strong> - Shows detected BPM</li>
+                            <li><strong>Key Badge</strong> - Shows detected key</li>
+                            <li><strong>Pitch Badge</strong> - Shows pitch shift</li>
+                            <li><strong>Rate Badge</strong> - Shows tempo rate</li>
+                            <li><strong>Anchor Badge</strong> - Auto-match anchor</li>
+                            <li><strong>Opacity = Confidence</strong> - Brighter = more confident</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Region Operations -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">✂️</span>
+                            <p>Region editing operations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Region Operations</div>
+                    <h2>Working with Regions</h2>
+                    <p>Comprehensive guide to region manipulation:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Select:</strong> Click region to select it</li>
+                        <li><span class="check">✓</span> <strong>Multi-Select:</strong> ⌘+Click to add to selection</li>
+                        <li><span class="check">✓</span> <strong>Range Select:</strong> Shift+Click for range</li>
+                        <li><span class="check">✓</span> <strong>Move:</strong> Drag to new position (respects snap)</li>
+                        <li><span class="check">✓</span> <strong>Nudge:</strong> ← → keys for fine positioning</li>
+                        <li><span class="check">✓</span> <strong>Copy-Drag:</strong> Option+Drag to duplicate while moving</li>
+                        <li><span class="check">✓</span> <strong>Snap Override:</strong> ⌘+Drag to disable snap temporarily</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tempo & Key Analysis -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Audio Analysis</div>
+                    <h2>Tempo & Key Detection</h2>
+                    <p>Stori uses FFT-based analysis to detect tempo and musical key automatically:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>One-Click Analysis:</strong> Right-click region → "Analyze Audio (Tempo & Key)"</li>
+                        <li><span class="check">✓</span> <strong>FFT-Based:</strong> Chroma analysis for accurate key detection</li>
+                        <li><span class="check">✓</span> <strong>Confidence Scores:</strong> 0-100% confidence for each result</li>
+                        <li><span class="check">✓</span> <strong>Cached Results:</strong> Analysis saved with project</li>
+                        <li><span class="check">✓</span> <strong>Visual Badges:</strong> Results displayed on regions</li>
+                        <li><span class="check">✓</span> <strong>Inspector Display:</strong> Full analysis details in Region tab</li>
+                        <li><span class="check">✓</span> <strong>Progress HUD:</strong> macOS-style floating progress indicator</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🔍</span>
+                            <p>Audio analysis with tempo and key detection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tempo Matching -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎯</span>
+                            <p>Tempo matching between regions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Tempo Matching</div>
+                    <h2>Automatic Tempo Alignment</h2>
+                    <p>Match the tempo of multiple regions automatically:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Select Anchor:</strong> Right-click first region → "Set as Tempo Anchor"</li>
+                        <li><span class="check">✓</span> <strong>Select Others:</strong> ⌘+Click other regions to match</li>
+                        <li><span class="check">✓</span> <strong>Auto-Match:</strong> Right-click → "Match Tempo to Anchor"</li>
+                        <li><span class="check">✓</span> <strong>Time-Stretch:</strong> Regions stretch to match anchor tempo</li>
+                        <li><span class="check">✓</span> <strong>Quality Preserved:</strong> High-quality time-stretching algorithm</li>
+                        <li><span class="check">✓</span> <strong>Anchor Badge:</strong> Shows "AUTO-MATCH ANCHOR" on anchor region</li>
+                        <li><span class="check">✓</span> <strong>Rate Display:</strong> Shows tempo rate (e.g., 1.2x) on matched regions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Pitch Matching -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Pitch Matching</div>
+                    <h2>Musical Key Alignment</h2>
+                    <p>Transpose regions to match musical keys automatically:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Analyze Keys:</strong> Run analysis on all regions first</li>
+                        <li><span class="check">✓</span> <strong>Select Target:</strong> Choose the key you want to match</li>
+                        <li><span class="check">✓</span> <strong>Auto-Transpose:</strong> Regions pitch-shift to target key</li>
+                        <li><span class="check">✓</span> <strong>Semitone Display:</strong> Shows pitch shift (e.g., +3 semitones)</li>
+                        <li><span class="check">✓</span> <strong>Quality Preserved:</strong> Professional pitch-shifting algorithm</li>
+                        <li><span class="check">✓</span> <strong>Inspector Control:</strong> Manual adjustment in Region tab</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎼</span>
+                            <p>Pitch shifting for key matching</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snap & Grid -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px;">📐 Snap & Grid</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🧲</span>
+                            <h3>Snap to Grid</h3>
+                        </div>
+                        <p>Snap helps align regions to musical timing. Toggle with <strong>⌘G</strong> or the snap button in toolbar.</p>
+                        <ul class="ai-features">
+                            <li>Bars (1, 2, 4 bars)</li>
+                            <li>Beats (1/4, 1/8, 1/16 notes)</li>
+                            <li>Triplets (1/8T, 1/16T)</li>
+                            <li>Off - Free positioning</li>
+                        </ul>
+                        <p style="margin-top: 16px; font-size: 0.9rem; color: var(--color-text-secondary);">
+                            <strong>Tip:</strong> Hold ⌘ while dragging to temporarily override snap.
+                        </p>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">📊</span>
+                            <h3>Grid Display</h3>
+                        </div>
+                        <p>The grid shows beat divisions as vertical lines. Grid density adjusts automatically when you zoom.</p>
+                        <ul class="ai-features">
+                            <li>Bar lines (strongest)</li>
+                            <li>Beat lines (medium)</li>
+                            <li>Sub-division lines (subtle)</li>
+                            <li>Adapts to zoom level</li>
+                        </ul>
+                        <p style="margin-top: 16px; font-size: 0.9rem; color: var(--color-text-secondary);">
+                            <strong>Tip:</strong> Zoom in (⌘+) to see finer grid divisions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cycle/Loop Region -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🔁</span>
+                            <p>Yellow cycle region for looping</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Cycle/Loop Region</div>
+                    <h2>Loop Playback</h2>
+                    <p>The cycle region (yellow area) defines a section that loops during playback:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Create:</strong> Drag on timeline ruler to create cycle region</li>
+                        <li><span class="check">✓</span> <strong>Adjust:</strong> Drag edges to change loop points</li>
+                        <li><span class="check">✓</span> <strong>Move:</strong> Drag center to move entire region</li>
+                        <li><span class="check">✓</span> <strong>Enable/Disable:</strong> Toggle loop button in transport</li>
+                        <li><span class="check">✓</span> <strong>Perfect Loops:</strong> Snap to ensure clean loop boundaries</li>
+                        <li><span class="check">✓</span> <strong>Practice Tool:</strong> Loop difficult sections for practice</li>
+                        <li><span class="check">✓</span> <strong>Composition:</strong> Loop sections while layering parts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Zoom & Navigation -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px;">🔍 Zoom & Navigation</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🔎 Zoom Controls</h4>
+                        <ul>
+                            <li><code>⌘+</code> - Zoom In</li>
+                            <li><code>⌘-</code> - Zoom Out</li>
+                            <li><code>⌘0</code> - Zoom to Fit Project</li>
+                            <li><strong>Scroll Gesture</strong> - Pinch to zoom</li>
+                            <li><strong>Zoom Slider</strong> - In toolbar</li>
+                            <li><strong>Maintains Center</strong> - Zooms around playhead</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🧭 Navigation</h4>
+                        <ul>
+                            <li><code>Home</code> - Jump to Start</li>
+                            <li><code>End</code> - Jump to End</li>
+                            <li><code>⌘↑</code> - Go to Beginning</li>
+                            <li><code>⌘↓</code> - Go to End</li>
+                            <li><strong>Click Ruler</strong> - Jump playhead</li>
+                            <li><strong>Scroll</strong> - Pan timeline</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>👁️ View Options</h4>
+                        <ul>
+                            <li><strong>Waveform Zoom</strong> - Vertical zoom</li>
+                            <li><strong>Track Height</strong> - Adjust per track</li>
+                            <li><strong>Compact Mode</strong> - Show more tracks</li>
+                            <li><strong>Follow Playhead</strong> - Auto-scroll</li>
+                            <li><strong>Grid Visibility</strong> - Show/hide grid</li>
+                            <li><strong>Region Names</strong> - Toggle labels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selection & Multi-Edit -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Multi-Region Editing</div>
+                    <h2>Batch Operations</h2>
+                    <p>Work with multiple regions simultaneously:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>⌘+Click:</strong> Add regions to selection</li>
+                        <li><span class="check">✓</span> <strong>Shift+Click:</strong> Select range of regions</li>
+                        <li><span class="check">✓</span> <strong>⌘A:</strong> Select all regions on current track</li>
+                        <li><span class="check">✓</span> <strong>Move Together:</strong> Drag any selected region to move all</li>
+                        <li><span class="check">✓</span> <strong>Duplicate All:</strong> ⌘D duplicates entire selection</li>
+                        <li><span class="check">✓</span> <strong>Delete All:</strong> Delete key removes all selected</li>
+                        <li><span class="check">✓</span> <strong>Batch Analysis:</strong> Analyze tempo/key for all selected</li>
+                        <li><span class="check">✓</span> <strong>Tempo Matching:</strong> Match multiple regions to anchor</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📦</span>
+                            <p>Multiple regions selected for batch editing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Context Menu -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🖱️ Region Context Menu</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Right-click (or Control+Click) any region to access these options:
+                </p>
+                <div class="tech-category" style="max-width: 800px; margin: 0 auto;">
+                    <ul style="font-size: 1rem; line-height: 2;">
+                        <li>• <strong>Duplicate</strong> - Create copy of region</li>
+                        <li>• <strong>Delete</strong> - Remove region from timeline</li>
+                        <li>• <strong>Split at Playhead</strong> - Cut region into two</li>
+                        <li>• <strong>Analyze Audio (Tempo & Key)</strong> - Run FFT analysis</li>
+                        <li>• <strong>Set as Tempo Anchor</strong> - Mark as reference for tempo matching</li>
+                        <li>• <strong>Match Tempo to Anchor</strong> - Time-stretch to match anchor</li>
+                        <li>• <strong>Match Key to...</strong> - Transpose to target key</li>
+                        <li>• <strong>Bounce to Audio</strong> - Render MIDI to audio (MIDI regions only)</li>
+                        <li>• <strong>Show in Inspector</strong> - Focus region in Inspector panel</li>
+                        <li>• <strong>Export Region</strong> - Export just this region</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Professional Workflows -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Pro Arrangement Workflow</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Generate Multiple Clips:</strong> Create 5-10 different AI generations with varied prompts</li>
+                            <li>• <strong>Analyze All:</strong> Select all regions → Right-click → Analyze for tempo/key detection</li>
+                            <li>• <strong>Pick Anchor:</strong> Choose your favorite as the tempo anchor (usually drums or bass)</li>
+                            <li>• <strong>Match Others:</strong> Select remaining regions → Match tempo to anchor</li>
+                            <li>• <strong>Arrange:</strong> Drag regions into song structure (intro, verse, chorus, etc.)</li>
+                            <li>• <strong>Layer:</strong> Stack complementary parts on different tracks</li>
+                            <li>• <strong>Trim & Fade:</strong> Clean up region boundaries for smooth transitions</li>
+                            <li>• <strong>Mix:</strong> Adjust volumes, pan, and effects in mixer panel</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

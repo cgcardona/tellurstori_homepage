@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Album Artwork Generation guide for Stori - SDXL-Turbo AI image generation for track covers">
+    <title>Album Artwork - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation — Coming Soon</span>
+                <h1 class="section-title">Album Artwork Generation</h1>
+                <p class="section-subtitle">Create professional album covers with AI image generation — available in a future update</p>
+            </div>
+            
+            <div class="ai-local-banner" style="margin-bottom: 48px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <h4>Coming in a Future Update</h4>
+                        <p>AI image generation is in development. The current v0.1.2 release focuses on professional DAW functionality. Check back for updates!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Generation Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Image Generation Basics</div>
+                    <h2>AI-Powered Album Art</h2>
+                    <p>Create stunning album artwork using SDXL-Turbo, a state-of-the-art diffusion model:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>SDXL-Turbo:</strong> Advanced diffusion model for high-quality images</li>
+                        <li><span class="check">✓</span> <strong>1024x1024 Resolution:</strong> Professional quality for album covers</li>
+                        <li><span class="check">✓</span> <strong>LLM Enhancement:</strong> AI improves your prompt automatically</li>
+                        <li><span class="check">✓</span> <strong>Fast Generation:</strong> 15-30 seconds per image</li>
+                        <li><span class="check">✓</span> <strong>Track Assignment:</strong> Set image for any track with one click</li>
+                        <li><span class="check">✓</span> <strong>NFT Integration:</strong> Images automatically included in minted NFTs</li>
+                        <li><span class="check">✓</span> <strong>Project Persistence:</strong> Images saved in project bundle</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎨</span>
+                            <p>Visual tab in Inspector with image generation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Start -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🚀 Generate Your First Album Cover</h2>
+                <div class="value-grid" style="max-width: 1000px; margin: 0 auto;">
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">1️⃣</span></div>
+                        <h3>Open Visual Tab</h3>
+                        <p>Inspector Panel → Visual tab. The image generation interface appears.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">2️⃣</span></div>
+                        <h3>Enter Prompt</h3>
+                        <p>Describe the image you want: "Cyberpunk city at sunset with neon lights"</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">3️⃣</span></div>
+                        <h3>Enhance (Optional)</h3>
+                        <p>Click "Enhance Prompt" to let the LLM improve your description for better results.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">4️⃣</span></div>
+                        <h3>Generate & Assign</h3>
+                        <p>Click "Generate Image". Once complete, click "Set as Track Image" to assign to selected track.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Writing Image Prompts -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">✍️</span>
+                            <p>Prompt input with enhance button</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Writing Prompts</div>
+                    <h2>Effective Image Prompts</h2>
+                    <p>Guidelines for creating great album artwork prompts:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Subject First:</strong> Start with main subject (person, landscape, object)</li>
+                        <li><span class="check">✓</span> <strong>Setting/Environment:</strong> Where is it? (city, nature, space, abstract)</li>
+                        <li><span class="check">✓</span> <strong>Lighting:</strong> Time of day, lighting style (sunset, neon, dramatic)</li>
+                        <li><span class="check">✓</span> <strong>Mood/Atmosphere:</strong> Feeling you want (mysterious, energetic, peaceful)</li>
+                        <li><span class="check">✓</span> <strong>Style/Genre:</strong> Art style (photorealistic, painting, synthwave, minimalist)</li>
+                        <li><span class="check">✓</span> <strong>Colors:</strong> Dominant color palette (vibrant, muted, neon, pastel)</li>
+                        <li><span class="check">✓</span> <strong>Details:</strong> Specific elements you want included</li>
+                        <li><span class="check">✓</span> <strong>Keep Focused:</strong> 15-40 words works best</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Example Prompts -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎨 Example Prompts</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🌃 Cyberpunk/Synthwave</h4>
+                        <ul style="font-size: 0.85rem; line-height: 1.6;">
+                            <li>"Neon-lit cyberpunk city at night with rain-slicked streets and glowing signs"</li>
+                            <li>"Retro 80s synthwave sunset with purple and pink gradient sky over grid landscape"</li>
+                            <li>"Futuristic Tokyo street with holographic advertisements and flying cars"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🌿 Nature & Organic</h4>
+                        <ul style="font-size: 0.85rem; line-height: 1.6;">
+                            <li>"Mystical forest with glowing mushrooms and ethereal morning light filtering through trees"</li>
+                            <li>"Mountain landscape at golden hour with dramatic clouds and alpine meadow"</li>
+                            <li>"Underwater coral reef scene with tropical fish and sun rays"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎭 Abstract & Artistic</h4>
+                        <ul style="font-size: 0.85rem; line-height: 1.6;">
+                            <li>"Abstract geometric shapes in vibrant colors with fluid motion blur"</li>
+                            <li>"Minimalist design with single color gradient and simple line art"</li>
+                            <li>"Surreal dreamscape with floating objects and impossible architecture"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🌌 Space & Cosmic</h4>
+                        <ul style="font-size: 0.85rem; line-height: 1.6;">
+                            <li>"Deep space nebula with swirling purple and blue gases and distant stars"</li>
+                            <li>"Alien planet landscape with multiple moons and strange rock formations"</li>
+                            <li>"Astronaut floating in space with Earth in background and galaxy visible"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🏙️ Urban & Street</h4>
+                        <ul style="font-size: 0.85rem; line-height: 1.6;">
+                            <li>"Graffiti-covered brick wall with colorful street art and urban decay"</li>
+                            <li>"New York City skyline at sunset from rooftop perspective"</li>
+                            <li>"Underground subway station with moody lighting and urban atmosphere"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎪 Vintage & Retro</h4>
+                        <ul style="font-size: 0.85rem; line-height: 1.6;">
+                            <li>"Vintage 70s aesthetic with warm colors, film grain, and retro typography"</li>
+                            <li>"Old vinyl record on turntable with warm studio lighting"</li>
+                            <li>"Classic diner at night with neon signs and chrome details"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track Image Management -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Track Images</div>
+                    <h2>Assigning Images to Tracks</h2>
+                    <p>Complete workflow for track image management:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Generate Image:</strong> Create artwork in Visual tab</li>
+                        <li><span class="check">✓</span> <strong>Select Track:</strong> Click track in timeline to select it</li>
+                        <li><span class="check">✓</span> <strong>Assign Image:</strong> Click "Set as Track Image" button</li>
+                        <li><span class="check">✓</span> <strong>Visual Indicator:</strong> Track header shows small thumbnail</li>
+                        <li><span class="check">✓</span> <strong>Inspector Display:</strong> Full image visible in Inspector panel</li>
+                        <li><span class="check">✓</span> <strong>Project Saved:</strong> Images stored in project bundle</li>
+                        <li><span class="check">✓</span> <strong>NFT Ready:</strong> Automatically included when minting</li>
+                        <li><span class="check">✓</span> <strong>Change Anytime:</strong> Generate new image to replace existing</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🖼️</span>
+                            <p>Track with assigned album artwork thumbnail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prompt Enhancement -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">✨ Prompt Enhancement</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">📝</span>
+                            <h3>Before Enhancement</h3>
+                        </div>
+                        <div class="ai-example" style="margin-bottom: 16px;">
+                            <code>"sunset over ocean"</code>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Simple prompt - results may be generic or lack visual interest.
+                        </p>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">✨</span>
+                            <h3>After Enhancement</h3>
+                        </div>
+                        <div class="ai-example" style="margin-bottom: 16px;">
+                            <code>"Breathtaking sunset over calm ocean with vibrant orange and pink sky, silhouetted palm trees, gentle waves, golden hour lighting, professional photography, highly detailed, 4k quality"</code>
+                        </div>
+                        <p style="font-size: 0.9rem; color: var(--color-text-secondary);">
+                            Enhanced prompt - adds detail, lighting, quality keywords for professional results.
+                        </p>
+                    </div>
+                </div>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-top: 24px; font-size: 0.95rem;">
+                    <strong>Tip:</strong> The LLM adds photography keywords, lighting details, and quality modifiers that improve image generation.
+                </p>
+            </div>
+
+            <!-- Generation Settings -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">⚙️</span>
+                            <p>Image generation settings panel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Generation Settings</div>
+                    <h2>Advanced Options</h2>
+                    <p>Fine-tune your image generation:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Resolution:</strong> Fixed at 1024x1024 (optimal for album covers)</li>
+                        <li><span class="check">✓</span> <strong>Inference Steps:</strong> 1-4 steps (more = better quality, slower)</li>
+                        <li><span class="check">✓</span> <strong>Guidance Scale:</strong> How closely to follow prompt (1.0-2.0 typical)</li>
+                        <li><span class="check">✓</span> <strong>Seed:</strong> Reproducible results (same seed + prompt = same image)</li>
+                        <li><span class="check">✓</span> <strong>Negative Prompt:</strong> Specify what to avoid (blur, distortion, text)</li>
+                        <li><span class="check">✓</span> <strong>Batch Generation:</strong> Generate multiple variations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tips for Great Results -->
+            <div class="ai-local-banner" data-animate style="margin-top: 80px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Pro Tips for Amazing Album Artwork</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Match Your Music:</strong> Artwork should reflect the genre and mood of your track</li>
+                            <li>• <strong>Use Enhance:</strong> Let the LLM add professional keywords to your prompt</li>
+                            <li>• <strong>Generate Multiple:</strong> Create 3-5 variations and choose the best</li>
+                            <li>• <strong>Simple Subjects:</strong> Clear, focused subjects work better than complex scenes</li>
+                            <li>• <strong>Avoid Text:</strong> AI struggles with text/words - use graphic design software for typography</li>
+                            <li>• <strong>Color Harmony:</strong> Mention specific color palettes for cohesive branding</li>
+                            <li>• <strong>Style Consistency:</strong> Use similar style keywords across album tracks</li>
+                            <li>• <strong>Quality Keywords:</strong> Include "high quality", "professional", "detailed" in prompts</li>
+                            <li>• <strong>Reference Art Styles:</strong> "oil painting", "digital art", "photography", "illustration"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

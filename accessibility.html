@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessibility guide for Stori - VoiceOver, keyboard navigation, and inclusive features">
+    <title>Accessibility - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Accessibility Features</h1>
+                <p class="section-subtitle">VoiceOver support, keyboard navigation, and inclusive design for all users</p>
+            </div>
+
+            <!-- Accessibility Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Accessibility Commitment</div>
+                    <h2>Music Creation for Everyone</h2>
+                    <p>Stori is designed to be accessible to all users, including those with visual, motor, or cognitive disabilities:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Full VoiceOver Support:</strong> All UI elements properly labeled</li>
+                        <li><span class="check">✓</span> <strong>Keyboard Navigation:</strong> Complete keyboard control without mouse</li>
+                        <li><span class="check">✓</span> <strong>High Contrast:</strong> Respects system appearance settings</li>
+                        <li><span class="check">✓</span> <strong>Focus Indicators:</strong> Clear visual focus for keyboard navigation</li>
+                        <li><span class="check">✓</span> <strong>Semantic Labels:</strong> Meaningful descriptions for assistive tech</li>
+                        <li><span class="check">✓</span> <strong>macOS Integration:</strong> Works with system accessibility features</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">♿</span>
+                            <p>Accessible interface with clear labels and focus indicators</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VoiceOver Support -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">👁️ VoiceOver Support</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Stori provides comprehensive VoiceOver support for blind and low-vision users:
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎛️ UI Elements</h4>
+                        <ul>
+                            <li><strong>Buttons:</strong> Clear action labels (e.g., "Play button", "Stop button")</li>
+                            <li><strong>Sliders:</strong> Current value announced (e.g., "Volume 80%")</li>
+                            <li><strong>Tracks:</strong> "Track 1, Audio Track, 2 regions"</li>
+                            <li><strong>Regions:</strong> "Audio region, 0:10 duration, Track 1"</li>
+                            <li><strong>Time Display:</strong> "Current position 1 minute 23 seconds"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>⌨️ VoiceOver Commands</h4>
+                        <ul>
+                            <li><strong>Enable:</strong> ⌘F5 to toggle VoiceOver</li>
+                            <li><strong>Navigate:</strong> VO+Arrow keys to move</li>
+                            <li><strong>Interact:</strong> VO+Space to activate</li>
+                            <li><strong>Read All:</strong> VO+A to read everything</li>
+                            <li><strong>Rotor:</strong> VO+U for quick navigation</li>
+                            <li><strong>Context Menu:</strong> VO+Shift+M</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>⏯️ Transport Controls</h4>
+                        <ul>
+                            <li><strong>Play Button:</strong> "Play button" / "Pause button" (Space)</li>
+                            <li><strong>Stop Button:</strong> "Stop button, Stop playback and return to start" (⌃Space)</li>
+                            <li><strong>Record Button:</strong> "Record button" / "Stop Recording button" (R)</li>
+                            <li><strong>Rewind:</strong> "Rewind button, Skip backward one beat" (,)</li>
+                            <li><strong>Fast Forward:</strong> "Fast Forward button, Skip forward one beat" (.)</li>
+                            <li><strong>Cycle Mode:</strong> "Cycle button, Enabled/Disabled" (C)</li>
+                            <li><strong>Transport State:</strong> Playing/Stopped/Recording announced</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Timeline Navigation</h4>
+                        <ul>
+                            <li><strong>Track List:</strong> Navigate tracks with VO+arrows</li>
+                            <li><strong>Region Selection:</strong> Each region announced with details</li>
+                            <li><strong>Time Position:</strong> Playhead position spoken</li>
+                            <li><strong>Selection Count:</strong> "3 regions selected"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎚️ Mixer Navigation</h4>
+                        <ul>
+                            <li><strong>Channel Strips:</strong> "Track 1 channel strip"</li>
+                            <li><strong>Fader Values:</strong> "Volume -6.2 decibels"</li>
+                            <li><strong>Pan Position:</strong> "Pan 30% left"</li>
+                            <li><strong>Effect Slots:</strong> "Reverb in slot 1"</li>
+                            <li><strong>Parameters:</strong> Current values announced</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Keyboard Navigation -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">⌨️</span>
+                            <p>Keyboard focus indicators throughout interface</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Keyboard Navigation</div>
+                    <h2>Full Keyboard Control</h2>
+                    <p>Navigate and control Stori entirely with the keyboard:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Tab Navigation:</strong> Tab/Shift+Tab to move between controls</li>
+                        <li><span class="check">✓</span> <strong>Arrow Keys:</strong> Navigate lists, adjust values, move selection</li>
+                        <li><span class="check">✓</span> <strong>Space/Enter:</strong> Activate buttons and controls</li>
+                        <li><span class="check">✓</span> <strong>Escape:</strong> Cancel operations, close modals</li>
+                        <li><span class="check">✓</span> <strong>Context Menus:</strong> fn+⌃+F2 then arrow keys</li>
+                        <li><span class="check">✓</span> <strong>Menu Bar:</strong> ⌃F2 to access menus</li>
+                        <li><span class="check">✓</span> <strong>Focus Indicators:</strong> Blue outline shows current focus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Visual Accessibility -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎨 Visual Accessibility</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🌓</span>
+                            <h3>Dark Mode Support</h3>
+                        </div>
+                        <p>Stori automatically adapts to your macOS appearance settings:</p>
+                        <ul class="ai-features">
+                            <li>Automatic light/dark mode</li>
+                            <li>Follows system preferences</li>
+                            <li>Optimized contrast ratios</li>
+                            <li>Reduced eye strain</li>
+                            <li>Professional color schemes</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🔍</span>
+                            <h3>High Contrast Mode</h3>
+                        </div>
+                        <p>Enhanced visibility for users with visual impairments:</p>
+                        <ul class="ai-features">
+                            <li>Respects "Increase Contrast" setting</li>
+                            <li>Higher contrast UI elements</li>
+                            <li>Clearer borders and outlines</li>
+                            <li>Enhanced focus indicators</li>
+                            <li>Better text legibility</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">📏</span>
+                            <h3>Font Scaling</h3>
+                        </div>
+                        <p>Respects macOS text size preferences:</p>
+                        <ul class="ai-features">
+                            <li>Dynamic Type support</li>
+                            <li>Scales with system settings</li>
+                            <li>Maintains layout integrity</li>
+                            <li>Readable at all sizes</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎨</span>
+                            <h3>Color Blind Modes</h3>
+                        </div>
+                        <p>Color coding uses multiple visual cues:</p>
+                        <ul class="ai-features">
+                            <li>Not reliant on color alone</li>
+                            <li>Icons accompany colors</li>
+                            <li>Text labels for status</li>
+                            <li>Pattern differentiation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motor Accessibility -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Motor Accessibility</div>
+                    <h2>Features for Motor Disabilities</h2>
+                    <p>Stori includes features to help users with motor control challenges:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Large Click Targets:</strong> Generous hit areas for buttons</li>
+                        <li><span class="check">✓</span> <strong>Keyboard Shortcuts:</strong> Reduce mouse dependency</li>
+                        <li><span class="check">✓</span> <strong>Double-Click Alternative:</strong> Single-click + Enter for editable fields</li>
+                        <li><span class="check">✓</span> <strong>Drag Tolerance:</strong> Forgiving drag thresholds</li>
+                        <li><span class="check">✓</span> <strong>Sticky Keys Compatible:</strong> Works with macOS Sticky Keys</li>
+                        <li><span class="check">✓</span> <strong>Voice Control:</strong> Compatible with macOS Voice Control</li>
+                        <li><span class="check">✓</span> <strong>Switch Control:</strong> Works with external switch devices</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🖱️</span>
+                            <p>Large, accessible click targets and controls</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cognitive Accessibility -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🧠</span>
+                            <p>Clear, consistent interface design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Cognitive Accessibility</div>
+                    <h2>Clear & Consistent Design</h2>
+                    <p>Features to reduce cognitive load and support learning:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Consistent Layout:</strong> Same controls in same places</li>
+                        <li><span class="check">✓</span> <strong>Clear Labels:</strong> Descriptive text, not just icons</li>
+                        <li><span class="check">✓</span> <strong>Tooltips:</strong> Hover for helpful explanations</li>
+                        <li><span class="check">✓</span> <strong>Undo/Redo:</strong> Experiment without fear (⌘Z/⌘⇧Z)</li>
+                        <li><span class="check">✓</span> <strong>Visual Feedback:</strong> Clear indication of actions</li>
+                        <li><span class="check">✓</span> <strong>Error Prevention:</strong> Confirmations for destructive actions</li>
+                        <li><span class="check">✓</span> <strong>AI Assistant:</strong> Get help anytime via chat</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Enabling Accessibility Features -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">⚙️ Enabling macOS Accessibility Features</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>👁️ VoiceOver</h4>
+                        <ul>
+                            <li><strong>Enable:</strong> ⌘F5 to toggle</li>
+                            <li><strong>Settings:</strong> System Settings → Accessibility → VoiceOver</li>
+                            <li><strong>Training:</strong> VoiceOver Quick Start tutorial</li>
+                            <li><strong>Speech Rate:</strong> Adjust in VoiceOver Utility</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>⌨️ Keyboard Access</h4>
+                        <ul>
+                            <li><strong>Full Keyboard Access:</strong> System Settings → Keyboard → Keyboard Navigation</li>
+                            <li><strong>Enable:</strong> Turn on "Use keyboard navigation"</li>
+                            <li><strong>Tab Navigation:</strong> Navigate all controls</li>
+                            <li><strong>Focus Shortcuts:</strong> ⌃F2-F7 for different areas</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎨 Display</h4>
+                        <ul>
+                            <li><strong>Increase Contrast:</strong> System Settings → Accessibility → Display</li>
+                            <li><strong>Reduce Motion:</strong> Disable animations</li>
+                            <li><strong>Reduce Transparency:</strong> Solid backgrounds</li>
+                            <li><strong>Display Accommodations:</strong> Color filters</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🗣️ Voice Control</h4>
+                        <ul>
+                            <li><strong>Enable:</strong> System Settings → Accessibility → Voice Control</li>
+                            <li><strong>Commands:</strong> "Click Play", "Show numbers"</li>
+                            <li><strong>Dictation:</strong> Text input via speech</li>
+                            <li><strong>Custom Commands:</strong> Create workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🖱️ Pointer Control</h4>
+                        <ul>
+                            <li><strong>Slow Down Mouse:</strong> Reduce pointer speed</li>
+                            <li><strong>Shake to Locate:</strong> Find cursor easily</li>
+                            <li><strong>Sticky Keys:</strong> Press modifiers sequentially</li>
+                            <li><strong>Mouse Keys:</strong> Control cursor with keyboard</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎧 Audio</h4>
+                        <ul>
+                            <li><strong>Mono Audio:</strong> Combine stereo to mono</li>
+                            <li><strong>Flash Screen:</strong> Visual alert alternatives</li>
+                            <li><strong>Background Sounds:</strong> Focus aid</li>
+                            <li><strong>Live Captions:</strong> For voice content</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Best Practices -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">💡</div>
+                    <div class="banner-text">
+                        <h3>Accessibility Best Practices</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Learn VoiceOver:</strong> Complete the Quick Start tutorial in VoiceOver Utility</li>
+                            <li>• <strong>Customize Settings:</strong> Adjust speech rate, verbosity, and sounds to your preference</li>
+                            <li>• <strong>Use Rotor:</strong> VO+U to quickly jump between headings, links, buttons</li>
+                            <li>• <strong>Keyboard Shortcuts:</strong> Learn essential shortcuts to speed up workflow</li>
+                            <li>• <strong>Test Incrementally:</strong> Enable one accessibility feature at a time to learn</li>
+                            <li>• <strong>Report Issues:</strong> Help menu → Report Issue for accessibility problems</li>
+                            <li>• <strong>Join Community:</strong> Connect with other accessible music makers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback -->
+            <div class="value-card" data-animate style="max-width: 800px; margin: 60px auto 0; padding: 40px;">
+                <div style="text-align: center;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 16px;">Help Us Improve Accessibility</h3>
+                    <p style="color: var(--color-text-secondary); margin-bottom: 24px;">
+                        We're committed to making Stori accessible to everyone. If you encounter accessibility barriers or have suggestions for improvement, please let us know.
+                    </p>
+                    <a href="mailto:accessibility@tellurstori.com" class="btn btn-primary">
+                        Report Accessibility Issue
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

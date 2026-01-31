@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audio recording guide for Stori - professional microphone recording with real-time monitoring">
+    <title>Audio Recording - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Audio Recording</h1>
+                <p class="section-subtitle">Professional microphone recording with zero-latency monitoring and real-time level metering</p>
+            </div>
+
+            <!-- Recording Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Recording Basics</div>
+                    <h2>Professional Audio Capture</h2>
+                    <p>Stori provides professional-grade audio recording from your Mac's microphone or external audio interface:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>One-Click Recording:</strong> Simple workflow for quick captures</li>
+                        <li><span class="check">✓</span> <strong>Real-Time Monitoring:</strong> Hear yourself with zero latency</li>
+                        <li><span class="check">✓</span> <strong>Level Metering:</strong> Visual EQ display during recording</li>
+                        <li><span class="check">✓</span> <strong>Professional WAV:</strong> High-quality 44.1kHz audio files</li>
+                        <li><span class="check">✓</span> <strong>Automatic Regions:</strong> Recordings appear instantly on timeline</li>
+                        <li><span class="check">✓</span> <strong>Input Selection:</strong> Choose from available audio devices</li>
+                        <li><span class="check">✓</span> <strong>Auto-Naming:</strong> Files named with date/time stamps</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎤</span>
+                            <p>Recording interface with input level meters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Start Guide -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🚀 Quick Start Recording</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Record audio in 4 simple steps:
+                </p>
+
+                <div class="value-grid" style="max-width: 1000px; margin: 0 auto;">
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">1️⃣</span></div>
+                        <h3>Create Audio Track</h3>
+                        <p>Track menu → New Audio Track (⌘⇧A). The track appears in the timeline ready for recording.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">2️⃣</span></div>
+                        <h3>Arm for Recording</h3>
+                        <p>Click the red record button (●) on the track header. Input monitoring activates automatically.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">3️⃣</span></div>
+                        <h3>Press Record</h3>
+                        <p>Click the red record button in transport controls. Start speaking/singing into microphone.</p>
+                    </div>
+                    <div class="value-card" data-animate>
+                        <div class="value-icon-wrapper"><span class="value-icon">4️⃣</span></div>
+                        <h3>Stop Recording</h3>
+                        <p>Press record button again to stop. Audio region appears on timeline, ready to play back.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Workflow -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🔴</span>
+                            <p>Track with record arm button active and input meter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Detailed Workflow</div>
+                    <h2>Complete Recording Process</h2>
+                    <p>Step-by-step guide to professional recording:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Grant Permissions:</strong> macOS will request microphone access on first use</li>
+                        <li><span class="check">✓</span> <strong>Select Input:</strong> Choose audio device in track settings</li>
+                        <li><span class="check">✓</span> <strong>Check Levels:</strong> Speak/sing to see input meter respond</li>
+                        <li><span class="check">✓</span> <strong>Arm Track:</strong> Click red ● button on track header</li>
+                        <li><span class="check">✓</span> <strong>Monitor Input:</strong> Hear yourself through speakers/headphones</li>
+                        <li><span class="check">✓</span> <strong>Start Recording:</strong> Click transport record button</li>
+                        <li><span class="check">✓</span> <strong>Perform:</strong> Recording captures all audio input</li>
+                        <li><span class="check">✓</span> <strong>Stop:</strong> Click record button again or press Space</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Input Monitoring -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Input Monitoring</div>
+                    <h2>Zero-Latency Monitoring</h2>
+                    <p>Real-time audio monitoring while recording:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Automatic Activation:</strong> Monitoring starts when track is armed</li>
+                        <li><span class="check">✓</span> <strong>Zero Latency:</strong> Direct hardware monitoring, no delay</li>
+                        <li><span class="check">✓</span> <strong>Level Control:</strong> Adjust monitoring volume independently</li>
+                        <li><span class="check">✓</span> <strong>Visual Feedback:</strong> Input level meters show signal strength</li>
+                        <li><span class="check">✓</span> <strong>EQ Display:</strong> Real-time frequency visualization</li>
+                        <li><span class="check">✓</span> <strong>Auto-Teardown:</strong> Monitoring stops when recording stops</li>
+                        <li><span class="check">✓</span> <strong>Safe for Headphones:</strong> Prevents feedback with proper gain staging</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📊</span>
+                            <p>Real-time input level meter with frequency display</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Level Metering -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">📈 Level Metering & Gain Staging</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎚️</span>
+                            <h3>Input Levels</h3>
+                        </div>
+                        <p>Monitor your input signal to ensure clean recordings without distortion:</p>
+                        <ul class="ai-features">
+                            <li>Green = Good (-24dB to -12dB)</li>
+                            <li>Yellow = Hot (-12dB to -6dB)</li>
+                            <li>Orange = Very Hot (-6dB to -3dB)</li>
+                            <li>Red = Clipping (0dB+ - TOO LOUD!)</li>
+                            <li>Peak hold indicator</li>
+                            <li>Real-time frequency display</li>
+                        </ul>
+                        <p style="margin-top: 16px; font-size: 0.9rem; color: var(--color-text-secondary);">
+                            <strong>Target:</strong> Aim for peaks around -12dB to -6dB (yellow zone) for optimal signal-to-noise ratio.
+                        </p>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎛️</span>
+                            <h3>Gain Staging</h3>
+                        </div>
+                        <p>Proper gain staging ensures clean, professional recordings:</p>
+                        <ul class="ai-features">
+                            <li>Adjust input gain on interface</li>
+                            <li>Leave 6-12dB headroom</li>
+                            <li>Avoid hitting 0dB (red)</li>
+                            <li>Test with loud parts first</li>
+                            <li>Set level, then don't touch</li>
+                            <li>Better quiet than distorted</li>
+                        </ul>
+                        <p style="margin-top: 16px; font-size: 0.9rem; color: var(--color-text-secondary);">
+                            <strong>Pro Tip:</strong> Set your level with the loudest part of your performance to avoid clipping later.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- File Management -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📁</span>
+                            <p>Recorded audio files automatically named and organized</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">File Management</div>
+                    <h2>Recording Files</h2>
+                    <p>How Stori manages recorded audio files:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Auto-Naming:</strong> Files named `Recording_Track_1_YYYY-MM-DD_HH-MM-SS.wav`</li>
+                        <li><span class="check">✓</span> <strong>Project Bundle:</strong> Recordings stored in project bundle</li>
+                        <li><span class="check">✓</span> <strong>WAV Format:</strong> Professional 44.1kHz/16-bit audio</li>
+                        <li><span class="check">✓</span> <strong>Instant Playback:</strong> Recordings immediately playable</li>
+                        <li><span class="check">✓</span> <strong>Waveform Display:</strong> Visual representation on timeline</li>
+                        <li><span class="check">✓</span> <strong>Non-Destructive:</strong> Original recordings never modified</li>
+                        <li><span class="check">✓</span> <strong>Organized:</strong> All project audio in one location</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Multiple Takes -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Multiple Takes</div>
+                    <h2>Recording Multiple Takes</h2>
+                    <p>Professional workflow for capturing multiple performances:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Create New Track:</strong> Each take on separate track for easy comparison</li>
+                        <li><span class="check">✓</span> <strong>Keep Armed:</strong> Leave track armed between takes</li>
+                        <li><span class="check">✓</span> <strong>Record Take:</strong> Press record, perform, stop</li>
+                        <li><span class="check">✓</span> <strong>Playback:</strong> Press Space to review</li>
+                        <li><span class="check">✓</span> <strong>Record Again:</strong> Press record for next take (new region appears)</li>
+                        <li><span class="check">✓</span> <strong>Compare:</strong> Solo different takes to choose best</li>
+                        <li><span class="check">✓</span> <strong>Comp:</strong> Extract best parts from each take</li>
+                        <li><span class="check">✓</span> <strong>Delete Unused:</strong> Remove unwanted takes to save space</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎵</span>
+                            <p>Multiple takes on separate tracks for easy comparison</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troubleshooting -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🔧 Troubleshooting Recording Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ No Input Signal</h4>
+                        <ul>
+                            <li>Check macOS microphone permissions</li>
+                            <li>System Settings → Privacy → Microphone → Enable Stori</li>
+                            <li>Verify correct input selected</li>
+                            <li>Test microphone in another app</li>
+                            <li>Check cable connections</li>
+                            <li>Restart audio interface</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Clipping/Distortion</h4>
+                        <ul>
+                            <li>Lower input gain on interface</li>
+                            <li>Move away from microphone</li>
+                            <li>Use pop filter for vocals</li>
+                            <li>Check for feedback loops</li>
+                            <li>Disable input monitoring if feeding back</li>
+                            <li>Aim for -12dB to -6dB peaks</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Latency Issues</h4>
+                        <ul>
+                            <li>Lower buffer size in audio settings</li>
+                            <li>Use direct hardware monitoring</li>
+                            <li>Close other audio applications</li>
+                            <li>Disable software effects during tracking</li>
+                            <li>Use external audio interface</li>
+                            <li>Check system audio settings</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ No Playback After Recording</h4>
+                        <li>Check track mute/solo status</li>
+                            <li>Verify volume fader is up</li>
+                            <li>Check master output level</li>
+                            <li>Ensure correct output device</li>
+                            <li>Try disarming track and playing again</li>
+                            <li>Restart Stori if issue persists</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Background Noise</h4>
+                        <ul>
+                            <li>Record in quiet environment</li>
+                            <li>Use noise gate or gate plugin</li>
+                            <li>Lower input gain appropriately</li>
+                            <li>Use quality microphone</li>
+                            <li>Position mic away from fans/AC</li>
+                            <li>Apply noise reduction in post</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Incomplete Recordings</h4>
+                        <ul>
+                            <li>Check available disk space</li>
+                            <li>Verify project bundle location writable</li>
+                            <li>Don't stop recording too quickly</li>
+                            <li>Let recording finish before closing</li>
+                            <li>Check system resources (CPU/RAM)</li>
+                            <li>Close unnecessary applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pro Tips -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Professional Recording Tips</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Soundproof:</strong> Record in quietest room available, minimize external noise</li>
+                            <li>• <strong>Room Treatment:</strong> Hang blankets/curtains to reduce echo and reverb</li>
+                            <li>• <strong>Mic Position:</strong> 6-12 inches from mouth for vocals, experiment with placement</li>
+                            <li>• <strong>Pop Filter:</strong> Use pop filter or windscreen for vocals to reduce plosives (P, B sounds)</li>
+                            <li>• <strong>Headphone Monitoring:</strong> Use closed-back headphones to prevent bleed into mic</li>
+                            <li>• <strong>Warm Up:</strong> Vocalists should warm up before recording takes</li>
+                            <li>• <strong>Multiple Takes:</strong> Record 3-5 takes and comp the best moments</li>
+                            <li>• <strong>Stay Consistent:</strong> Maintain same mic position/distance for all takes</li>
+                            <li>• <strong>Hydrate:</strong> Keep water nearby for vocals to prevent mouth clicks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blockchain & NFT guide for Stori - Wallet, tokenization, and Digital Master minting on Avalanche L1">
+    <title>Blockchain & Tokenization - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation — Coming Soon</span>
+                <h1 class="section-title">Blockchain & Tokenization</h1>
+                <p class="section-subtitle">Mint music NFTs, manage your wallet, and own your music forever — available in a future update</p>
+            </div>
+            
+            <div class="ai-local-banner" style="margin-bottom: 48px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <h4>Coming in a Future Update</h4>
+                        <p>Web3 and blockchain features are in development. The current v0.1.2 release focuses on professional DAW functionality. Check back for updates!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blockchain Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Web3 Music Ownership</div>
+                    <h2>Own Your Music Forever</h2>
+                    <p>Stori uses blockchain technology to create verifiable ownership of your music:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>TellUrStori L1:</strong> Custom Avalanche L1 blockchain (Chain ID 507)</li>
+                        <li><span class="check">✓</span> <strong>Digital Masters:</strong> ERC-721 NFTs representing original creations</li>
+                        <li><span class="check">✓</span> <strong>Digital Licenses:</strong> ERC-1155 NFTs for copies and licenses</li>
+                        <li><span class="check">✓</span> <strong>IPFS Storage:</strong> Decentralized audio and metadata storage</li>
+                        <li><span class="check">✓</span> <strong>Multi-Owner:</strong> Unlimited co-creators with configurable shares</li>
+                        <li><span class="check">✓</span> <strong>Automatic Royalties:</strong> On-chain royalty distribution forever</li>
+                        <li><span class="check">✓</span> <strong>89% Creator Share:</strong> Only 1% platform fee + 10% resale royalty</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">⛓️</span>
+                            <p>Blockchain tokenization interface</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two-Tier System -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">👑 Two-Tier NFT System</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Stori uses a two-tier system inspired by traditional music industry: Digital Masters (Tier 1) and Digital Licenses (Tier 2).
+                </p>
+
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate style="border-color: var(--color-warning);">
+                        <div class="ai-card-header">
+                            <span class="ai-icon">👑</span>
+                            <h3>Tier 1: Digital Master</h3>
+                            <span class="ai-badge" style="background: var(--color-warning);">ERC-721</span>
+                        </div>
+                        <p>Unique token representing the original creation and ownership rights. Like the "master recording" in traditional music.</p>
+                        <ul class="ai-features">
+                            <li>One unique token per track</li>
+                            <li>Multi-owner support (unlimited co-creators)</li>
+                            <li>Configurable ownership shares (%, basis points)</li>
+                            <li>Automatic royalty distribution</li>
+                            <li>Immutable on-chain rights</li>
+                            <li>Create licenses from master</li>
+                        </ul>
+                        <div class="ai-example">
+                            <code><strong>Example:</strong> Artist 50% • Producer 30% • Songwriter 20%</code>
+                        </div>
+                    </div>
+
+                    <div class="ai-card" data-animate style="border-color: var(--color-accent);">
+                        <div class="ai-card-header">
+                            <span class="ai-icon">💿</span>
+                            <h3>Tier 2: Digital Licenses</h3>
+                            <span class="ai-badge" style="background: var(--color-accent); color: var(--color-bg);">ERC-1155</span>
+                        </div>
+                        <p>Multiple copies and licenses of the Digital Master. What users buy, stream, and collect.</p>
+                        <ul class="ai-features">
+                            <li>Unlimited instances per master</li>
+                            <li>Five distinct license types</li>
+                            <li>Flexible pricing models</li>
+                            <li>Resalable on secondary market</li>
+                            <li>Automatic creator royalties (10%)</li>
+                            <li>Time/play-based restrictions</li>
+                        </ul>
+                        <div class="ai-example">
+                            <code><strong>Example:</strong> 100× Full Ownership @ $10 each</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Connecting Wallet -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">💼</span>
+                            <p>Wallet connection interface with Core wallet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Wallet Setup</div>
+                    <h2>Connect Your Wallet</h2>
+                    <p>Connect Core wallet to interact with blockchain features:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">1</span> <strong>Install Core:</strong> Download Core wallet from core.app</li>
+                        <li><span class="check">2</span> <strong>Create Account:</strong> Set up new wallet or import existing</li>
+                        <li><span class="check">3</span> <strong>Add Network:</strong> Add TellUrStori L1 (Chain ID 507, RPC provided)</li>
+                        <li><span class="check">4</span> <strong>Get Test Tokens:</strong> Use faucet for testnet TUS tokens</li>
+                        <li><span class="check">5</span> <strong>Connect in Stori:</strong> Blockchain menu → Connect Wallet</li>
+                        <li><span class="check">6</span> <strong>Approve Connection:</strong> Confirm in Core wallet popup</li>
+                        <li><span class="check">7</span> <strong>Verify Status:</strong> Green indicator shows connected</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Minting Process -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🪙 Minting Your First NFT</h2>
+                <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 0;">
+                    <div class="timeline-item completed" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Step 1</span>
+                            <h3>Complete Your Project</h3>
+                            <ul style="list-style: none; margin-top: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem;">
+                                <li>• Create and arrange your music</li>
+                                <li>• Add effects and mix professionally</li>
+                                <li>• Generate and assign track images</li>
+                                <li>• Save project (⌘S)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Step 2</span>
+                            <h3>Tokenize Project</h3>
+                            <ul style="list-style: none; margin-top: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem;">
+                                <li>• Blockchain menu → Tokenize Project</li>
+                                <li>• Enter project title and description</li>
+                                <li>• Add co-creators and ownership shares (optional)</li>
+                                <li>• Review metadata and track information</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Step 3</span>
+                            <h3>Upload to IPFS</h3>
+                            <ul style="list-style: none; margin-top: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem;">
+                                <li>• All audio files uploaded to IPFS</li>
+                                <li>• All track images uploaded</li>
+                                <li>• Metadata JSON created with CIDs</li>
+                                <li>• Progress tracked in real-time</li>
+                                <li>• Takes 30-120 seconds depending on file sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item current" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Step 4</span>
+                            <h3>Pay Minting Fee</h3>
+                            <ul style="list-style: none; margin-top: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem;">
+                                <li>• Fee: 0.01 TUS base + 0.005 TUS per track</li>
+                                <li>• QR code displayed for mobile wallet payment</li>
+                                <li>• Or copy payment address for desktop wallet</li>
+                                <li>• Automatic detection when payment received</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Step 5</span>
+                            <h3>Digital Master Minted</h3>
+                            <ul style="list-style: none; margin-top: 12px; display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem;">
+                                <li>• ERC-721 token minted to your wallet</li>
+                                <li>• Token ID assigned</li>
+                                <li>• Ownership recorded on blockchain</li>
+                                <li>• Appears in your wallet and marketplace</li>
+                                <li>• Ready to create licenses for sale</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- License Types -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">📜 Five License Types</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Once you've minted a Digital Master, you can create licenses with different usage rights and pricing models:
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>💎 Full Ownership</h4>
+                        <ul>
+                            <li><strong>Price Range:</strong> $10 - $100 typical</li>
+                            <li><strong>Rights:</strong> Download, own forever, resell</li>
+                            <li><strong>Downloads:</strong> Unlimited</li>
+                            <li><strong>Resale:</strong> Allowed (10% creator royalty)</li>
+                            <li><strong>Best For:</strong> Collectors and fans</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📻 Streaming</h4>
+                        <ul>
+                            <li><strong>Price:</strong> $0.0005 per play</li>
+                            <li><strong>Rights:</strong> Pay-per-stream access</li>
+                            <li><strong>Downloads:</strong> None</li>
+                            <li><strong>Resale:</strong> Not applicable</li>
+                            <li><strong>Best For:</strong> Casual listeners</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎧 Limited Play</h4>
+                        <ul>
+                            <li><strong>Price Range:</strong> $0.10 - $1</li>
+                            <li><strong>Rights:</strong> Fixed number of plays (10-100)</li>
+                            <li><strong>Downloads:</strong> Optional</li>
+                            <li><strong>Resale:</strong> Not allowed</li>
+                            <li><strong>Best For:</strong> Try before you buy</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>⏰ Time-Limited</h4>
+                        <ul>
+                            <li><strong>Price Range:</strong> $1 - $5</li>
+                            <li><strong>Rights:</strong> Unlimited plays for fixed period</li>
+                            <li><strong>Duration:</strong> 7/30/90 days typical</li>
+                            <li><strong>Downloads:</strong> During active period</li>
+                            <li><strong>Best For:</strong> Subscriptions and rentals</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎬 Commercial Sync</h4>
+                        <ul>
+                            <li><strong>Price Range:</strong> $100 - $10,000+</li>
+                            <li><strong>Rights:</strong> Use in videos, ads, games, films</li>
+                            <li><strong>Exclusivity:</strong> Optional exclusive rights</li>
+                            <li><strong>Attribution:</strong> Required in credits</li>
+                            <li><strong>Best For:</strong> Content creators, brands</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>💰 Pricing Strategy</h4>
+                        <ul>
+                            <li><strong>Full Ownership:</strong> Set based on production value</li>
+                            <li><strong>Streaming:</strong> Low barrier for discovery</li>
+                            <li><strong>Limited:</strong> Entry point for conversion</li>
+                            <li><strong>Time-Limited:</strong> Recurring revenue model</li>
+                            <li><strong>Commercial:</strong> Premium pricing for business use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QR Code Payments -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📱</span>
+                            <p>QR code payment for mobile wallet scanning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">EIP-681 Payments</div>
+                    <h2>QR Code Payment System</h2>
+                    <p>Professional blockchain payment workflow with automatic detection:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>EIP-681 Standard:</strong> Standard Ethereum payment URIs</li>
+                        <li><span class="check">✓</span> <strong>QR Code:</strong> High-quality 10x scaled QR codes</li>
+                        <li><span class="check">✓</span> <strong>Embedded Metadata:</strong> Address, amount, and request ID</li>
+                        <li><span class="check">✓</span> <strong>Mobile Friendly:</strong> Scan with Core mobile wallet</li>
+                        <li><span class="check">✓</span> <strong>Auto-Detection:</strong> App monitors blockchain every 5 seconds</li>
+                        <li><span class="check">✓</span> <strong>Instant Processing:</strong> Automatic when payment confirmed</li>
+                        <li><span class="check">✓</span> <strong>Cross-Wallet:</strong> Works with Core, MetaMask, and other EIP-681 wallets</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IPFS Storage -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Decentralized Storage</div>
+                    <h2>IPFS Integration</h2>
+                    <p>All music and artwork stored on IPFS for permanent decentralized access:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Audio Files:</strong> All track audio uploaded to IPFS</li>
+                        <li><span class="check">✓</span> <strong>Track Images:</strong> Album artwork for each track</li>
+                        <li><span class="check">✓</span> <strong>Cover Artwork:</strong> Project cover image</li>
+                        <li><span class="check">✓</span> <strong>Metadata JSON:</strong> All metadata with CID references</li>
+                        <li><span class="check">✓</span> <strong>Gateway URLs:</strong> HTTP access via IPFS gateways</li>
+                        <li><span class="check">✓</span> <strong>Permanent Storage:</strong> Content-addressed, immutable</li>
+                        <li><span class="check">✓</span> <strong>Decentralized:</strong> No single point of failure</li>
+                        <li><span class="check">✓</span> <strong>Progress Tracking:</strong> Real-time upload progress display</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📦</span>
+                            <p>IPFS upload progress with CID display</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pro Tips -->
+            <div class="ai-local-banner" data-animate style="margin-top: 80px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Blockchain Best Practices</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Backup Wallet:</strong> Write down your seed phrase and store it safely</li>
+                            <li>• <strong>Test First:</strong> Use testnet before mainnet to understand the process</li>
+                            <li>• <strong>Co-Creator Shares:</strong> Clearly define ownership % before minting (immutable after)</li>
+                            <li>• <strong>Quality Matters:</strong> Only mint your best work - blockchain is permanent</li>
+                            <li>• <strong>Complete Metadata:</strong> Fill out all fields for better marketplace visibility</li>
+                            <li>• <strong>Track Images:</strong> Add artwork to all tracks before minting</li>
+                            <li>• <strong>License Strategy:</strong> Offer multiple license types at different price points</li>
+                            <li>• <strong>Gas Awareness:</strong> Minting costs gas - batch operations when possible</li>
+                            <li>• <strong>Verify Transactions:</strong> Check transaction hash on block explorer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

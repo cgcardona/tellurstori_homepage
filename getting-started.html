@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Getting Started with Stori - Complete setup and first project guide">
+    <title>Getting Started - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Content -->
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <!-- Header -->
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Getting Started with Stori</h1>
+                <p class="section-subtitle">Your complete guide to setting up Stori and creating your first project</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="value-grid" style="margin-bottom: 60px;">
+                <a href="interface-overview.html" class="value-card" style="text-decoration: none;">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🖥️</span>
+                    </div>
+                    <h3>Interface Overview</h3>
+                    <p>Learn the main window layout and UI elements</p>
+                </a>
+                <a href="keyboard-shortcuts.html" class="value-card" style="text-decoration: none;">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">⌨️</span>
+                    </div>
+                    <h3>Keyboard Shortcuts</h3>
+                    <p>Master the shortcuts for faster workflow</p>
+                </a>
+                <a href="mixer.html" class="value-card" style="text-decoration: none;">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🎚️</span>
+                    </div>
+                    <h3>Mixer & Effects</h3>
+                    <p>Professional mixing and 8 studio effects</p>
+                </a>
+                <a href="troubleshooting.html" class="value-card" style="text-decoration: none;">
+                    <div class="value-icon-wrapper">
+                        <span class="value-icon">🔧</span>
+                    </div>
+                    <h3>Troubleshooting</h3>
+                    <p>Solutions to common issues</p>
+                </a>
+            </div>
+
+            <!-- System Requirements -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">System Requirements</div>
+                    <h2>What You Need</h2>
+                    <p>Stori is a native macOS application. Here's what you need to run it:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>macOS 14+</strong> (Sonoma or later)</li>
+                        <li><span class="check">✓</span> <strong>Mac computer</strong> (Intel or Apple Silicon)</li>
+                        <li><span class="check">✓</span> <strong>16GB RAM</strong> (recommended, 8GB minimum for basic features)</li>
+                        <li><span class="check">✓</span> <strong>2GB free disk space</strong> (for app and projects)</li>
+                        <li><span class="check">✓</span> <strong>Audio interface</strong> (optional, for recording)</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🍎</span>
+                            <p>Built natively for macOS with < 10ms audio latency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Installation -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">⬇️</span>
+                            <p>Download the DMG and drag to Applications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Installation</div>
+                    <h2>Install Stori</h2>
+                    <p>Installing Stori is simple and straightforward:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Step 1:</strong> Download the DMG file from our website</li>
+                        <li><span class="check">✓</span> <strong>Step 2:</strong> Open the DMG and drag Stori to Applications</li>
+                        <li><span class="check">✓</span> <strong>Step 3:</strong> Launch Stori from Applications or Spotlight</li>
+                        <li><span class="check">✓</span> <strong>Step 4:</strong> Grant permissions for microphone and file access when prompted</li>
+                    </ul>
+                    <div class="ai-local-banner" style="margin-top: 20px;">
+                        <div class="banner-content">
+                            <div class="banner-icon">⚠️</div>
+                            <div class="banner-text">
+                                <h4>First Launch Security</h4>
+                                <p>On first launch, you may see a security warning. Right-click Stori in Applications → Open → Confirm to bypass Gatekeeper.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First Launch -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">First Launch</div>
+                    <h2>Explore the Interface</h2>
+                    <p>When you launch Stori for the first time, you'll see the main DAW interface. Take a moment to explore:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Timeline:</strong> The main workspace for arranging your music</li>
+                        <li><span class="check">✓</span> <strong>Track Headers:</strong> Controls for each track on the left</li>
+                        <li><span class="check">✓</span> <strong>Inspector:</strong> Details panel on the right (toggle with ⌘I)</li>
+                        <li><span class="check">✓</span> <strong>Mixer:</strong> Professional mixing console (toggle with ⌘M)</li>
+                        <li><span class="check">✓</span> <strong>Transport:</strong> Play, stop, record controls at the bottom</li>
+                    </ul>
+                    <p style="margin-top: 20px; font-size: 0.95rem; color: var(--color-text-secondary);">
+                        <strong>Tip:</strong> Press ⌘/ to see all available keyboard shortcuts at any time.
+                    </p>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎛️</span>
+                            <p>Main DAW interface with timeline and mixer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Your First Project -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎵</span>
+                            <p>Timeline view with tracks and regions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Your First Project</div>
+                    <h2>Create Your First Song</h2>
+                    <p>Let's create a simple song with MIDI instruments:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">1</span> <strong>Create Project:</strong> Click "New" in the toolbar or press ⌘N</li>
+                        <li><span class="check">2</span> <strong>Add MIDI Track:</strong> Press ⌘⇧M to add a MIDI track</li>
+                        <li><span class="check">3</span> <strong>Choose Instrument:</strong> Select from 128 GM instruments</li>
+                        <li><span class="check">4</span> <strong>Open Piano Roll:</strong> Double-click the track or press ⌘⌥P</li>
+                        <li><span class="check">5</span> <strong>Draw Notes:</strong> Click to add notes in the piano roll</li>
+                        <li><span class="check">6</span> <strong>Play:</strong> Press Space to hear your creation</li>
+                        <li><span class="check">7</span> <strong>Save:</strong> Press ⌘S to save your project</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Tips -->
+            <div class="ai-local-banner" data-animate style="margin-top: 60px;">
+                <div class="banner-content">
+                    <div class="banner-icon">💡</div>
+                    <div class="banner-text">
+                        <h3>Quick Tips for Beginners</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Space bar</strong> to play/pause - your most-used shortcut</li>
+                            <li>• <strong>⌘S</strong> to save often - projects auto-bundle all files</li>
+                            <li>• <strong>⌘Z</strong> to undo - experiment fearlessly!</li>
+                            <li>• <strong>Drag regions</strong> around the timeline to arrange your song</li>
+                            <li>• <strong>Use the Virtual Keyboard</strong> (⌘K) to play instruments with your computer keyboard</li>
+                            <li>• <strong>Try the Step Sequencer</strong> for quick drum patterns (300+ presets!)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Workflows -->
+            <div style="margin-top: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">Common Workflows</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category">
+                        <h4>🎵 Audio Production</h4>
+                        <ul>
+                            <li>Import audio files (drag & drop)</li>
+                            <li>Record from microphone/interface</li>
+                            <li>Apply effects (reverb, delay, EQ)</li>
+                            <li>Mix with professional mixer</li>
+                            <li>Export final mix as WAV</li>
+                            <li>Arrange on multi-track timeline</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🎹 MIDI Composition</h4>
+                        <ul>
+                            <li>Create MIDI tracks (⌘⇧M)</li>
+                            <li>Choose from 128 GM instruments</li>
+                            <li>Draw notes in Piano Roll (⌘⌥P)</li>
+                            <li>Or use Score notation view</li>
+                            <li>Play with Virtual Keyboard (⌘⇧K)</li>
+                            <li>Bounce to audio for mixing</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🥁 Beat Making</h4>
+                        <ul>
+                            <li>Open Step Sequencer</li>
+                            <li>Choose from 300+ drum patterns</li>
+                            <li>Edit 16-step grid with real samples</li>
+                            <li>Adjust swing and velocity</li>
+                            <li>Export to timeline</li>
+                            <li>Layer with other tracks</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🎤 Recording</h4>
+                        <ul>
+                            <li>Create audio track</li>
+                            <li>Arm for recording (red button)</li>
+                            <li>Press record in transport</li>
+                            <li>Speak/sing into microphone</li>
+                            <li>Press record again to stop</li>
+                            <li>Region appears on timeline</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>🎨 Album Artwork</h4>
+                        <ul>
+                            <li>Go to Inspector → Visual tab</li>
+                            <li>Enter image prompt</li>
+                            <li>Click "Enhance Prompt" (optional)</li>
+                            <li>Generate 1024x1024 artwork</li>
+                            <li>Set as track image</li>
+                            <li>Included in NFT minting</li>
+                        </ul>
+                    </div>
+                    <div class="instrument-category">
+                        <h4>⛓️ NFT Creation</h4>
+                        <ul>
+                            <li>Complete your project</li>
+                            <li>Add track images</li>
+                            <li>Connect wallet</li>
+                            <li>Tokenize project</li>
+                            <li>Upload to IPFS</li>
+                            <li>Mint Digital Master NFT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accessibility Features -->
+            <div style="margin-top: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">Accessibility Features</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Stori is designed to be accessible to all users. We support VoiceOver, keyboard navigation, and high contrast modes.
+                </p>
+                <div class="ai-grid">
+                    <div class="ai-card">
+                        <div class="ai-card-header">
+                            <span class="ai-icon">👁️</span>
+                            <h3>VoiceOver Support</h3>
+                        </div>
+                        <p>All UI elements are labeled for VoiceOver. Navigate with VO+arrows, interact with VO+Space. Regions announce their name, track, and duration.</p>
+                        <ul class="ai-features">
+                            <li>Complete UI labeling</li>
+                            <li>Track and region announcements</li>
+                            <li>Transport state feedback</li>
+                            <li>Effect parameter values</li>
+                        </ul>
+                    </div>
+                    <div class="ai-card">
+                        <div class="ai-card-header">
+                            <span class="ai-icon">⌨️</span>
+                            <h3>Keyboard Navigation</h3>
+                        </div>
+                        <p>Full keyboard control without requiring a mouse. Tab through controls, use arrow keys for lists, Enter/Space to activate.</p>
+                        <ul class="ai-features">
+                            <li>Tab navigation support</li>
+                            <li>Focus indicators</li>
+                            <li>Keyboard shortcuts</li>
+                            <li>Context menu access (fn+⌃+F2)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="ai-local-banner" data-animate style="margin-top: 60px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <h3>Next Steps</h3>
+                        <p style="margin-top: 12px;">
+                            <a href="interface-overview.html" style="color: var(--color-primary-light); text-decoration: underline;">Learn the interface</a> • 
+                            <a href="timeline-editing.html" style="color: var(--color-primary-light); text-decoration: underline;">Master timeline editing</a> • 
+                            <a href="ai-generation.html" style="color: var(--color-primary-light); text-decoration: underline;">Explore AI generation</a> • 
+                            <a href="keyboard-shortcuts.html" style="color: var(--color-primary-light); text-decoration: underline;">Learn shortcuts</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

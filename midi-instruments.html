@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete MIDI guide for Stori - 128 GM instruments, Piano Roll, Score notation, Synthesizer, Virtual Keyboard">
+    <title>MIDI & Instruments - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">MIDI & Virtual Instruments</h1>
+                <p class="section-subtitle">Complete guide to MIDI workflow, 128 GM instruments, Piano Roll, Score notation, and Synthesizer</p>
+            </div>
+
+            <!-- MIDI Basics -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">MIDI Basics</div>
+                    <h2>Understanding MIDI</h2>
+                    <p>MIDI (Musical Instrument Digital Interface) is a protocol for recording and playing musical notes and performance data:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Not Audio:</strong> MIDI is instructions, not sound waves</li>
+                        <li><span class="check">✓</span> <strong>Note Data:</strong> Which notes to play, when, and how loud</li>
+                        <li><span class="check">✓</span> <strong>Small Files:</strong> Much smaller than audio recordings</li>
+                        <li><span class="check">✓</span> <strong>Editable:</strong> Change notes, timing, instrument after recording</li>
+                        <li><span class="check">✓</span> <strong>Flexible:</strong> Same MIDI can play different instruments</li>
+                        <li><span class="check">✓</span> <strong>Precise:</strong> Perfect timing and pitch control</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎹</span>
+                            <p>MIDI notes in Piano Roll editor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creating MIDI Tracks -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">➕</span>
+                            <p>Creating new MIDI track</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">MIDI Tracks</div>
+                    <h2>Creating MIDI Tracks</h2>
+                    <p>MIDI tracks hold note data and route to virtual instruments:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Create Track:</strong> Track menu → New MIDI Track (⌘⇧M)</li>
+                        <li><span class="check">✓</span> <strong>Choose Instrument:</strong> Select from 128 GM instruments in Library</li>
+                        <li><span class="check">✓</span> <strong>Record MIDI:</strong> Use Virtual Keyboard or external MIDI controller</li>
+                        <li><span class="check">✓</span> <strong>Edit Notes:</strong> Open Piano Roll (⌘⌥P) for precise editing</li>
+                        <li><span class="check">✓</span> <strong>Bounce to Audio:</strong> Right-click region → "Bounce to Audio"</li>
+                        <li><span class="check">✓</span> <strong>Multiple Tracks:</strong> Layer different instruments</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 128 GM Instruments -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎻 128 General MIDI Instruments</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Stori includes the complete General MIDI instrument set with professional SoundFont samples across 16 categories:
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Piano (1-8)</h4>
+                        <ul>
+                            <li>Acoustic Grand Piano</li>
+                            <li>Bright Acoustic Piano</li>
+                            <li>Electric Grand Piano</li>
+                            <li>Honky-tonk Piano</li>
+                            <li>Electric Piano 1 & 2</li>
+                            <li>Harpsichord</li>
+                            <li>Clavinet</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🔔 Chromatic Percussion (9-16)</h4>
+                        <ul>
+                            <li>Celesta</li>
+                            <li>Glockenspiel</li>
+                            <li>Music Box</li>
+                            <li>Vibraphone</li>
+                            <li>Marimba</li>
+                            <li>Xylophone</li>
+                            <li>Tubular Bells</li>
+                            <li>Dulcimer</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎺 Organ (17-24)</h4>
+                        <ul>
+                            <li>Drawbar Organ</li>
+                            <li>Percussive Organ</li>
+                            <li>Rock Organ</li>
+                            <li>Church Organ</li>
+                            <li>Reed Organ</li>
+                            <li>Accordion</li>
+                            <li>Harmonica</li>
+                            <li>Tango Accordion</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎸 Guitar (25-32)</h4>
+                        <ul>
+                            <li>Acoustic Guitar (nylon)</li>
+                            <li>Acoustic Guitar (steel)</li>
+                            <li>Electric Guitar (jazz)</li>
+                            <li>Electric Guitar (clean)</li>
+                            <li>Electric Guitar (muted)</li>
+                            <li>Overdriven Guitar</li>
+                            <li>Distortion Guitar</li>
+                            <li>Guitar Harmonics</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎸 Bass (33-40)</h4>
+                        <ul>
+                            <li>Acoustic Bass</li>
+                            <li>Electric Bass (finger)</li>
+                            <li>Electric Bass (pick)</li>
+                            <li>Fretless Bass</li>
+                            <li>Slap Bass 1 & 2</li>
+                            <li>Synth Bass 1 & 2</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎻 Strings (41-48)</h4>
+                        <ul>
+                            <li>Violin</li>
+                            <li>Viola</li>
+                            <li>Cello</li>
+                            <li>Contrabass</li>
+                            <li>Tremolo Strings</li>
+                            <li>Pizzicato Strings</li>
+                            <li>Orchestral Harp</li>
+                            <li>Timpani</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎼 Ensemble (49-56)</h4>
+                        <ul>
+                            <li>String Ensemble 1 & 2</li>
+                            <li>Synth Strings 1 & 2</li>
+                            <li>Choir Aahs</li>
+                            <li>Voice Oohs</li>
+                            <li>Synth Voice</li>
+                            <li>Orchestra Hit</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎺 Brass (57-64)</h4>
+                        <ul>
+                            <li>Trumpet</li>
+                            <li>Trombone</li>
+                            <li>Tuba</li>
+                            <li>Muted Trumpet</li>
+                            <li>French Horn</li>
+                            <li>Brass Section</li>
+                            <li>Synth Brass 1 & 2</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎷 Reed (65-72)</h4>
+                        <ul>
+                            <li>Soprano Sax</li>
+                            <li>Alto Sax</li>
+                            <li>Tenor Sax</li>
+                            <li>Baritone Sax</li>
+                            <li>Oboe</li>
+                            <li>English Horn</li>
+                            <li>Bassoon</li>
+                            <li>Clarinet</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📯 Pipe (73-80)</h4>
+                        <ul>
+                            <li>Piccolo</li>
+                            <li>Flute</li>
+                            <li>Recorder</li>
+                            <li>Pan Flute</li>
+                            <li>Blown Bottle</li>
+                            <li>Shakuhachi</li>
+                            <li>Whistle</li>
+                            <li>Ocarina</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Synth Lead (81-88)</h4>
+                        <ul>
+                            <li>Lead 1 (square)</li>
+                            <li>Lead 2 (sawtooth)</li>
+                            <li>Lead 3 (calliope)</li>
+                            <li>Lead 4 (chiff)</li>
+                            <li>Lead 5 (charang)</li>
+                            <li>Lead 6 (voice)</li>
+                            <li>Lead 7 (fifths)</li>
+                            <li>Lead 8 (bass + lead)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🌊 Synth Pad (89-96)</h4>
+                        <ul>
+                            <li>Pad 1 (new age)</li>
+                            <li>Pad 2 (warm)</li>
+                            <li>Pad 3 (polysynth)</li>
+                            <li>Pad 4 (choir)</li>
+                            <li>Pad 5 (bowed)</li>
+                            <li>Pad 6 (metallic)</li>
+                            <li>Pad 7 (halo)</li>
+                            <li>Pad 8 (sweep)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>✨ Synth Effects (97-104)</h4>
+                        <ul>
+                            <li>FX 1 (rain)</li>
+                            <li>FX 2 (soundtrack)</li>
+                            <li>FX 3 (crystal)</li>
+                            <li>FX 4 (atmosphere)</li>
+                            <li>FX 5 (brightness)</li>
+                            <li>FX 6 (goblins)</li>
+                            <li>FX 7 (echoes)</li>
+                            <li>FX 8 (sci-fi)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🌍 Ethnic (105-112)</h4>
+                        <ul>
+                            <li>Sitar</li>
+                            <li>Banjo</li>
+                            <li>Shamisen</li>
+                            <li>Koto</li>
+                            <li>Kalimba</li>
+                            <li>Bagpipe</li>
+                            <li>Fiddle</li>
+                            <li>Shanai</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🔔 Percussive (113-120)</h4>
+                        <ul>
+                            <li>Tinkle Bell</li>
+                            <li>Agogo</li>
+                            <li>Steel Drums</li>
+                            <li>Woodblock</li>
+                            <li>Taiko Drum</li>
+                            <li>Melodic Tom</li>
+                            <li>Synth Drum</li>
+                            <li>Reverse Cymbal</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Sound Effects (121-128)</h4>
+                        <ul>
+                            <li>Guitar Fret Noise</li>
+                            <li>Breath Noise</li>
+                            <li>Seashore</li>
+                            <li>Bird Tweet</li>
+                            <li>Telephone Ring</li>
+                            <li>Helicopter</li>
+                            <li>Applause</li>
+                            <li>Gunshot</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Using SoundFonts -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">SoundFont Workflow</div>
+                    <h2>Using GM Instruments</h2>
+                    <p>Complete workflow for playing General MIDI instruments:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Create MIDI Track:</strong> Track menu → New MIDI Track (⌘⇧M)</li>
+                        <li><span class="check">✓</span> <strong>Open Library:</strong> Library Panel → Instruments tab</li>
+                        <li><span class="check">✓</span> <strong>Browse Categories:</strong> Click category to expand (Piano, Strings, etc.)</li>
+                        <li><span class="check">✓</span> <strong>Select Instrument:</strong> Click instrument to assign to track</li>
+                        <li><span class="check">✓</span> <strong>Play with Virtual Keyboard:</strong> Open Virtual Keyboard (⌘⇧K)</li>
+                        <li><span class="check">✓</span> <strong>Record MIDI:</strong> Arm track, press record, play notes</li>
+                        <li><span class="check">✓</span> <strong>Switch Instruments:</strong> Change instrument without creating new track</li>
+                        <li><span class="check">✓</span> <strong>Professional Samples:</strong> High-quality SoundFont playback</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📚</span>
+                            <p>Library panel with 128 GM instruments organized by category</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Piano Roll & Score -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎼 Piano Roll & Score Editor</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Professional MIDI note editing with dual view modes - Piano Roll grid or traditional Score notation:
+                </p>
+
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎹</span>
+                            <h3>Piano Roll View</h3>
+                        </div>
+                        <p>Traditional grid-based note editing with piano keyboard on left. Best for precise timing and modern music production.</p>
+                        <ul class="ai-features">
+                            <li>Piano keyboard reference</li>
+                            <li>Grid-based note placement</li>
+                            <li>Velocity lane at bottom</li>
+                            <li>Scale highlighting (14 scales)</li>
+                            <li>Snap to grid (11 resolutions)</li>
+                            <li>Real-time note preview</li>
+                            <li>Select, Draw, Erase, Slice modes</li>
+                            <li>Multi-note editing</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎼</span>
+                            <h3>Score View</h3>
+                        </div>
+                        <p>Traditional musical staff notation with proper clefs, note heads, stems, and beams. Best for reading and printing sheet music.</p>
+                        <ul class="ai-features">
+                            <li>Treble and bass clefs</li>
+                            <li>Proper note heads (whole, half, quarter)</li>
+                            <li>Stems and beams</li>
+                            <li>Accidentals (sharps/flats)</li>
+                            <li>Time signatures</li>
+                            <li>Key signatures</li>
+                            <li>Professional engraving</li>
+                            <li>Print-ready output</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Piano Roll Features -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📝</span>
+                            <p>Piano Roll with notes, velocity lane, and edit tools</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Piano Roll</div>
+                    <h2>Note Editing Tools</h2>
+                    <p>Comprehensive note editing capabilities:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Select Mode:</strong> Click notes to select, drag to move</li>
+                        <li><span class="check">✓</span> <strong>Draw Mode:</strong> Click to add notes at cursor</li>
+                        <li><span class="check">✓</span> <strong>Erase Mode:</strong> Click notes to delete</li>
+                        <li><span class="check">✓</span> <strong>Slice Mode:</strong> Cut notes into smaller durations</li>
+                        <li><span class="check">✓</span> <strong>Velocity Mode:</strong> Adjust note loudness in velocity lane</li>
+                        <li><span class="check">✓</span> <strong>Snap to Grid:</strong> 11 resolutions from whole notes to 1/64</li>
+                        <li><span class="check">✓</span> <strong>Scale Highlighting:</strong> Show only notes in selected scale</li>
+                        <li><span class="check">✓</span> <strong>Real-Time Preview:</strong> Hear notes as you edit</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Synthesizer -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">16-Voice Synthesizer</div>
+                    <h2>Built-In Polyphonic Synth</h2>
+                    <p>Professional synthesizer with real-time parameter control:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Open Synth:</strong> MIDI menu → Synthesizer (⌘⌥I)</li>
+                        <li><span class="check">✓</span> <strong>16 Voices:</strong> Play up to 16 notes simultaneously</li>
+                        <li><span class="check">✓</span> <strong>ADSR Envelope:</strong> Attack, Decay, Sustain, Release controls</li>
+                        <li><span class="check">✓</span> <strong>5 Factory Presets:</strong> Init, Bright Lead, Warm Pad, Deep Bass, Plucky Synth</li>
+                        <li><span class="check">✓</span> <strong>Slider Interface:</strong> Easy-to-use slider controls</li>
+                        <li><span class="check">✓</span> <strong>Mini Keyboard:</strong> 3-octave keyboard for testing sounds</li>
+                        <li><span class="check">✓</span> <strong>Per-Track Instances:</strong> Each MIDI track can have its own synth</li>
+                        <li><span class="check">✓</span> <strong>Real-Time:</strong> Adjust parameters while playing</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎛️</span>
+                            <p>16-voice polyphonic synthesizer with ADSR and presets</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virtual Keyboard -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🎮</span>
+                            <p>Virtual Keyboard for playing instruments with computer keyboard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Virtual Keyboard</div>
+                    <h2>Play with Computer Keyboard</h2>
+                    <p>Turn your QWERTY keyboard into a musical instrument:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Open Keyboard:</strong> MIDI menu → Virtual Keyboard (⌘⇧K)</li>
+                        <li><span class="check">✓</span> <strong>Play Notes:</strong> ASDFGHJKL keys = white keys, WETYUOP = black keys</li>
+                        <li><span class="check">✓</span> <strong>Octave Control:</strong> Z = down octave, X = up octave</li>
+                        <li><span class="check">✓</span> <strong>Velocity Control:</strong> C = softer, V = louder</li>
+                        <li><span class="check">✓</span> <strong>Sustain Pedal:</strong> Space bar holds notes</li>
+                        <li><span class="check">✓</span> <strong>Auto-Routing:</strong> Notes go to selected track's instrument</li>
+                        <li><span class="check">✓</span> <strong>MIDI Recording:</strong> Arm track to record played notes</li>
+                        <li><span class="check">✓</span> <strong>Real-Time:</strong> Zero-latency playback</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bounce to Audio -->
+            <div class="ai-local-banner" data-animate style="margin-top: 80px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>MIDI Workflow Tips</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Bounce to Audio:</strong> Right-click MIDI region → "Bounce to Audio" to render MIDI as audio file</li>
+                            <li>• <strong>Non-Destructive:</strong> Original MIDI region remains intact, audio is separate</li>
+                            <li>• <strong>Effects on Audio:</strong> Once bounced, you can apply audio effects like reverb/delay</li>
+                            <li>• <strong>CPU Savings:</strong> Bounced audio uses less CPU than real-time MIDI playback</li>
+                            <li>• <strong>Quantize Notes:</strong> Use quantize to snap notes to perfect timing</li>
+                            <li>• <strong>Velocity Humanization:</strong> Vary note velocities for more natural sound</li>
+                            <li>• <strong>Layer Instruments:</strong> Create multiple MIDI tracks with different instruments for rich textures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

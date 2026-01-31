@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Troubleshooting guide for Stori - solutions to common issues and problems">
+    <title>Troubleshooting - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation</span>
+                <h1 class="section-title">Troubleshooting</h1>
+                <p class="section-subtitle">Solutions to common issues and problems</p>
+            </div>
+
+            <!-- Quick Fixes -->
+            <div class="ai-local-banner" data-animate style="margin-bottom: 60px;">
+                <div class="banner-content">
+                    <div class="banner-icon">⚡</div>
+                    <div class="banner-text">
+                        <h3>Try These First (90% of Issues)</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Restart Stori:</strong> Quit completely (⌘Q) and relaunch</li>
+                            <li>• <strong>Check AI Services:</strong> ⌘⇧M to verify all services are green</li>
+                            <li>• <strong>Restart Services:</strong> Stop All → Start All in service panel</li>
+                            <li>• <strong>Check Permissions:</strong> System Settings → Privacy for mic/file access</li>
+                            <li>• <strong>Update macOS:</strong> Ensure you're on macOS 14+ (Sonoma or later)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Issues -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🔊 Audio Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ No Sound During Playback</h4>
+                        <ul>
+                            <li><strong>Check Volume:</strong> Master fader and track faders up?</li>
+                            <li><strong>Check Mute:</strong> Ensure tracks not muted (M button off)</li>
+                            <li><strong>Check Solo:</strong> Solo mode isolates specific tracks</li>
+                            <li><strong>Check Output:</strong> System Settings → Sound → Output device</li>
+                            <li><strong>Check Levels:</strong> Look at meters - signal present?</li>
+                            <li><strong>Restart Audio:</strong> Quit and relaunch Stori</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Crackling or Glitches</h4>
+                        <ul>
+                            <li><strong>Check CPU:</strong> Look at CPU meter in toolbar</li>
+                            <li><strong>Increase Buffer:</strong> Higher buffer = less glitches</li>
+                            <li><strong>Close Apps:</strong> Quit other audio applications</li>
+                            <li><strong>Bounce Tracks:</strong> Render MIDI to audio to save CPU</li>
+                            <li><strong>Freeze Effects:</strong> Disable effects temporarily</li>
+                            <li><strong>Restart Mac:</strong> Clear system audio state</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Latency/Delay</h4>
+                        <ul>
+                            <li><strong>Lower Buffer Size:</strong> 128 or 64 samples</li>
+                            <li><strong>Use Interface:</strong> External audio interface better than built-in</li>
+                            <li><strong>Close Background:</strong> Quit CPU-heavy apps</li>
+                            <li><strong>Check Bluetooth:</strong> Bluetooth adds latency - use wired</li>
+                            <li><strong>Disable Effects:</strong> Effects add processing time</li>
+                            <li><strong>Sample Rate:</strong> Match interface to project (44.1kHz)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Distortion/Clipping</h4>
+                        <ul>
+                            <li><strong>Check Meters:</strong> Are they hitting red?</li>
+                            <li><strong>Lower Faders:</strong> Reduce track and master volume</li>
+                            <li><strong>Check Gain:</strong> Lower region gain in Inspector</li>
+                            <li><strong>Remove Effects:</strong> Distortion/compression adding gain?</li>
+                            <li><strong>Headroom:</strong> Keep peaks at -6dB to -3dB</li>
+                            <li><strong>Master Limiter:</strong> Add limiter to prevent clipping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Generation Issues -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🤖 AI Generation Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Generation Fails</h4>
+                        <ul>
+                            <li><strong>Check Services:</strong> ⌘⇧M - all indicators green?</li>
+                            <li><strong>Restart Services:</strong> Stop All → Start All</li>
+                            <li><strong>Check RAM:</strong> Need 16GB for AI models</li>
+                            <li><strong>Close Apps:</strong> Free up memory</li>
+                            <li><strong>Check Disk:</strong> 10GB free space required</li>
+                            <li><strong>Check Internet:</strong> First run downloads models</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Services Won't Start</h4>
+                        <ul>
+                            <li><strong>Port Conflicts:</strong> Other apps using ports 10000-10002?</li>
+                            <li><strong>Check Terminal:</strong> Look for error messages</li>
+                            <li><strong>Python Version:</strong> Need Python 3.11+</li>
+                            <li><strong>Dependencies:</strong> Run setup script again</li>
+                            <li><strong>Permissions:</strong> Grant file access in System Settings</li>
+                            <li><strong>Logs:</strong> Check service logs for errors</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Slow Generation</h4>
+                        <ul>
+                            <li><strong>First Run:</strong> Initial model download takes time</li>
+                            <li><strong>Model Loading:</strong> First generation loads model (~10-15s)</li>
+                            <li><strong>Expected Time:</strong> 30-60s for 30-second clips normal</li>
+                            <li><strong>CPU Throttling:</strong> Check Activity Monitor</li>
+                            <li><strong>Background Tasks:</strong> Close heavy applications</li>
+                            <li><strong>Use Smaller Model:</strong> Faster but lower quality</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Poor Quality Results</h4>
+                        <ul>
+                            <li><strong>Improve Prompt:</strong> Be more specific and detailed</li>
+                            <li><strong>Use Enhancement:</strong> Click "Enhance Prompt" button</li>
+                            <li><strong>Generate Multiple:</strong> Try 3-5 variations</li>
+                            <li><strong>Adjust Temperature:</strong> Lower for consistency</li>
+                            <li><strong>Try Different Model:</strong> Medium vs small/large</li>
+                            <li><strong>30 Seconds:</strong> Sweet spot for quality</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blockchain Issues -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">⛓️ Blockchain & Wallet Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Wallet Won't Connect</h4>
+                        <ul>
+                            <li><strong>Core Installed?</strong> Download from core.app</li>
+                            <li><strong>Wallet Unlocked?</strong> Unlock Core wallet</li>
+                            <li><strong>Network Added?</strong> Add TellUrStori L1 (Chain ID 507)</li>
+                            <li><strong>Grant Permission:</strong> Approve connection in Core</li>
+                            <li><strong>Restart Both:</strong> Quit Stori and Core, relaunch</li>
+                            <li><strong>Check Browser:</strong> Some wallets need browser open</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Transaction Failed</h4>
+                        <ul>
+                            <li><strong>Insufficient Funds:</strong> Need TUS for gas + payment</li>
+                            <li><strong>Gas Too Low:</strong> Increase gas limit</li>
+                            <li><strong>Network Congestion:</strong> Wait and try again</li>
+                            <li><strong>Rejected in Wallet:</strong> Approve in Core popup</li>
+                            <li><strong>Check Balance:</strong> Verify wallet has enough TUS</li>
+                            <li><strong>Block Explorer:</strong> Check transaction status</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ IPFS Upload Fails</h4>
+                        <ul>
+                            <li><strong>File Size:</strong> Check if files too large (500MB limit)</li>
+                            <li><strong>Internet:</strong> Stable connection required</li>
+                            <li><strong>IPFS Daemon:</strong> Local daemon running? (optional)</li>
+                            <li><strong>Timeout:</strong> Large files take longer</li>
+                            <li><strong>Retry Upload:</strong> Click retry button</li>
+                            <li><strong>Check Logs:</strong> Review upload progress details</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ NFT Not Appearing</h4>
+                        <ul>
+                            <li><strong>Wait for Confirmation:</strong> Takes 1-5 seconds</li>
+                            <li><strong>Refresh View:</strong> Close and reopen marketplace</li>
+                            <li><strong>Check Wallet:</strong> Verify transaction in Core</li>
+                            <li><strong>Block Explorer:</strong> Confirm on blockchain</li>
+                            <li><strong>Indexer Delay:</strong> GraphQL indexer may lag slightly</li>
+                            <li><strong>Restart Stori:</strong> Force refresh data</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Performance Issues -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">⚡ Performance Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ App Slow or Laggy</h4>
+                        <ul>
+                            <li><strong>Too Many Tracks:</strong> Limit to 8-16 for smooth performance</li>
+                            <li><strong>Too Many Effects:</strong> Each effect uses CPU</li>
+                            <li><strong>Bounce MIDI:</strong> Convert to audio to save CPU</li>
+                            <li><strong>Close Other Apps:</strong> Free system resources</li>
+                            <li><strong>Check Activity Monitor:</strong> Look for memory/CPU hogs</li>
+                            <li><strong>Restart Mac:</strong> Clear system caches</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ High CPU Usage</h4>
+                        <ul>
+                            <li><strong>Check CPU Meter:</strong> Toolbar shows current load</li>
+                            <li><strong>Bypass Effects:</strong> Disable effects temporarily</li>
+                            <li><strong>Increase Buffer:</strong> 256 or 512 samples</li>
+                            <li><strong>Reduce Track Count:</strong> Fewer simultaneous tracks</li>
+                            <li><strong>Close Background:</strong> Quit Safari, Chrome, etc.</li>
+                            <li><strong>Sample Rate:</strong> Use 44.1kHz not 96kHz</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ App Crashes</h4>
+                        <ul>
+                            <li><strong>Update macOS:</strong> Ensure latest OS version</li>
+                            <li><strong>Update Stori:</strong> Check for app updates</li>
+                            <li><strong>Check RAM:</strong> 16GB recommended minimum</li>
+                            <li><strong>Disk Space:</strong> Need 10GB+ free</li>
+                            <li><strong>Corrupted Project:</strong> Try opening different project</li>
+                            <li><strong>Report Issue:</strong> Help menu → Report Issue</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Memory Issues</h4>
+                        <ul>
+                            <li><strong>Close Projects:</strong> Open fewer projects simultaneously</li>
+                            <li><strong>Clear Cache:</strong> Delete temp files</li>
+                            <li><strong>Quit Services:</strong> Stop AI services when not needed</li>
+                            <li><strong>Compress Audio:</strong> Use lower sample rates</li>
+                            <li><strong>Monitor RAM:</strong> Activity Monitor → Memory tab</li>
+                            <li><strong>Upgrade RAM:</strong> Consider 32GB for heavy projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIDI & Instruments -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎹 MIDI & Instrument Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Virtual Keyboard Not Working</h4>
+                        <ul>
+                            <li><strong>Track Selected?</strong> Click MIDI track first</li>
+                            <li><strong>Instrument Assigned?</strong> Choose from Library</li>
+                            <li><strong>Not in Text Field:</strong> Press Escape to exit text input</li>
+                            <li><strong>Volume Up:</strong> Check track and master faders</li>
+                            <li><strong>Synth Panel:</strong> Try opening Synthesizer (⌘⌥I)</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Piano Roll Won't Open</h4>
+                        <ul>
+                            <li><strong>Select MIDI Region:</strong> Click MIDI region first</li>
+                            <li><strong>Right Track Type:</strong> Only works on MIDI tracks</li>
+                            <li><strong>Shortcut:</strong> Try ⌘⌥P</li>
+                            <li><strong>MIDI Menu:</strong> MIDI → Open Piano Roll</li>
+                            <li><strong>Restart Stori:</strong> If still not opening</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Instrument Won't Play</h4>
+                        <ul>
+                            <li><strong>Instrument Loaded?</strong> Check Library panel assignment</li>
+                            <li><strong>SoundFont Available?</strong> Verify SoundFont installed</li>
+                            <li><strong>Track Armed?</strong> Try disarming and re-arming</li>
+                            <li><strong>MIDI Data Present?</strong> Notes visible in Piano Roll?</li>
+                            <li><strong>Synth On?</strong> Check synth panel enabled</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Step Sequencer Silent</h4>
+                        <ul>
+                            <li><strong>Steps Active?</strong> Click pads to activate them</li>
+                            <li><strong>Transport Playing?</strong> Press Space to start</li>
+                            <li><strong>Volume:</strong> Check sequencer master volume</li>
+                            <li><strong>Drum Kit:</strong> Verify drum samples loaded</li>
+                            <li><strong>Export First:</strong> Sequencer for editing, export to hear in context</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Issues -->
+            <div style="margin-bottom: 80px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">📁 Project & File Issues</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Project Won't Open</h4>
+                        <ul>
+                            <li><strong>File Corrupted:</strong> Try backup copy</li>
+                            <li><strong>Permissions:</strong> Check file permissions</li>
+                            <li><strong>Wrong Version:</strong> Project from newer Stori version?</li>
+                            <li><strong>Bundle Incomplete:</strong> Missing audio files?</li>
+                            <li><strong>Move to Desktop:</strong> Try opening from simpler path</li>
+                            <li><strong>Create New:</strong> Import audio into fresh project</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Can't Save Project</h4>
+                        <ul>
+                            <li><strong>Disk Full:</strong> Check available space</li>
+                            <li><strong>Permissions:</strong> Folder write permissions?</li>
+                            <li><strong>Read-Only:</strong> Project file locked?</li>
+                            <li><strong>Save As:</strong> Try saving to different location</li>
+                            <li><strong>Quit Apps:</strong> Close other apps using files</li>
+                            <li><strong>File Name:</strong> Avoid special characters</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Missing Audio Files</h4>
+                        <ul>
+                            <li><strong>Project Bundle:</strong> All files in .stori folder?</li>
+                            <li><strong>Moved Project:</strong> Keep bundle together</li>
+                            <li><strong>Relink Files:</strong> Right-click region → Relink</li>
+                            <li><strong>Check Trash:</strong> Audio files deleted?</li>
+                            <li><strong>Backup:</strong> Restore from Time Machine</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>❌ Export Fails</h4>
+                        <ul>
+                            <li><strong>Disk Space:</strong> Need space for export file</li>
+                            <li><strong>Permissions:</strong> Can write to destination?</li>
+                            <li><strong>File Name:</strong> Use valid filename</li>
+                            <li><strong>Format Support:</strong> WAV fully supported</li>
+                            <li><strong>Sample Rate:</strong> Match project settings</li>
+                            <li><strong>Try Desktop:</strong> Export to Desktop first</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Getting Help -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">❓</div>
+                    <div class="banner-text">
+                        <h3>Still Need Help?</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>AI Chat Assistant:</strong> Ask the chat bot - it knows Stori features!</li>
+                            <li>• <strong>Report Issue:</strong> Help menu → Report Issue (opens GitHub)</li>
+                            <li>• <strong>Check Logs:</strong> Service Diagnostics (⌘⇧D) shows detailed logs</li>
+                            <li>• <strong>Community:</strong> Join Discord/Twitter for community support</li>
+                            <li>• <strong>Email Support:</strong> support@tellurstori.com for urgent issues</li>
+                            <li>• <strong>Include Details:</strong> macOS version, Stori version, steps to reproduce</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- System Info -->
+            <div class="value-card" data-animate style="max-width: 900px; margin: 0 auto; padding: 32px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; text-align: center;">📊 Gathering System Information</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 20px;">
+                    When reporting issues, include this information:
+                </p>
+                <div class="tech-category" style="background: var(--color-bg); padding: 20px; border-radius: var(--radius-md);">
+                    <ul style="display: grid; gap: 12px; list-style: none; font-size: 0.9rem;">
+                        <li>• <strong>macOS Version:</strong>  → About This Mac</li>
+                        <li>• <strong>Stori Version:</strong> Shown in title bar and About window</li>
+                        <li>• <strong>Mac Model:</strong> M1, M2, M3, M4 - About This Mac → Chip</li>
+                        <li>• <strong>RAM Amount:</strong> About This Mac → Memory</li>
+                        <li>• <strong>Available Storage:</strong>  → About This Mac → Storage</li>
+                        <li>• <strong>Service Status:</strong> Screenshot from ⌘⇧D diagnostics</li>
+                        <li>• <strong>Error Messages:</strong> Copy exact text from alerts</li>
+                        <li>• <strong>Console Logs:</strong> Console.app → search "Stori"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

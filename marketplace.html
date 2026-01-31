@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NFT Marketplace guide for Stori - Browse, buy, and sell music NFTs with audio preview">
+    <title>NFT Marketplace - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation — Coming Soon</span>
+                <h1 class="section-title">NFT Marketplace</h1>
+                <p class="section-subtitle">Browse, buy, and sell music NFTs — available in a future update</p>
+            </div>
+            
+            <div class="ai-local-banner" style="margin-bottom: 48px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <h4>Coming in a Future Update</h4>
+                        <p>The NFT Marketplace is in development. The current v0.1.2 release focuses on professional DAW functionality. Check back for updates!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketplace Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Marketplace Basics</div>
+                    <h2>Buy & Sell Music NFTs</h2>
+                    <p>The Marketplace is a decentralized platform for trading music NFTs directly within Stori:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Browse NFTs:</strong> Explore music from creators worldwide</li>
+                        <li><span class="check">✓</span> <strong>Audio Preview:</strong> Listen before you buy via IPFS streaming</li>
+                        <li><span class="check">✓</span> <strong>Album Artwork:</strong> Full artwork display from IPFS</li>
+                        <li><span class="check">✓</span> <strong>Filtering:</strong> Search by genre, price, creator, license type</li>
+                        <li><span class="check">✓</span> <strong>Wallet Integration:</strong> Connect Core wallet for purchases</li>
+                        <li><span class="check">✓</span> <strong>My Collection:</strong> View and manage your owned NFTs</li>
+                        <li><span class="check">✓</span> <strong>Creator Dashboard:</strong> Track sales and royalties</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🏪</span>
+                            <p>Marketplace browse view with NFT cards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Browsing & Discovery -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🔍 Browsing & Discovery</h2>
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>📊 Browse Views</h4>
+                        <ul>
+                            <li><strong>Grid View</strong> - Card-based layout</li>
+                            <li><strong>List View</strong> - Detailed information</li>
+                            <li><strong>Featured</strong> - Curated selections</li>
+                            <li><strong>New Releases</strong> - Recently minted</li>
+                            <li><strong>Trending</strong> - Popular tracks</li>
+                            <li><strong>Top Sellers</strong> - Best-selling NFTs</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎨 Filters</h4>
+                        <ul>
+                            <li><strong>Genre</strong> - Electronic, Hip Hop, Rock, etc.</li>
+                            <li><strong>License Type</strong> - Ownership, Streaming, etc.</li>
+                            <li><strong>Price Range</strong> - Min/max TUS amount</li>
+                            <li><strong>Creator</strong> - Filter by specific artist</li>
+                            <li><strong>Date Listed</strong> - Recent or older</li>
+                            <li><strong>Audio Length</strong> - Duration filters</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🔎 Search</h4>
+                        <ul>
+                            <li><strong>Text Search</strong> - Search titles and descriptions</li>
+                            <li><strong>Tag Search</strong> - Search by tags</li>
+                            <li><strong>Creator Search</strong> - Find by wallet address</li>
+                            <li><strong>Token ID Search</strong> - Look up specific NFT</li>
+                            <li><strong>Real-Time Results</strong> - Instant filtering</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎵 Audio Preview</h4>
+                        <ul>
+                            <li><strong>Click to Play</strong> - Stream from IPFS</li>
+                            <li><strong>Play/Pause Control</strong> - Toggle playback</li>
+                            <li><strong>Waveform Display</strong> - Visual representation</li>
+                            <li><strong>Progress Bar</strong> - Track playback position</li>
+                            <li><strong>Volume Control</strong> - Adjust playback level</li>
+                            <li><strong>Auto-Cleanup</strong> - Stops when modal closed</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>📸 NFT Cards</h4>
+                        <ul>
+                            <li><strong>Album Artwork</strong> - From IPFS storage</li>
+                            <li><strong>Track Title</strong> - NFT name</li>
+                            <li><strong>Creator Name</strong> - Artist/wallet</li>
+                            <li><strong>Price</strong> - In TUS tokens</li>
+                            <li><strong>License Type Badge</strong> - Rights indicator</li>
+                            <li><strong>Play Button</strong> - Quick audio preview</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>ℹ️ Detail View</h4>
+                        <ul>
+                            <li><strong>Full Metadata</strong> - Complete information</li>
+                            <li><strong>Track Listing</strong> - All audio stems</li>
+                            <li><strong>Ownership Info</strong> - Co-creator shares</li>
+                            <li><strong>Transaction History</strong> - Sales record</li>
+                            <li><strong>IPFS Links</strong> - Content IDs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buying NFTs -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">💳</span>
+                            <p>Purchase flow with wallet confirmation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Buying NFTs</div>
+                    <h2>Purchase Workflow</h2>
+                    <p>Complete process for buying music NFTs:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">1</span> <strong>Connect Wallet:</strong> Ensure Core wallet is connected</li>
+                        <li><span class="check">2</span> <strong>Browse Marketplace:</strong> Find NFT you want to purchase</li>
+                        <li><span class="check">3</span> <strong>Preview Audio:</strong> Click play button to listen</li>
+                        <li><span class="check">4</span> <strong>Click Buy:</strong> Opens purchase confirmation modal</li>
+                        <li><span class="check">5</span> <strong>Review Details:</strong> Price, license type, creator info</li>
+                        <li><span class="check">6</span> <strong>Confirm Purchase:</strong> Approve transaction in wallet</li>
+                        <li><span class="check">7</span> <strong>Wait for Confirmation:</strong> Transaction processes (~1-2 seconds)</li>
+                        <li><span class="check">8</span> <strong>NFT Received:</strong> Appears in "My Collection" view</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Selling NFTs -->
+            <div class="feature-block feature-block-left" data-animate style="margin-top: 60px;">
+                <div class="feature-content">
+                    <div class="feature-tag">Creating Listings</div>
+                    <h2>Sell Your Music NFTs</h2>
+                    <p>Create listings to sell licenses from your Digital Masters:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>My Digital Masters:</strong> View → My Digital Masters tab</li>
+                        <li><span class="check">✓</span> <strong>Select Master:</strong> Click the Digital Master NFT you want to sell from</li>
+                        <li><span class="check">✓</span> <strong>Create License:</strong> Click "Create License" button</li>
+                        <li><span class="check">✓</span> <strong>Choose License Type:</strong> Select from 5 license types</li>
+                        <li><span class="check">✓</span> <strong>Set Price:</strong> Enter price in TUS tokens</li>
+                        <li><span class="check">✓</span> <strong>Set Quantity:</strong> How many licenses to mint</li>
+                        <li><span class="check">✓</span> <strong>Set Restrictions:</strong> Time limits, play limits, etc.</li>
+                        <li><span class="check">✓</span> <strong>Create Listing:</strong> Mint and list licenses on marketplace</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🏷️</span>
+                            <p>Create license listing interface</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My Collection -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">💼 Managing Your Collection</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">👑</span>
+                            <h3>My Digital Masters</h3>
+                        </div>
+                        <p>View and manage your original creations (ERC-721 NFTs):</p>
+                        <ul class="ai-features">
+                            <li>All minted Digital Masters</li>
+                            <li>Co-ownership displays</li>
+                            <li>Create license listings</li>
+                            <li>View sales history</li>
+                            <li>Track royalty earnings</li>
+                            <li>Transfer ownership</li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">💿</span>
+                            <h3>My Licenses</h3>
+                        </div>
+                        <p>View licenses you've purchased (ERC-1155 NFTs):</p>
+                        <ul class="ai-features">
+                            <li>All owned license NFTs</li>
+                            <li>Play/download based on rights</li>
+                            <li>Resell Full Ownership licenses</li>
+                            <li>View expiration dates</li>
+                            <li>Track remaining plays</li>
+                            <li>License details and restrictions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Feed -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">📊</span>
+                            <p>Activity feed with transaction history</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Activity & Analytics</div>
+                    <h2>Track Your Activity</h2>
+                    <p>Monitor marketplace activity and your transactions:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Activity Feed:</strong> Real-time marketplace events</li>
+                        <li><span class="check">✓</span> <strong>Your Transactions:</strong> Personal buy/sell history</li>
+                        <li><span class="check">✓</span> <strong>Sales Analytics:</strong> Track revenue and royalties</li>
+                        <li><span class="check">✓</span> <strong>Play Counts:</strong> How many times each track was played</li>
+                        <li><span class="check">✓</span> <strong>Revenue Dashboard:</strong> Total earnings breakdown</li>
+                        <li><span class="check">✓</span> <strong>Royalty Tracking:</strong> Secondary sales royalty income</li>
+                        <li><span class="check">✓</span> <strong>Transaction Details:</strong> Block explorer links for verification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Creator Royalties -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">💰 Creator Royalties & Revenue</h2>
+                <div class="tech-category" style="max-width: 900px; margin: 0 auto; padding: 32px;">
+                    <div style="display: grid; gap: 32px;">
+                        <div>
+                            <h3 style="color: var(--color-success); margin-bottom: 16px;">💵 Primary Sales (First Sale)</h3>
+                            <div style="background: var(--color-bg); padding: 20px; border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 0.9rem;">
+                                <p style="margin-bottom: 8px;"><strong>Sale Price:</strong> 10.0 TUS</p>
+                                <p style="margin-bottom: 8px;"><strong>Platform Fee (1%):</strong> -0.1 TUS</p>
+                                <p style="margin-bottom: 8px;"><strong>Creator Receives:</strong> 8.9 TUS (89%)</p>
+                                <p style="border-top: 1px solid var(--color-border); padding-top: 8px; margin-top: 8px;">
+                                    <strong>Co-Creators Split 8.9 TUS:</strong><br>
+                                    • Artist (50%): 4.45 TUS<br>
+                                    • Producer (30%): 2.67 TUS<br>
+                                    • Songwriter (20%): 1.78 TUS
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 style="color: var(--color-primary-light); margin-bottom: 16px;">🔄 Secondary Sales (Resale)</h3>
+                            <div style="background: var(--color-bg); padding: 20px; border-radius: var(--radius-md); font-family: var(--font-mono); font-size: 0.9rem;">
+                                <p style="margin-bottom: 8px;"><strong>Resale Price:</strong> 15.0 TUS</p>
+                                <p style="margin-bottom: 8px;"><strong>Original Creator Royalty (10%):</strong> 1.5 TUS</p>
+                                <p style="margin-bottom: 8px;"><strong>Platform Fee (1%):</strong> 0.15 TUS</p>
+                                <p style="margin-bottom: 8px;"><strong>Seller Receives:</strong> 13.35 TUS (89%)</p>
+                                <p style="border-top: 1px solid var(--color-border); padding-top: 8px; margin-top: 8px; color: var(--color-success);">
+                                    <strong>✨ Forever Royalties:</strong> Original creators earn 10% on every resale, automatically, forever.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketplace Tips -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Marketplace Success Tips</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Great Artwork:</strong> Eye-catching album covers get more clicks and sales</li>
+                            <li>• <strong>Quality Audio:</strong> Professional mixing and mastering sells better</li>
+                            <li>• <strong>Competitive Pricing:</strong> Research similar tracks to price appropriately</li>
+                            <li>• <strong>Multiple License Types:</strong> Offer various price points to reach more buyers</li>
+                            <li>• <strong>Descriptive Titles:</strong> Clear, searchable titles help discovery</li>
+                            <li>• <strong>Detailed Descriptions:</strong> Explain genre, mood, instruments, and use cases</li>
+                            <li>• <strong>Tag Properly:</strong> Use relevant genre/mood tags for filtering</li>
+                            <li>• <strong>Preview Matters:</strong> 30-second clips should showcase your best moments</li>
+                            <li>• <strong>Promote Externally:</strong> Share your NFT links on social media</li>
+                            <li>• <strong>Build Reputation:</strong> Consistent quality builds fan base over time</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

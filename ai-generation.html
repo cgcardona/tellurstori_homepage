@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Music Generation guide for Stori - MusicGen and AudioGen with prompt templates">
+    <title>AI Music Generation - Stori Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🎵</span>
+                    <span class="logo-text">Stori</span>
+                    <span class="version-badge">v0.1.2 Beta</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#ai">AI Generation</a></li>
+                    <li><a href="index.html#instruments">Instruments</a></li>
+                    <li><a href="index.html#blockchain">Web3</a></li>
+                    <li><a href="docs.html" style="color: var(--color-primary-light);">Docs</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="features" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Documentation — Coming Soon</span>
+                <h1 class="section-title">AI Music Generation</h1>
+                <p class="section-subtitle">Create music and sound effects from text descriptions — available in a future update</p>
+            </div>
+            
+            <div class="ai-local-banner" style="margin-bottom: 48px;">
+                <div class="banner-content">
+                    <div class="banner-icon">🚀</div>
+                    <div class="banner-text">
+                        <h4>Coming in a Future Update</h4>
+                        <p>AI music generation is in development. The current v0.1.2 release focuses on professional DAW functionality. Check back for updates!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Generation Overview -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">AI Generation Basics</div>
+                    <h2>Generate Music from Text</h2>
+                    <p>Stori uses Meta's AudioCraft models to generate music and sound effects from text descriptions:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">○</span> <strong>Music Generation:</strong> Generate music clips in any genre</li>
+                        <li><span class="check">○</span> <strong>Sound Effects:</strong> Create sound effects and environmental audio</li>
+                        <li><span class="check">○</span> <strong>100% Local:</strong> All AI will run on your Mac</li>
+                        <li><span class="check">○</span> <strong>Template System:</strong> Pre-built prompts for quick generation</li>
+                        <li><span class="check">○</span> <strong>Prompt Enhancement:</strong> AI improves your descriptions</li>
+                        <li><span class="check">○</span> <strong>Timeline Integration:</strong> Generated audio appears instantly</li>
+                        <li><span class="check">○</span> <strong>No API Fees:</strong> Unlimited generations, no cloud costs</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">🤖</span>
+                            <p>AI Generation modal with prompt templates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MusicGen vs AudioGen -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">🎵 MusicGen vs 🎧 AudioGen</h2>
+                <div class="ai-grid">
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎵</span>
+                            <h3>MusicGen</h3>
+                            <span class="ai-badge">Music Generation</span>
+                        </div>
+                        <p>Generate musical compositions with melody, harmony, rhythm, and instruments. Perfect for creating songs, loops, and musical ideas.</p>
+                        <ul class="ai-features">
+                            <li>Full musical compositions</li>
+                            <li>Multiple genres (EDM, hip hop, rock, jazz, etc.)</li>
+                            <li>Tempo and key control</li>
+                            <li>Instrument specification</li>
+                            <li>Mood and energy settings</li>
+                            <li>Melody conditioning support</li>
+                        </ul>
+                        <div class="ai-example">
+                            <code>"High-energy EDM track at 128 BPM in A minor with punchy synths and driving bass"</code>
+                        </div>
+                    </div>
+
+                    <div class="ai-card" data-animate>
+                        <div class="ai-card-header">
+                            <span class="ai-icon">🎧</span>
+                            <h3>AudioGen</h3>
+                            <span class="ai-badge">Sound Effects</span>
+                        </div>
+                        <p>Generate sound effects, foley, ambience, and textures. Ideal for podcasts, videos, games, and adding atmosphere to music.</p>
+                        <ul class="ai-features">
+                            <li>Sound effects (footsteps, doors, etc.)</li>
+                            <li>Environmental ambience</li>
+                            <li>Foley and textures</li>
+                            <li>Nature sounds</li>
+                            <li>Mechanical/industrial sounds</li>
+                            <li>Atmospheric layers</li>
+                        </ul>
+                        <div class="ai-example">
+                            <code>"Rain on a tin roof with distant thunder and occasional wind gusts"</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Start -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">⚡</span>
+                            <p>Quick generation workflow</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Quick Start</div>
+                    <h2>Generate Your First Track</h2>
+                    <p>Simple workflow to create AI-generated music:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">1</span> <strong>Click Generate:</strong> Click "Generate" button on track or ⌘⇧G</li>
+                        <li><span class="check">2</span> <strong>Choose Type:</strong> Select MusicGen (music) or AudioGen (effects)</li>
+                        <li><span class="check">3</span> <strong>Enter Prompt:</strong> Describe what you want to create</li>
+                        <li><span class="check">4</span> <strong>Enhance (Optional):</strong> Click "Enhance Prompt" for better results</li>
+                        <li><span class="check">5</span> <strong>Set Duration:</strong> Choose 5-30 seconds</li>
+                        <li><span class="check">6</span> <strong>Generate:</strong> Click "Generate" button and wait ~30-60 seconds</li>
+                        <li><span class="check">7</span> <strong>Listen:</strong> Audio appears on timeline, press Space to play</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Template System -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">📋 Prompt Templates</h2>
+                <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Pre-built templates help you generate professional results quickly. Choose a template and customize it:
+                </p>
+
+                <div class="instruments-grid">
+                    <div class="instrument-category" data-animate>
+                        <h4>🎹 Electronic Music</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>House:</strong> "Upbeat house track at 128 BPM with four-on-the-floor kick and disco strings"</li>
+                            <li><strong>Techno:</strong> "Dark minimal techno at 130 BPM with industrial percussion"</li>
+                            <li><strong>Trance:</strong> "Uplifting trance at 138 BPM with epic synth pads"</li>
+                            <li><strong>Dubstep:</strong> "Heavy dubstep at 140 BPM with wobble bass"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎤 Hip Hop & R&B</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Boom Bap:</strong> "Classic 90s hip hop beat at 90 BPM with vinyl crackle and jazz samples"</li>
+                            <li><strong>Trap:</strong> "Modern trap beat at 140 BPM with 808 bass and hi-hat rolls"</li>
+                            <li><strong>Lo-Fi:</strong> "Chill lo-fi hip hop at 85 BPM with mellow piano and vinyl noise"</li>
+                            <li><strong>R&B:</strong> "Smooth R&B groove at 75 BPM with electric piano"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎸 Rock & Metal</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Rock:</strong> "Classic rock riff at 120 BPM with distorted guitar and driving drums"</li>
+                            <li><strong>Metal:</strong> "Heavy metal at 180 BPM with double bass drums and palm-muted guitars"</li>
+                            <li><strong>Punk:</strong> "Fast punk rock at 160 BPM with power chords"</li>
+                            <li><strong>Indie:</strong> "Indie rock at 110 BPM with jangly guitars"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎺 Jazz & Blues</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Jazz:</strong> "Smooth jazz at 120 BPM with saxophone and walking bass"</li>
+                            <li><strong>Blues:</strong> "12-bar blues at 80 BPM with blues guitar"</li>
+                            <li><strong>Bebop:</strong> "Fast bebop at 200 BPM with intricate melody"</li>
+                            <li><strong>Fusion:</strong> "Jazz fusion at 140 BPM with electric piano"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🌙 Ambient & Cinematic</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Ambient:</strong> "Ethereal ambient soundscape with evolving pads and subtle textures"</li>
+                            <li><strong>Cinematic:</strong> "Epic cinematic orchestral piece with strings and brass"</li>
+                            <li><strong>Drone:</strong> "Dark drone atmosphere with low rumble and distant echoes"</li>
+                            <li><strong>New Age:</strong> "Peaceful new age music with piano and nature sounds"</li>
+                        </ul>
+                    </div>
+
+                    <div class="instrument-category" data-animate>
+                        <h4>🎧 Sound Effects</h4>
+                        <ul style="font-size: 0.85rem;">
+                            <li><strong>Nature:</strong> "Forest ambience with birds chirping and rustling leaves"</li>
+                            <li><strong>Weather:</strong> "Heavy rainstorm with thunder and wind"</li>
+                            <li><strong>Urban:</strong> "City street sounds with traffic and distant sirens"</li>
+                            <li><strong>Mechanical:</strong> "Industrial factory with machinery and steam"</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Writing Great Prompts -->
+            <div class="feature-block feature-block-left" data-animate>
+                <div class="feature-content">
+                    <div class="feature-tag">Writing Prompts</div>
+                    <h2>How to Write Effective Prompts</h2>
+                    <p>Follow these guidelines for best results:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Be Specific:</strong> "Upbeat pop song" vs "Energetic pop song at 128 BPM with synth hooks"</li>
+                        <li><span class="check">✓</span> <strong>Include Tempo:</strong> Specify BPM for accurate timing (60-200 BPM typical)</li>
+                        <li><span class="check">✓</span> <strong>Mention Key:</strong> Add musical key (C major, A minor, etc.) for harmonic control</li>
+                        <li><span class="check">✓</span> <strong>Describe Instruments:</strong> List specific instruments you want to hear</li>
+                        <li><span class="check">✓</span> <strong>Set Mood/Energy:</strong> Use descriptive words (dark, bright, energetic, calm)</li>
+                        <li><span class="check">✓</span> <strong>Reference Genres:</strong> Mention genre conventions for authentic results</li>
+                        <li><span class="check">✓</span> <strong>Keep It Simple:</strong> 10-30 words is ideal, not a novel</li>
+                        <li><span class="check">✓</span> <strong>Use Enhance:</strong> Let the LLM improve your prompt automatically</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">✍️</span>
+                            <p>Prompt builder with template selection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prompt Examples -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">✨ Prompt Examples</h2>
+                <div class="tech-category" style="background: var(--color-bg-tertiary); padding: 32px; border-radius: var(--radius-lg);">
+                    <div style="display: grid; gap: 24px;">
+                        <div>
+                            <h4 style="color: var(--color-success); margin-bottom: 8px;">✅ Good Prompt:</h4>
+                            <code style="font-family: var(--font-mono); font-size: 0.9rem; display: block; padding: 12px; background: var(--color-bg); border-radius: var(--radius-sm); color: var(--color-accent);">
+                                "Upbeat electronic dance music at 128 BPM in A minor with punchy synth bass, bright lead synths, and four-on-the-floor kick drum"
+                            </code>
+                            <p style="margin-top: 8px; font-size: 0.85rem; color: var(--color-text-secondary);">
+                                <strong>Why it works:</strong> Specific genre, tempo, key, instruments, and energy level.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--color-warning); margin-bottom: 8px;">⚠️ Mediocre Prompt:</h4>
+                            <code style="font-family: var(--font-mono); font-size: 0.9rem; display: block; padding: 12px; background: var(--color-bg); border-radius: var(--radius-sm); color: var(--color-text-secondary);">
+                                "Dance music that sounds good"
+                            </code>
+                            <p style="margin-top: 8px; font-size: 0.85rem; color: var(--color-text-secondary);">
+                                <strong>Problem:</strong> Too vague - no tempo, key, or specific instruments mentioned.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h4 style="color: var(--color-success); margin-bottom: 8px;">✅ Great Sound Effect Prompt:</h4>
+                            <code style="font-family: var(--font-mono); font-size: 0.9rem; display: block; padding: 12px; background: var(--color-bg); border-radius: var(--radius-sm); color: var(--color-accent);">
+                                "Heavy rainstorm on a tin roof with distant rolling thunder, occasional wind gusts, and water dripping"
+                            </code>
+                            <p style="margin-top: 8px; font-size: 0.85rem; color: var(--color-text-secondary);">
+                                <strong>Why it works:</strong> Specific environmental details create vivid audio scene.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generation Settings -->
+            <div class="feature-block feature-block-right" data-animate>
+                <div class="feature-visual">
+                    <div class="screenshot-placeholder small">
+                        <div class="placeholder-content">
+                            <span class="placeholder-icon">⚙️</span>
+                            <p>Generation settings panel</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="feature-tag">Generation Settings</div>
+                    <h2>Advanced Options</h2>
+                    <p>Fine-tune your generation parameters:</p>
+                    <ul class="feature-list">
+                        <li><span class="check">✓</span> <strong>Duration:</strong> 5-30 seconds (30s is sweet spot for quality)</li>
+                        <li><span class="check">✓</span> <strong>Model:</strong> Choose model size (small/medium/large)</li>
+                        <li><span class="check">✓</span> <strong>Temperature:</strong> Creativity vs consistency (0.0-2.0)</li>
+                        <li><span class="check">✓</span> <strong>Top-k:</strong> Sampling diversity control</li>
+                        <li><span class="check">✓</span> <strong>Melody Conditioning:</strong> Use existing audio as guide (MusicGen only)</li>
+                        <li><span class="check">✓</span> <strong>Seed:</strong> Reproducible generations (same seed = same result)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Generation Process -->
+            <div style="margin-top: 80px; margin-bottom: 60px;">
+                <h2 style="font-size: 2rem; margin-bottom: 32px; text-align: center;">⏱️ Generation Timeline</h2>
+                <div class="timeline" style="max-width: 800px; margin: 0 auto; padding-left: 0;">
+                    <div class="timeline-item current" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">0-5 seconds</span>
+                            <h3>Prompt Processing</h3>
+                            <p>Your prompt is analyzed and converted into model inputs. If using "Enhance Prompt", the LLM improves your description.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item current" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">5-10 seconds</span>
+                            <h3>Model Loading</h3>
+                            <p>AI model loads into memory (first generation only - subsequent generations skip this step).</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item current" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">10-60 seconds</span>
+                            <h3>Audio Generation</h3>
+                            <p>Model generates audio sample by sample. Progress bar shows real-time status. Longer durations take more time.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item completed" data-animate>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Complete!</span>
+                            <h3>Timeline Integration</h3>
+                            <p>Generated audio appears as region on timeline. Press Space to listen. Generation metadata saved in Inspector.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pro Tips -->
+            <div class="ai-local-banner" data-animate>
+                <div class="banner-content">
+                    <div class="banner-icon">🎯</div>
+                    <div class="banner-text">
+                        <h3>Professional AI Generation Workflow</h3>
+                        <ul style="margin-top: 12px; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                            <li>• <strong>Generate Multiple:</strong> Create 5-10 variations with different prompts, pick the best</li>
+                            <li>• <strong>30 Seconds Sweet Spot:</strong> Quality stays consistent, long enough for useful loops</li>
+                            <li>• <strong>Iterate on Prompts:</strong> Start simple, refine based on results you get</li>
+                            <li>• <strong>Mix AI + Traditional:</strong> Layer AI generations with recorded instruments</li>
+                            <li>• <strong>Extract Sections:</strong> Trim regions to use just the best 8-16 bar sections</li>
+                            <li>• <strong>Tempo Match:</strong> Analyze and match tempo for tight arrangements</li>
+                            <li>• <strong>Enhance Selectively:</strong> Try both raw and enhanced prompts to compare</li>
+                            <li>• <strong>Genre Blend:</strong> Combine genre terms for unique results ("jazz hip hop fusion")</li>
+                            <li>• <strong>Save Good Prompts:</strong> Keep a notes file of prompts that worked well</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🎵 Stori</span>
+                    <p class="footer-tagline">Professional DAW Powered by AI</p>
+                </div>
+                <div class="footer-links">
+                    <a href="getting-started.html">Getting Started</a>
+                    <a href="interface-overview.html">Interface</a>
+                    <a href="keyboard-shortcuts.html">Shortcuts</a>
+                    <a href="troubleshooting.html">Troubleshooting</a>
+                </div>
+                <p class="footer-copyright">© 2026 TellUrStori. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

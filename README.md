@@ -2,7 +2,7 @@
 
 Documentation website for Stori - Professional DAW for macOS.
 
-## Current Version: v0.1.7 Beta
+## Current Version: v0.1.8 Beta
 
 ### What's Shipping
 
